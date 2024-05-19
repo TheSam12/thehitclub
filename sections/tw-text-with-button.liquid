@@ -1,0 +1,86 @@
+{% liquid
+  assign title = section.settings.title
+  assign sticker = section.settings.sticker
+  assign content = section.settings.content
+  assign btn_label = section.settings.btn_label
+  assign btn_link = section.settings.btn_link
+%}
+
+<div class="tw-container tw-m-auto md:tw-pt-20 tw-p-10 tw-relative">
+  {% if sticker != blank %}
+    <div class="tw-relative">
+      <img
+        src="{{ sticker | image_url }}"
+        width="90"
+        height="90"
+        class="rotate-45 drop-shadow-xl sticker-button absolute"
+      >
+    </div>
+  {% endif %}
+  <div class="tw-flex tw-flex-col tw-gap-6 md:tw-gap-14">
+    <h2 class="tw-text-4xl md:tw-text-7xl tw-font-bold tw-text-center md:tw-text-left">{{ title }}</h2>
+    <div class="tw-text-left xl:tw-text-4xl lg:tw-text-3xl">
+      {{ content }}
+    </div>
+    <div class="tw-flex tw-justify-center">
+      <a
+        class="tw-bg-black tw-px-7 tw-py-3 tw-rounded-full tw-font-semibold md:tw-text-3xl tw-text-white tw-uppercase tw-mt-3 md:tw-mt-0 tw-text-center"
+        href="{{ btn_link }}"
+      >
+        {{- btn_label -}}
+      </a>
+    </div>
+  </div>
+</div>
+<style>
+  .sticker-button {
+    top: -100px;
+    right: 0;
+  }
+  @media screen and (min-width: 768px) {
+    .sticker-button {
+      width: 150px;
+      top: -150px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Text with button",
+  "class": "tw-my-8",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "sticker",
+      "label": "Sticker Image"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "text",
+      "id": "btn_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Button URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text with button"
+    }
+  ]
+}
+{% endschema %}

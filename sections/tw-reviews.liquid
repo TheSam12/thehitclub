@@ -1,0 +1,200 @@
+{% liquid
+  assign var = section.settings
+  assign bg_img = var.bg_img
+  assign title = var.title
+  assign sub_title = var.sub_title
+  assign slider_label = var.slider_label
+  assign sticker_img = var.sticker_img
+%}
+
+<div class="">
+  <div>
+    {% if bg_img != null %}
+      <div class="tw-relative">
+        {% if bg_img != null %}
+          <img
+            src="{{ bg_img | image_url: width: 1920  }}"
+            alt="{{ bg_img.alt }}"
+            class="tw-absolute tw-w-full tw-h-full"
+          >
+        {% endif %}
+        <div class="tw-relative tw-py-20 lg:tw-py-32">
+          <h2 class="tw-text-5xl md:tw-text-8xl lg:tw-text-9xl tw-font-bold tw-text-center tw-drop-shadow-lg tw-text-white tw-flex tw-flex-col tw-gap-1 md:tw-gap-5">
+            {{ title }}
+            <span class="tw-text-2xl md:tw-text-6xl">
+              {{ sub_title }}
+            </span>
+          </h2>
+        </div>
+        {% if sticker_img != null %}
+          <img
+            src="{{ sticker_img | image_url }}"
+            alt="{{ sticker_img.alt }}"
+            class="tw-absolute tw-drop-shadow-lg tw-review-sticker"
+            width="100"
+            height="100"
+          >
+        {% endif %}
+      </div>
+    {% endif %}
+    <div class="tw-container tw-m-auto tw-px-4 md:tw-px-20 tw-pt-10 md:tw-pt-0">
+      <h3 class="tw-hidden md:tw-block tw-text-center tw-py-10 tw-text-2xl">
+        {{ slider_label }}
+      </h3>
+      <div class="swiper reviews_slider">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            {% if block.type == 'review' %}
+              <div class="swiper-slide">
+                <div class="tw-w-5/6 tw-m-auto">
+                  <p class="tw-text-center tw-text-lg md:tw-text-3xl lg:tw-text-5xl tw-font-bold ">
+                    {{ block.settings.content }}
+                  </p>
+                  {% if block.settings.customer_img != null %}
+                    <div class="tw-flex tw-justify-center tw-py-4">
+                      <img
+                        class="tw-rounded-full tw-overflow-hidden tw-h-16"
+                        src="{{ block.settings.customer_img | image_url: width: 64, height: 64}}"
+                        alt="{{ block.settings.customer_img.alt }}"
+                        width="64"
+                        height="64"
+                      >
+                    </div>
+                  {% endif %}
+                  <h3 class="tw-text-base md:tw-text-2xl tw-text-center">{{ block.settings.customer_name }}</h3>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <div class="tw-container tw-m-auto tw-pt-10 tw-px-9">
+      <div class="tw-flex tw-justify-between tw-w-full tw-gap-8">
+        {% for block in section.blocks %}
+          {% if block.type == 'sample_images' %}
+            {% if block.settings.sample_images != null %}
+              <div class="tw-w-1/3">
+                <img
+                  src="{{ block.settings.sample_images | image_url }}"
+                  alt="{{ block.settings.sample_images.alt }}"
+                  class="tw-w-full"
+                  width="200"
+                  height="500"
+                >
+              </div>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .reviews_slider .swiper-button-prev::after,
+  .reviews_slider .swiper-button-next::after {
+    font-weight: bolder;
+    color: #c7c803;
+  }
+  .review-sticker {
+    top: -66px;
+    left: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    .review-sticker {
+      left: 15%;
+      width: 200px;
+      top: -100px;
+    }
+  }
+</style>
+<script>
+  const swiper = new Swiper('.reviews_slider', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Reviews",
+  "class": "tw-my-20",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_img",
+      "label": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "sticker_img",
+      "label": "Banner Sticker"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "text",
+      "id": "sub_title",
+      "label": "Sub Title",
+      "default": "Sub Title"
+    },
+    {
+      "type": "text",
+      "id": "slider_label",
+      "label": "Slider Label",
+      "default": "y esto es lo que opinan algunos de ellos..."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "review slider",
+      "settings": [
+        {
+          "type": "text",
+          "id": "content",
+          "label": "Content",
+          "default": "¨Transmites algo increíble! Tu energía es hermosa. Espero todos los días la hora de entrenar¨"
+        },
+        {
+          "type": "image_picker",
+          "id": "customer_img",
+          "label": "Customer image"
+        },
+        {
+          "type": "text",
+          "id": "customer_name",
+          "label": "Customer name"
+        }
+      ]
+    },
+    {
+      "type": "sample_images",
+      "name": "Bodies Examples",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "sample_images",
+          "label": "Body Example"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Reviews"
+    }
+  ]
+}
+{% endschema %}

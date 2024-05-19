@@ -1,0 +1,49 @@
+{% liquid
+  assign var = section.settings
+  assign collection = var.collection
+%}
+
+<div class="tw-container tw-m-auto">
+  <div class="md:tw-px-20 tw-px-4">
+    <div class="tw-text-center">
+      <h2 class="tw-font-bold tw-text-3xl md:tw-text-6xl tw-py-8">{{ collection.title }}</h2>
+    </div>
+    <div class="tw-grid {% if collection.size > 3 %}lg:tw-grid-cols-4 md:tw-grid-cols-2{% elsif collection.size == 3 %}md:tw-grid-cols-3{% else %}md:tw-grid-cols-2{% endif %} tw-grid-cols-1 tw-gap-8">
+      {% for product in collection.products limit: 4 %}
+        <a class="tw-flex tw-flex-col tw-justify-start tw-items-center tw-gap-4 tw-w-max md:tw-w-fit tw-m-auto lg:tw-m-0" href="{{ product.url }}">
+          <div class="tw-w-full">
+            {% if product.featured_image != null %}
+              <img src="{{ product.featured_image | image_url }}" width="290" height="290" class="tw-rounded-3xl">
+            {% endif %}
+          </div>
+          <p class="tw-flex tw-flex-col tw-justify-between tw-gap-2 tw-w-full tw-text-lg tw-font-bold" style="color:#9a999a">
+            <span>{{ product.title }}</span>
+            <span>{{ product.price | money }}</span>
+          </p>
+        </a>
+      {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Featured Collection",
+  "class": "tw-my-8",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Content"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Collection"
+    }
+  ]
+}
+{% endschema %}

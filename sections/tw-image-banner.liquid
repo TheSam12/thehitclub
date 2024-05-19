@@ -1,0 +1,111 @@
+{% liquid
+  assign d_img = section.settings.d_img
+  assign m_img = section.settings.m_img
+  assign pre_title = section.settings.pre_title
+  assign title = section.settings.title
+  assign btn_label = section.settings.btn_label
+  assign btn_link = section.settings.btn_link
+%}
+
+<style>
+  .{{ section.id }}-bg {
+    background-image: url({{ d_img | image_url: width: 1920 }});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+  }
+  {% if m_img != blank %}
+    @media (max-width: 768px) {
+      .{{ section.id }}-bg {
+        background-image: url({{ m_img | image_url: width: 1920 }});
+        height: 600px;
+      }
+    }
+  {% endif %}
+
+  .{{ section.id }}-bg h1 {
+    font-family: 'Univers-Extrablack';
+  }
+</style>
+
+<div class="tw-m-auto {{ section.id }}-bg">
+  <div class="tw-relative tw-overflow-hidden tw-h-full tw-px-4">
+    {% comment %}
+      <div class="tw-absolute tw-inset-0">
+        <picture>
+          <source media="(min-width:700px)" srcset="{{ d_img | image_url: width: 1080 }}">
+          {% if m_img %}
+            {{ m_img | image_url: width: 700 | image_tag }}
+          {% else %}
+            {{ d_img | image_url: width: 1920 | image_tag }}
+          {% endif %}
+        </picture>
+      </div>
+    {% endcomment %}
+    {% if pre_title and title and btn_label != blank %}
+      <div class="tw-relative tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-white tw-w-full tw-h-full tw-gap-6">
+        <h1 class="tw-font-bold tw-text-3xl md:tw-text-6xl tw-text-center tw-mb-20 tw-drop-shadow-lg">
+          <span class="tw-text-xl md:tw-text-3xl">{{ pre_title }}</span><br>
+          {{ title }}
+        </h1>
+        <a
+          class="tw-bg-gradient-to-r tw-from-yellow-300 tw-to-orange-600 tw-py-3 tw-px-8 tw-rounded-full tw-font-bold tw-text-base md:tw-text-2xl tw-text-center tw-text-black tw-uppercase"
+          href="{{ btn_link }}"
+        >
+          {{- btn_label -}}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "image banner",
+  "class": "tw-mb-8",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "d_img",
+      "label": "Desktop image"
+    },
+    {
+      "type": "image_picker",
+      "id": "m_img",
+      "label": "Mobile image"
+    },
+    {
+      "type": "text",
+      "id": "pre_title",
+      "label": "Pre Title",
+      "default": "Pre Title"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "btn_label",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Button URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Banner"
+    }
+  ]
+}
+{% endschema %}

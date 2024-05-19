@@ -47,8 +47,8 @@
         "show_text_below": false
       }
     },
-    "text_with_gif_WDrfPe": {
-      "type": "text-with-gif",
+    "tw-text_with_gif": {
+      "type": "tw-text-with-gif",
       "settings": {
         "title": "¿Estás listo para entrenar con torque?",
         "content": "Nuestros programas te dan la flexibilidad de entrenar desde la cómodidad de tu hogar o desde un gimnasio. WE GOT YOU!",
@@ -227,7 +227,7 @@
   },
   "order": [
     "image_banner",
-    "text_with_gif_WDrfPe",
+    "tw-text_with_gif",
     "rich_text",
     "featured_collection",
     "collage",

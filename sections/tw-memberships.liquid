@@ -1,0 +1,72 @@
+{% liquid
+  assign title = section.settings.title
+  assign product_list = section.settings.product_list
+  assign cards_btn_label = section.settings.cards_btn_label
+%}
+
+<div class="tw-bg-gradient-to-br tw-from-cyan-400 tw-to-yellow-200">
+  <div class="tw-container tw-mx-auto tw-px-10 tw-py-20">
+    <h2 class="tw-font-bold tw-text-4xl md:tw-text-7xl tw-mb-10 tw-text-center md:tw-text-left">{{ title }}</h2>
+    <div class="tw-grid lg:tw-grid-cols-3 tw-gap-10">
+      {% for product in product_list %}
+        <div class="tw-bg-white tw-flex tw-flex-col tw-gap-4 md:tw-gap-8 tw-justify-around tw-p-5 tw-px-8 tw-py-10 tw-rounded-3xl tw-text-center tw-relative">
+          {% for tag in product.tags %}
+            {% if tag == 'new' %}
+              <div class="tw-absolute" style="top:-5px;right:-5px">
+                <img src="{{ 'new-tag.png' | asset_img_url }}" width="70" height="70">
+              </div>
+            {% endif %}
+          {% endfor %}
+          <h3 class="tw-font-bold tw-text-xl">{{ product.title }}</h3>
+          <span class="tw-font-bold tw-text-6xl md:tw-text-8xl">
+            {{- product.price | money_without_trailing_zeros -}}
+          </span>
+          <span>(Ahorro $XX)</span>
+          <div class="tw-tw-flex tw-tw-justify-center">
+            <a class="tw-bg-black tw-px-7 tw-py-2 tw-rounded-full tw-font-semibold tw-text-white" href="http://">
+              {{- cards_btn_label -}}
+            </a>
+          </div>
+          <p class="tw-text-gray-500">Pago recurrente cada XX dias</p>
+        </div>
+        tw-
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "memberships",
+  "class": "tw-mb-8",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "product_list",
+      "id": "product_list",
+      "label": "Product List",
+      "limit": 3
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "cards_btn_label",
+      "label": "Cards button label",
+      "default": "Button"
+    }
+  ],
+  "presets": [
+    {
+      "name": "memberships"
+    }
+  ]
+}
+{% endschema %}
