@@ -48,6 +48,17 @@
         "show_text_below": false
       }
     },
+    "tw_image_banner_jhYmQg": {
+      "type": "tw-image-banner",
+      "settings": {
+        "d_img": "shopify:\/\/shop_images\/Hit_club_marzo0725.jpg",
+        "m_img": "shopify:\/\/shop_images\/Hit_club_marzo1031-m.jpg",
+        "pre_title": "THE HOUSE OF",
+        "title": "SABROSURA LATINA",
+        "btn_label": "¡PRUEBA UNA CLASE GRATIS!",
+        "btn_link": ""
+      }
+    },
     "tw-text_with_gif": {
       "type": "tw-text-with-gif",
       "settings": {
@@ -59,17 +70,6 @@
         "pill_3": "CON PROPS O SIN EQUIPOS",
         "gif_url": "",
         "image": "shopify:\/\/shop_images\/The_Hit_Club_Homepage_gif.gif"
-      }
-    },
-    "tw_image_banner_jhYmQg": {
-      "type": "tw-image-banner",
-      "settings": {
-        "d_img": "shopify:\/\/shop_images\/Hit_club_marzo0725.jpg",
-        "m_img": "shopify:\/\/shop_images\/Hit_club_marzo1031-m.jpg",
-        "pre_title": "THE HOUSE OF",
-        "title": "SABROSURA LATINA",
-        "btn_label": "¡PRUEBA UNA CLASE GRATIS!",
-        "btn_link": ""
       }
     },
     "tw_memberships_Q7cxVz": {
@@ -334,8 +334,8 @@
   },
   "order": [
     "image_banner",
-    "tw-text_with_gif",
     "tw_image_banner_jhYmQg",
+    "tw-text_with_gif",
     "tw_memberships_Q7cxVz",
     "tw_text_with_button_kiey4m",
     "tw_reviews_xHykKm",
