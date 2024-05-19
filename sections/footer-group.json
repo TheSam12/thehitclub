@@ -8,14 +8,14 @@
         "menu_9nKB9L": {
           "type": "menu",
           "settings": {
-            "title": "",
+            "title": "Información",
             "menu": "footer"
           }
         },
         "menu_QLF6h3": {
           "type": "menu",
           "settings": {
-            "title": "",
+            "title": "Políticas",
             "menu": "pol-ticas"
           }
         },
