@@ -83,9 +83,57 @@
     },
     "tw_reviews_xHykKm": {
       "type": "tw-reviews",
+      "blocks": {
+        "review_4k4PRV": {
+          "type": "review",
+          "settings": {
+            "content": "¨Transmites algo increíble! Tu energía es hermosa. Espero todos los días la hora de entrenar¨",
+            "customer_name": ""
+          }
+        },
+        "review_WC78ez": {
+          "type": "review",
+          "settings": {
+            "content": "¨Transmites algo increíble! Tu energía es hermosa. Espero todos los días la hora de entrenar¨",
+            "customer_name": ""
+          }
+        },
+        "review_jpyHcF": {
+          "type": "review",
+          "settings": {
+            "content": "¨Transmites algo increíble! Tu energía es hermosa. Espero todos los días la hora de entrenar¨",
+            "customer_name": ""
+          }
+        },
+        "sample_images_NWfbcE": {
+          "type": "sample_images",
+          "settings": {
+          }
+        },
+        "sample_images_mCG97a": {
+          "type": "sample_images",
+          "settings": {
+          }
+        },
+        "sample_images_Nj8Pq3": {
+          "type": "sample_images",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "review_4k4PRV",
+        "review_WC78ez",
+        "review_jpyHcF",
+        "sample_images_NWfbcE",
+        "sample_images_mCG97a",
+        "sample_images_Nj8Pq3"
+      ],
       "settings": {
-        "title": "Title",
-        "sub_title": "Sub Title",
+        "bg_img": "shopify:\/\/shop_images\/2024.04.22_-_The_Hit_Club_Website_233eb994-a619-4c5e-8cbd-e8e6f22a78d2.jpg",
+        "sticker_img": "shopify:\/\/shop_images\/Slanted_Lighter.png",
+        "title": "12,000+",
+        "sub_title": "alumnos en 60 países",
         "slider_label": "y esto es lo que opinan algunos de ellos..."
       }
     },
