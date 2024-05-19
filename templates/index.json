@@ -59,6 +59,34 @@
         "btn_link": ""
       }
     },
+    "tw_memberships_Q7cxVz": {
+      "type": "tw-memberships",
+      "settings": {
+        "title": "Title",
+        "product_list": [
+
+        ],
+        "cards_btn_label": "Button"
+      }
+    },
+    "tw_reviews_xHykKm": {
+      "type": "tw-reviews",
+      "settings": {
+        "title": "Title",
+        "sub_title": "Sub Title",
+        "slider_label": "y esto es lo que opinan algunos de ellos..."
+      }
+    },
+    "tw_text_with_button_kiey4m": {
+      "type": "tw-text-with-button",
+      "settings": {
+        "title": "Somos el programa perfecto para tí si:",
+        "sticker": "shopify:\/\/shop_images\/Transparent.png",
+        "content": "<p>🌶️ Quieres encontrar un programa online <strong>fácil de seguir<\/strong><\/p><p>💦 Necesitas tener <strong>contacto directo<\/strong> con tus entrenadores<\/p><p>🔥 Quieres tener la opción de entrenar desde <strong>casa o gym<\/strong><\/p>",
+        "btn_label": "JOIN THE CLUB!",
+        "btn_link": ""
+      }
+    },
     "tw-text_with_gif": {
       "type": "tw-text-with-gif",
       "settings": {
@@ -240,6 +268,9 @@
   "order": [
     "image_banner",
     "tw_image_banner_jhYmQg",
+    "tw_memberships_Q7cxVz",
+    "tw_reviews_xHykKm",
+    "tw_text_with_button_kiey4m",
     "tw-text_with_gif",
     "rich_text",
     "featured_collection",
