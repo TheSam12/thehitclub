@@ -2,6 +2,12 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "tw_footer_8ki9aE": {
+      "type": "tw-footer",
+      "settings": {
+        "copy": ""
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -36,6 +42,7 @@
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
         "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
@@ -48,6 +55,7 @@
     }
   },
   "order": [
+    "tw_footer_8ki9aE",
     "footer"
   ]
 }
