@@ -34,6 +34,7 @@
         "text",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
@@ -45,6 +46,17 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
+      }
+    },
+    "tw_image_banner_jhYmQg": {
+      "type": "tw-image-banner",
+      "settings": {
+        "d_img": "shopify:\/\/shop_images\/Hit_club_marzo0725.jpg",
+        "m_img": "shopify:\/\/shop_images\/Hit_club_marzo1031-m.jpg",
+        "pre_title": "THE HOUSE OF",
+        "title": "SABROSURA LATINA",
+        "btn_label": "¡PRUEBA UNA CLASE GRATIS!",
+        "btn_link": ""
       }
     },
     "tw-text_with_gif": {
@@ -227,6 +239,7 @@
   },
   "order": [
     "image_banner",
+    "tw_image_banner_jhYmQg",
     "tw-text_with_gif",
     "rich_text",
     "featured_collection",
