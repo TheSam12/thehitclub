@@ -1,0 +1,163 @@
+{% liquid
+  assign logo_black = section.settings.logo_black
+  assign logo_white = section.settings.logo_white
+  assign menu = section.settings.menu
+  assign icon = section.settings.icon
+%}
+
+<div id="{{ section.id }}">
+  <div
+    :class="{ 'tw-bg-white tw-drop-shadow-md': tw-scrollPosition >= 1, 'tw-bg-gradient-to-b tw-from-black/50 tw-to-transparent': scrollPosition < 1 }"
+  >
+    <nav class="tw-container tw-m-auto tw-py-8">
+      <div class="tw-flex tw-justify-between tw-items-center tw-mx-4">
+        <div class="">
+          {% if logo_black != blank %}
+            <a href="/" :class="{ 'tw-hidden': scrollPosition < 1 }">
+              {{ logo_black | image_url: width: 200 | image_tag }}
+            </a>
+          {% endif %}
+          {% if logo_white != blank %}
+            <a href="/" :class="{ 'tw-hidden': scrollPosition >= 1 }">
+              {{ logo_white | image_url: width: 200 | image_tag }}
+            </a>
+          {% endif %}
+        </div>
+        <div class="tw-flex tw-gap-8 tw-items-center">
+          <div class="tw-hidden md:tw-flex gap-4">
+            {% for link in menu.links %}
+              <ul>
+                <li>
+                  <a
+                    href="{{ link.url }}"
+                    :class="{ 'tw-text-black': scrollPosition >= 1, 'tw-text-white': scrollPosition < 1 }"
+                    class="tw-capitalize"
+                  >
+                    {{ link.title }}
+                  </a>
+                </li>
+              </ul>
+            {% endfor %}
+          </div>
+          <div class="tw-flex tw-gap-4 tw-items-center">
+            <div>
+              <a
+                href="{{ routes.cart_url }}"
+                class="tw-relative"
+                :class="{ 'tw-fill-black': scrollPosition >= 1, 'tw-fill-white': scrollPosition < 1 }"
+              >
+                {% if icon %}
+                  {% render 'icon-cart' %}
+                {% else %}
+                  <span :class="{ 'tw-text-black': scrollPosition >= 1, 'tw-text-white': scrollPosition < 1 }"
+                    >Cart</span
+                  >
+                {% endif %}
+                {% if cart != empty %}
+                  {% if cart.item_count < 100 %}
+                    <span
+                      class="tw-absolute tw-rounded-full tw--top-1 tw--right-1 tw-h-max tw-text-sm tw-h-5 tw-w-5 tw-text-center"
+                      :class="{ 'tw-text-black': scrollPosition >= 1, 'tw-text-white': scrollPosition < 1,'tw-bg-white': scrollPosition >= 1,'tw-border': scrollPosition >= 1, 'tw-border-black': scrollPosition >= 1, 'tw-bg-black': scrollPosition < 1 }"
+                    >
+                      {{- cart.item_count -}}
+                    </span>
+                  {% endif %}
+                {% endif %}
+              </a>
+            </div>
+            {% if shop.customer_accounts_enabled %}
+              <div>
+                <a
+                  href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.acount_login_url }}{% endif %}"
+                  :class="{ 'tw-fill-black': scrollPosition >= 1, 'tw-fill-white': scrollPosition < 1 }"
+                >
+                  {% if icon %}
+                    {% render 'icon-account' %}
+                  {% else %}
+                    {% if customer %}
+                      <span :class="{ 'tw-text-black': scrollPosition >= 1, 'tw-text-white': scrollPosition < 1 }"
+                        >Account</span
+                      >
+                    {% else %}
+                      <span :class="{ 'tw-text-black': scrollPosition >= 1, 'tw-text-white': scrollPosition < 1 }"
+                        >Login</span
+                      >
+                    {% endif %}
+                  {% endif %}
+                </a>
+              </div>
+            {% endif %}
+            <div class="md:tw-hidden">
+              <span :class="{ 'tw-fill-black': scrollPosition >= 1, 'tw-fill-white': scrollPosition < 1 }">
+                {% render 'icon-hamburger' %}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+<script>
+  var { createApp } = Vue;
+  const appHeader = createApp({
+    delimiters: ['${', '}'],
+    data() {
+      const scrollPosition = 0;
+      return {
+        scrollPosition,
+      };
+    },
+    methods: {
+      updateScroll() {
+        this.scrollPosition = window.scrollY;
+      },
+    },
+    mounted() {
+      // Add scroll event listener
+      window.addEventListener('scroll', this.updateScroll);
+    },
+  });
+  appHeader.mount('#{{ section.id }}');
+</script>
+
+<style>
+  .change-color {
+    background-color: #fff !important;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Header",
+  "class": "tw-sticky tw-top-0 tw-z-10",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo_black",
+      "label": "Dark Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_white",
+      "label": "Light Logo"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu"
+    },
+    {
+      "type": "checkbox",
+      "id": "icon",
+      "label": "Show Icons",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Header"
+    }
+  ]
+}
+{% endschema %}

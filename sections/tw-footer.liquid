@@ -1,0 +1,148 @@
+{% liquid
+  assign logo = section.settings.logo
+  assign copy = section.settings.copy
+%}
+
+<footer class="tw-container tw-m-auto tw-py-16 tw-px-10">
+  <div class="tw-pb-6">
+    <div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-between tw-gap-8">
+      <div class="">
+        {{ logo | image_url: width: 200 | image_tag: class: 'tw-m-auto' }}
+      </div>
+      {% for block in section.blocks %}
+        {% case block.type` %}
+          {% when 'menu' %}
+            <div>
+              <h3 class="tw-font-bold tw-mb-4">
+                {{ block.settings.title }}
+              </h3>
+              <div class="tw-flex tw-gap-6">
+                {% assign menu = block.settings.menu %}
+                <ul class="tw-flex tw-flex-col">
+                  {% for link in menu.links %}
+                    <li>
+                      <a href="{{ link.url }}">{{ link.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          {% when 'icons' %}
+            <div>
+              <h3 class="tw-font-bold tw-mb-4">Nuestras redes sociales</h3>
+              <div class="tw-flex tw-gap-4">
+                {% liquid
+                  assign facebook = block.settings.facebook
+                  assign instagram = block.settings.instagram
+                  assign tiktok = block.settings.tiktok
+                  assign youtube = block.settings.youtube
+                  assign twitter = block.settings.twitter
+                %}
+                {% if facebook != blank %}
+                  <a class="tw-flex tw-items-center tw-p-4 tw-text-white " href="{{ facebook }}">
+                    {% render 'social-icons', icon: 'facebook' %}
+                  </a>
+                {% endif %}
+                {% if instagram != blank %}
+                  <a class="tw-flex tw-items-center tw-p-4 tw-text-white " href="{{ instagram }}">
+                    {% render 'social-icons', icon: 'instagram' %}
+                  </a>
+                {% endif %}
+                {% if tiktok != blank %}
+                  <a class="tw-flex tw-items-center tw-p-4 tw-text-white " href="{{ tiktok }}">
+                    {% render 'social-icons', icon: 'tiktok' %}
+                  </a>
+                {% endif %}
+                {% if youtube != blank %}
+                  <a class="tw-flex tw-items-center tw-p-4 tw-text-white " href="{{ youtube }}">
+                    {% render 'social-icons', icon: 'youtube' %}
+                  </a>
+                {% endif %}
+                {% if twitter != blank %}
+                  <a class="tw-flex tw-item-center tw-p-4 tw-text-white " href="{{ twitter }}">
+                    {% render 'social-icons', icon: 'twitter' %}
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</footer>
+<div class="tw-container tw-m-auto tw-py-4 tw-text-center">
+  {{ copy }}
+</div>
+
+{% schema %}
+{
+  "name": "Footer",
+  "class": "tw-bg-black tw-text-white tw-mt-8",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "text",
+      "id": "copy",
+      "label": "Copy"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "menu",
+      "name": "Menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu"
+        }
+      ]
+    },
+    {
+      "type": "icons",
+      "name": "Social media icons",
+      "settings": [
+        {
+          "type": "url",
+          "id": "facebook",
+          "label": "Facebook"
+        },
+        {
+          "type": "url",
+          "id": "instagram",
+          "label": "Instagram"
+        },
+        {
+          "type": "url",
+          "id": "tiktok",
+          "label": "Tiktok"
+        },
+        {
+          "type": "url",
+          "id": "youtube",
+          "label": "Youtube"
+        },
+        {
+          "type": "url",
+          "id": "twitter",
+          "label": "twitter"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Footer"
+    }
+  ]
+}
+{% endschema %}
