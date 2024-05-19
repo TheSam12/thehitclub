@@ -717,6 +717,10 @@ html, :host {
   height: max-content;
 }
 
+.tw-h-9 {
+  height: 2.25rem;
+}
+
 .tw-w-3\/4 {
   width: 75%;
 }
@@ -744,6 +748,10 @@ html, :host {
 
 .tw-w-5 {
   width: 1.25rem;
+}
+
+.tw-w-9 {
+  width: 2.25rem;
 }
 
 .tw--rotate-12 {
