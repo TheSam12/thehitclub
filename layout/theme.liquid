@@ -249,6 +249,12 @@
           font-size: 1.6rem;
         }
       }
+
+      /* Custom font */
+      @font-face {
+        font-family: "Univers-Extrablack";
+        src: url("{{ 'Univers-Next-Pro-ExtraBlack-Extended.ttf' | asset_url }}") format("truetype"),
+      }
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
