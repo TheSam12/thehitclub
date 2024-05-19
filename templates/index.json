@@ -62,19 +62,13 @@
     "tw_memberships_Q7cxVz": {
       "type": "tw-memberships",
       "settings": {
-        "title": "Title",
+        "title": "planes de membresía",
         "product_list": [
-
+          "dumbbell-10lbs-1-unidad",
+          "dumbbell-4lbs-1-unidad",
+          "dumbbell-5lbs-1-unidad"
         ],
-        "cards_btn_label": "Button"
-      }
-    },
-    "tw_reviews_xHykKm": {
-      "type": "tw-reviews",
-      "settings": {
-        "title": "Title",
-        "sub_title": "Sub Title",
-        "slider_label": "y esto es lo que opinan algunos de ellos..."
+        "cards_btn_label": "SUSCRIBIRME"
       }
     },
     "tw_text_with_button_kiey4m": {
@@ -85,6 +79,14 @@
         "content": "<p>🌶️ Quieres encontrar un programa online <strong>fácil de seguir<\/strong><\/p><p>💦 Necesitas tener <strong>contacto directo<\/strong> con tus entrenadores<\/p><p>🔥 Quieres tener la opción de entrenar desde <strong>casa o gym<\/strong><\/p>",
         "btn_label": "JOIN THE CLUB!",
         "btn_link": ""
+      }
+    },
+    "tw_reviews_xHykKm": {
+      "type": "tw-reviews",
+      "settings": {
+        "title": "Title",
+        "sub_title": "Sub Title",
+        "slider_label": "y esto es lo que opinan algunos de ellos..."
       }
     },
     "tw-text_with_gif": {
@@ -269,8 +271,8 @@
     "image_banner",
     "tw_image_banner_jhYmQg",
     "tw_memberships_Q7cxVz",
-    "tw_reviews_xHykKm",
     "tw_text_with_button_kiey4m",
+    "tw_reviews_xHykKm",
     "tw-text_with_gif",
     "rich_text",
     "featured_collection",
