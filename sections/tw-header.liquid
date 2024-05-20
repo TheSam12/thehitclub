@@ -47,7 +47,7 @@
                 :class="{ 'tw-fill-black': scrollPosition >= 1, 'tw-fill-white': scrollPosition < 1 }"
               >
                 {% if icon %}
-                  {% render 'icon-cart' %}
+                  {% render 'tw-icon-cart' %}
                 {% else %}
                   <span :class="{ 'tw-text-black': scrollPosition >= 1, 'tw-text-white': scrollPosition < 1 }"
                     >Cart</span
@@ -72,7 +72,7 @@
                   :class="{ 'tw-fill-black': scrollPosition >= 1, 'tw-fill-white': scrollPosition < 1 }"
                 >
                   {% if icon %}
-                    {% render 'icon-account' %}
+                    {% render 'tw-icon-account' %}
                   {% else %}
                     {% if customer %}
                       <span :class="{ 'tw-text-black': scrollPosition >= 1, 'tw-text-white': scrollPosition < 1 }"
@@ -89,7 +89,7 @@
             {% endif %}
             <div class="md:tw-hidden">
               <span :class="{ 'tw-fill-black': scrollPosition >= 1, 'tw-fill-white': scrollPosition < 1 }">
-                {% render 'icon-hamburger' %}
+                {% render 'tw-icon-hamburger' %}
               </span>
             </div>
           </div>
