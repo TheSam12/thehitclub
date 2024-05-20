@@ -10,16 +10,21 @@
             "text_style": "uppercase"
           }
         },
-        "title": {
-          "type": "title",
-          "settings": {
-          }
-        },
         "caption": {
           "type": "text",
           "settings": {
             "text": "{{ product.metafields.descriptors.subtitle.value }}",
             "text_style": "subtitle"
+          }
+        },
+        "appstle_subscriptions_app_appstle_subscription_product_page_widget_UceA9R": {
+          "type": "shopify:\/\/apps\/appstle-subscriptions-app\/blocks\/appstle-subscription-product-page-widget\/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
+          "settings": {
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
           }
         },
         "price": {
@@ -32,11 +37,6 @@
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
           }
         },
         "buy_buttons": {
@@ -53,6 +53,7 @@
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Materials",
             "icon": "leather",
@@ -62,6 +63,7 @@
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
@@ -71,6 +73,7 @@
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Dimensions",
             "icon": "ruler",
@@ -80,6 +83,7 @@
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
@@ -90,11 +94,11 @@
       },
       "block_order": [
         "vendor",
-        "title",
         "caption",
+        "appstle_subscriptions_app_appstle_subscription_product_page_widget_UceA9R",
+        "title",
         "price",
         "variant_picker",
-        "quantity_selector",
         "buy_buttons",
         "description",
         "collapsible-row-0",
