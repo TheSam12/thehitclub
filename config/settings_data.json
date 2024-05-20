@@ -112,6 +112,10 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "checkout_logo_image": "shopify:\/\/shop_images\/The_Hit_Club_Logo-02.png",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_sidebar_background_color": "#ffffff",
+    "checkout_accent_color": "#fedc63",
+    "checkout_button_color": "#fedc63",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
