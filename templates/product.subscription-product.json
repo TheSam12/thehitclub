@@ -10,11 +10,9 @@
             "text_style": "uppercase"
           }
         },
-        "caption": {
-          "type": "text",
+        "title": {
+          "type": "title",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
           }
         },
         "appstle_subscriptions_app_appstle_subscription_product_page_widget_UceA9R": {
@@ -22,27 +20,10 @@
           "settings": {
           }
         },
-        "title": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
         },
@@ -94,11 +75,8 @@
       },
       "block_order": [
         "vendor",
-        "caption",
-        "appstle_subscriptions_app_appstle_subscription_product_page_widget_UceA9R",
         "title",
-        "price",
-        "variant_picker",
+        "appstle_subscriptions_app_appstle_subscription_product_page_widget_UceA9R",
         "buy_buttons",
         "description",
         "collapsible-row-0",
