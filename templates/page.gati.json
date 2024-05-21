@@ -30,6 +30,49 @@
     },
     "tw_memberships_cFePKa": {
       "type": "tw-memberships",
+      "blocks": {
+        "product_ABpDc4": {
+          "type": "product",
+          "settings": {
+            "new_mark": false,
+            "title": "1 MES",
+            "price": "$32",
+            "custom_line_1": "",
+            "custom_line_2": "Pago recurrente cada 30 días",
+            "btn_label": "SUSCRIBIRME",
+            "btn_url": ""
+          }
+        },
+        "product_TcYC73": {
+          "type": "product",
+          "settings": {
+            "new_mark": false,
+            "title": "3 MESES",
+            "price": "$76",
+            "custom_line_1": "(Ahorro $20)",
+            "custom_line_2": "Pago recurrente cada 90 días",
+            "btn_label": "SUSCRIBIRME",
+            "btn_url": ""
+          }
+        },
+        "product_Y9nA9L": {
+          "type": "product",
+          "settings": {
+            "new_mark": true,
+            "title": "6 MESES",
+            "price": "$140",
+            "custom_line_1": "(Ahorro $52)",
+            "custom_line_2": "Pago recurrente cada 160 días",
+            "btn_label": "Button",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_ABpDc4",
+        "product_TcYC73",
+        "product_Y9nA9L"
+      ],
       "settings": {
         "title": "Planes de Membresía",
         "product_list": [
