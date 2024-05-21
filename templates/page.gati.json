@@ -39,12 +39,70 @@
         ],
         "cards_btn_label": "SUSCRIBIRME"
       }
+    },
+    "tw_text_with_gif_LQEwbQ": {
+      "type": "tw-text-with-gif",
+      "blocks": {
+        "side_text_MDrLiX": {
+          "type": "side-text",
+          "settings": {
+            "title": "6 RUTINAS X SEMANA",
+            "content": "<p>Seguirás una programación muscular con rutinas diariasdiseñadas por profesionales.<\/p>"
+          }
+        },
+        "side_text_bipWYR": {
+          "type": "side-text",
+          "settings": {
+            "title": "HOW TO VIDEOS",
+            "content": "<p>Los ¨how to videos¨ te enseñarán la técnica correcta y el uso de cada máquina.<\/p>"
+          }
+        },
+        "side_text_wemrfB": {
+          "type": "side-text",
+          "settings": {
+            "title": "ABS, YOGA & MORE",
+            "content": "<p>Acceso a cápsulas de sesiones de Abs, Yoga y Movilidad<\/p>"
+          }
+        },
+        "side_text_E7K9Tf": {
+          "type": "side-text",
+          "settings": {
+            "title": "DIRECT CONTACT",
+            "content": "<p>Contacto directo con tus entrenadores vía WhatsApp<\/p>"
+          }
+        },
+        "side_text_Qkwnj9": {
+          "type": "side-text",
+          "settings": {
+            "title": "MUSCLE SPLIT",
+            "content": "<p>Trabajamos todos los músculos del cuerpo, enfocándonos en dos músculos por día.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "side_text_MDrLiX",
+        "side_text_bipWYR",
+        "side_text_wemrfB",
+        "side_text_E7K9Tf",
+        "side_text_Qkwnj9"
+      ],
+      "settings": {
+        "title": "MUSCLE SPLIT",
+        "content": "",
+        "capsules": false,
+        "pill_1": "",
+        "pill_2": "",
+        "pill_3": "",
+        "gif_url": "",
+        "image": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage.gif"
+      }
     }
   },
   "order": [
     "main",
     "tw_image_banner_hRr8ak",
     "tw_text_with_button_epEtkc",
-    "tw_memberships_cFePKa"
+    "tw_memberships_cFePKa",
+    "tw_text_with_gif_LQEwbQ"
   ]
 }
