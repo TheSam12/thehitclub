@@ -1,12 +1,14 @@
 {% liquid
   assign title = section.settings.title
-  assign product_list = section.settings.product_list
-  assign cards_btn_label = section.settings.cards_btn_label
+  assign content = section.settings.content
 %}
 
 <div class="tw-bg-gradient-to-br tw-from-cyan-400 tw-to-yellow-200">
   <div class="tw-container tw-mx-auto tw-px-10 tw-py-20">
     <h2 class="tw-font-bold tw-text-4xl md:tw-text-7xl tw-mb-10 tw-text-center md:tw-text-left">{{ title }}</h2>
+    <div class="">
+      {{ content }}
+    </div>
     <div class="tw-grid lg:tw-grid-cols-3 tw-gap-10">
       {% for block in section.blocks %}
         <div class="tw-bg-white tw-flex tw-flex-col tw-gap-4 md:tw-gap-8 tw-justify-around tw-p-5 tw-px-8 tw-py-10 tw-rounded-3xl tw-text-center tw-relative">
@@ -47,20 +49,10 @@
       "default": "Title"
     },
     {
-      "type": "product_list",
-      "id": "product_list",
-      "label": "Product List",
-      "limit": 3
-    },
-    {
-      "type": "header",
-      "content": "Button"
-    },
-    {
-      "type": "text",
-      "id": "cards_btn_label",
-      "label": "Cards button label",
-      "default": "Button"
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p></p>"
     }
   ],
   "blocks": [
