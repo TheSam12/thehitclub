@@ -107,6 +107,65 @@
         "btn_label": "",
         "btn_link": ""
       }
+    },
+    "tw_faq_4GXP46": {
+      "type": "tw-faq",
+      "blocks": {
+        "questions_rHNbyL": {
+          "type": "questions",
+          "settings": {
+            "question": "¿Necesito tener acceso a un gimnasio para hacer las rutinas?",
+            "answer": "Sí, debes tener acceso a un gimnasio equipado. Si tienes un gimnasio bastante completo en tu hogar, no dudes en enviarnos fotos o videos de las máquinas y te dejamos saber si cumple con los requisitos para poder cumplir con las rutinas."
+          }
+        },
+        "questions_DMr7mq": {
+          "type": "questions",
+          "settings": {
+            "question": "¿Cuántas rutinas a la semana incluye Gym & Tone it?",
+            "answer": "Gym & Tone it incluye 6 rutinas a la semana (lunes a sábado) cumpliendo una programación muscular completa. Los domingos compartimos una sesión de mobility."
+          }
+        },
+        "questions_TUKFGA": {
+          "type": "questions",
+          "settings": {
+            "question": "¿Cuál es la programación muscular de Gym & Tone it?",
+            "answer": "Lunes: cuádriceps & femoralesMartes: espalda & deltoidesMiércoles: glúteos & abductoresJueves: pecho & hombroViernes: full lower bodySábado: biceps, triceps & pantorrilla"
+          }
+        },
+        "questions_3J3yHR": {
+          "type": "questions",
+          "settings": {
+            "question": "¿Cómo aprendo a utilizar correctamente cada máquina?",
+            "answer": "El programa incluye ¨how to videos¨ y tips para que aprendas la técnica correcta de uso en cada máquina. Y si quedas con alguna duda, tienes contacto directo al WhatsApp de tus entrenadores."
+          }
+        },
+        "questions_qjMViw": {
+          "type": "questions",
+          "settings": {
+            "question": "¿Puedo hacer ambos programas, Home & Gym?",
+            "answer": "¡Claro que sí! Tenemos un Bundle Deal para que puedas variar tus entrenamientos entre rutinas de casa y rutinas desde el gym."
+          }
+        },
+        "questions_tTeAKY": {
+          "type": "questions",
+          "settings": {
+            "question": "¿Tienen planes familiares o empresariales?",
+            "answer": "¡Si, por supuesto! Nos encanta ver a Home & Tone it uniendo familias y co-workers :). Para saber más sobre nuestros paquetes especiales escríbenos a nuestro WhatsApp y te enviamos la información."
+          }
+        }
+      },
+      "block_order": [
+        "questions_rHNbyL",
+        "questions_DMr7mq",
+        "questions_TUKFGA",
+        "questions_3J3yHR",
+        "questions_qjMViw",
+        "questions_tTeAKY"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "align": "center"
+      }
     }
   },
   "order": [
@@ -115,6 +174,7 @@
     "tw_text_with_button_epEtkc",
     "tw_memberships_cFePKa",
     "tw_text_with_gif_LQEwbQ",
-    "tw_image_banner_UxVVWc"
+    "tw_image_banner_UxVVWc",
+    "tw_faq_4GXP46"
   ]
 }
