@@ -27,11 +27,24 @@
         "btn_label": "¡ESTOY LISTO PARA EMPEZAR!",
         "btn_link": "shopify:\/\/products\/gym-tone-it-1-mes"
       }
+    },
+    "tw_memberships_cFePKa": {
+      "type": "tw-memberships",
+      "settings": {
+        "title": "Planes de Membresía",
+        "product_list": [
+          "dumbbell-10lbs-1-unidad",
+          "dumbbell-4lbs-1-unidad",
+          "dumbbell-5lbs-1-unidad"
+        ],
+        "cards_btn_label": "SUSCRIBIRME"
+      }
     }
   },
   "order": [
     "main",
     "tw_image_banner_hRr8ak",
-    "tw_text_with_button_epEtkc"
+    "tw_text_with_button_epEtkc",
+    "tw_memberships_cFePKa"
   ]
 }
