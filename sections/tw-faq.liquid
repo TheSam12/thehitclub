@@ -1,0 +1,142 @@
+{% liquid
+  assign title = section.settings.title
+  assign align = section.settings.align
+%}
+<div class="tw-m-auto tw-container tw-py-10">
+  <div class="tw-text-{{ align }} lg:tw-w-3/4 tw-m-auto tw-pb-14">
+    <h2 class="tw-text-4xl md:tw-text-7xl tw-font-bold tw-pb-4">{{ title }}</h2>
+  </div>
+  <div id="faq">
+    <div class="tw-mb-4 tw-w-full">
+      <ul class="tw-rounded-2xl">
+        <li v-for="(faq, index) in faqs" :key="index">
+          <div :class="{'tw-px-4': true, 'tw-py-6': true, 'tw-border-b': index < faqs.length - 1}">
+            <div class="tw-relative">
+              <a
+                href="#"
+                @click.prevent="toggleAnswer(faq)"
+                v-html="faq.question"
+                class="tw-cursor-pointer lg:tw-text-2xl xl:tw-text-3xl tw-text-xl tw-font-bold question tw-block tw-w-full tw-pr-10 tw-h-20 tw-flex tw-items-center"
+                :class="{ show: faq.showAnswer }"
+              ></a>
+            </div>
+            <div
+              v-if="faq.showAnswer"
+              v-html="faq.answer"
+              class="lg:tw-text-xl xl:tw-text-2xl tw-text-lg tw-px-2 tw-pt-5 tw-pb-2 answer"
+            ></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<style>
+  .question::before {
+    content: '';
+    width: 20px;
+    height: 3px;
+    display: block;
+    background: black;
+    right: 10px;
+    position: absolute;
+    top: 50%;
+  }
+  .question::after {
+    content: '';
+    width: 3px;
+    height: 20px;
+    display: block;
+    background: black;
+    right: 18px;
+    position: absolute;
+    top: 40%;
+    transition: all 0.3s;
+  }
+  .question.show::after {
+    transform: rotate(90deg);
+  }
+</style>
+
+<script>
+  Vue.createApp({
+      delimiters:['${', '}'],
+      data() {
+        return {
+          faqs: [
+              {% for block in section.blocks %}
+                  {% liquid
+                      assign question = block.settings.question
+                      assign answer = block.settings.answer
+                   %}
+                  { question: "{{ question }}", answer: "{{ answer }}", showAnswer: false },
+              {% endfor %}
+          ]
+        }
+      },
+      methods: {
+        toggleAnswer(faq) {
+          faq.showAnswer =!faq.showAnswer;
+        }
+      },
+    }).mount('#faq');
+</script>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "FAQ Title",
+      "default": "Frequently Asked Questions"
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "label": "Title Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "questions",
+      "name": "Q&A",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "Test"
+        },
+        {
+          "type": "text",
+          "id": "answer",
+          "label": "Answer",
+          "default": "Answer Test"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ"
+    }
+  ]
+}
+{% endschema %}

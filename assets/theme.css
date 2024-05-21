@@ -688,6 +688,10 @@ html, :host {
   margin-top: 2rem;
 }
 
+.tw-block {
+  display: block;
+}
+
 .tw-flex {
   display: flex;
 }
@@ -719,6 +723,10 @@ html, :host {
 
 .tw-h-9 {
   height: 2.25rem;
+}
+
+.tw-h-20 {
+  height: 5rem;
 }
 
 .tw-w-3\/4 {
@@ -769,8 +777,16 @@ html, :host {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.tw-cursor-pointer {
+  cursor: pointer;
+}
+
 .tw-grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.tw-grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .tw-flex-col {
@@ -845,8 +861,16 @@ html, :host {
   border-radius: 1.5rem;
 }
 
+.tw-rounded-2xl {
+  border-radius: 1rem;
+}
+
 .tw-border {
   border-width: 1px;
+}
+
+.tw-border-b {
+  border-bottom-width: 1px;
 }
 
 .tw-border-black {
@@ -1016,6 +1040,16 @@ html, :host {
   padding-bottom: 4rem;
 }
 
+.tw-px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.tw-py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .tw-pb-0 {
   padding-bottom: 0px;
 }
@@ -1034,6 +1068,18 @@ html, :host {
 
 .tw-pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.tw-pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.tw-pr-10 {
+  padding-right: 2.5rem;
+}
+
+.tw-pt-5 {
+  padding-top: 1.25rem;
 }
 
 .tw-text-left {
@@ -1096,6 +1142,11 @@ html, :host {
 .tw-text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.tw-text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .tw-font-bold {
@@ -1311,6 +1362,16 @@ html, :host {
     font-size: 8rem;
     line-height: 1;
   }
+
+  .lg\:tw-text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:tw-text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1325,5 +1386,15 @@ html, :host {
   .xl\:tw-text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .xl\:tw-text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:tw-text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
