@@ -104,6 +104,83 @@
         "gif_url": "",
         "image": "shopify:\/\/shop_images\/The_Hit_Club_Homepage_gif.gif"
       }
+    },
+    "tw_image_grid_itPJUP": {
+      "type": "tw-image-grid",
+      "blocks": {
+        "images_bMxEGB": {
+          "type": "images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage.png",
+            "content": "Pesas"
+          }
+        },
+        "images_z9CM8q": {
+          "type": "images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_3.png",
+            "content": "Bandas"
+          }
+        },
+        "images_3TVVrD": {
+          "type": "images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_1.png",
+            "content": "Soga"
+          }
+        },
+        "images_J9DdFV": {
+          "type": "images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_2.png",
+            "content": "Mat"
+          }
+        }
+      },
+      "block_order": [
+        "images_bMxEGB",
+        "images_z9CM8q",
+        "images_3TVVrD",
+        "images_J9DdFV"
+      ],
+      "settings": {
+        "title": "Section title"
+      }
+    },
+    "tw_faq_gzWTaD": {
+      "type": "tw-faq",
+      "blocks": {
+        "questions_aYHELk": {
+          "type": "questions",
+          "settings": {
+            "question": "Test",
+            "answer": "Answer Test"
+          }
+        },
+        "questions_DB7bwp": {
+          "type": "questions",
+          "settings": {
+            "question": "Test",
+            "answer": "Answer Test"
+          }
+        },
+        "questions_i9VhmL": {
+          "type": "questions",
+          "settings": {
+            "question": "Test",
+            "answer": "Answer Test"
+          }
+        }
+      },
+      "block_order": [
+        "questions_aYHELk",
+        "questions_DB7bwp",
+        "questions_i9VhmL"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "align": "center"
+      }
     }
   },
   "order": [
@@ -111,6 +188,8 @@
     "tw_image_banner_TYKM8W",
     "tw_text_with_button_VpDRLz",
     "tw_memberships_DdNN4T",
-    "tw_text_with_gif_dY6bQq"
+    "tw_text_with_gif_dY6bQq",
+    "tw_image_grid_itPJUP",
+    "tw_faq_gzWTaD"
   ]
 }
