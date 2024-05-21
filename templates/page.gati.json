@@ -2,13 +2,36 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "tw_image_banner_hRr8ak": {
+      "type": "tw-image-banner",
+      "settings": {
+        "d_img": "shopify:\/\/shop_images\/Hit_club_marzo0746.jpg",
+        "m_img": "shopify:\/\/shop_images\/Hit_club_marzo0746-m.jpg",
+        "pre_title": "",
+        "title": "Lift like a boss.",
+        "btn_label": "¡PRUEBA UNA CLASE GRÁTIS!",
+        "btn_link": "https:\/\/www.youtube.com\/watch?v=8rj4Po4QSpM&ab_channel=CoachIsaQ."
+      }
+    },
+    "tw_text_with_button_epEtkc": {
+      "type": "tw-text-with-button",
+      "settings": {
+        "title": "Gym & Tone ites para tí si:",
+        "content": "<p>⚡️ Quieres sentirte <strong>cómodo en el gym<\/strong><\/p><p>⚡️ Te gusta entrenar con máquinas en un<strong> <\/strong>gimnasio.<\/p><p><strong>⚡️ <\/strong>Quieres 6 rutinas nuevas a la semana a un <strong>precio accesible<\/strong><\/p><p>⚡️ Necesitas un coach que te prepare las <strong>rutinas de la semana<\/strong><\/p><p>⚡️ Quieres <strong>aprender <\/strong>a usar las máquinas y sacarles provecho<\/p>",
+        "btn_label": "¡ESTOY LISTO PARA EMPEZAR!",
+        "btn_link": "shopify:\/\/products\/gym-tone-it-1-mes"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "tw_image_banner_hRr8ak",
+    "tw_text_with_button_epEtkc"
   ]
 }
