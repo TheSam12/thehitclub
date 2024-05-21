@@ -96,6 +96,17 @@
         "gif_url": "",
         "image": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage.gif"
       }
+    },
+    "tw_image_banner_UxVVWc": {
+      "type": "tw-image-banner",
+      "settings": {
+        "d_img": "shopify:\/\/shop_images\/Hit_club_marzo0670.jpg",
+        "m_img": "shopify:\/\/shop_images\/Hit_club_marzo0670-m.jpg",
+        "pre_title": "Pre Title",
+        "title": "Title",
+        "btn_label": "",
+        "btn_link": ""
+      }
     }
   },
   "order": [
@@ -103,6 +114,7 @@
     "tw_image_banner_hRr8ak",
     "tw_text_with_button_epEtkc",
     "tw_memberships_cFePKa",
-    "tw_text_with_gif_LQEwbQ"
+    "tw_text_with_gif_LQEwbQ",
+    "tw_image_banner_UxVVWc"
   ]
 }
