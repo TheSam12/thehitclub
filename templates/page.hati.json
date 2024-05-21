@@ -18,10 +18,46 @@
         "btn_label": "¡PRUEBA UNA CLASE GRÁTIS!",
         "btn_link": "https:\/\/youtu.be\/8rj4Po4QSpM?si=QKACCdCGLGGlnDtK"
       }
+    },
+    "tw_text_with_button_VpDRLz": {
+      "type": "tw-text-with-button",
+      "settings": {
+        "title": "Home & Tone ites para tí si:",
+        "content": "<p>🌶️ Quieres <strong>gozar <\/strong>y <strong>disfrutar <\/strong>mientras entrenas<\/p><p>💦 Necesitas entrenamientos <strong>EN VIVO<\/strong> para motivarte<\/p><p>🔥 Quieres tener <strong>contacto directo<\/strong> con tu coach<\/p><p>⏰ No tienes <strong>tiempo <\/strong>para ir a un gym presencial<\/p><p>⚡️ Te cuesta mantener la <strong>disciplina <\/strong>y motivación<\/p>",
+        "btn_label": "¡ESTOY LISTO PARA EMPEZAR!",
+        "btn_link": "shopify:\/\/products\/home-tone-it-1-mes"
+      }
+    },
+    "tw_memberships_DdNN4T": {
+      "type": "tw-memberships",
+      "settings": {
+        "title": "Planes de Membresía",
+        "product_list": [
+          "dumbbell-10lbs-1-unidad",
+          "dumbbell-4lbs-1-unidad",
+          "dumbbell-5lbs-1-unidad"
+        ],
+        "cards_btn_label": "SUSCRIBIRME"
+      }
+    },
+    "tw_text_with_gif_dY6bQq": {
+      "type": "tw-text-with-gif",
+      "settings": {
+        "title": "",
+        "content": "Some text",
+        "capsules": false,
+        "pill_1": "",
+        "pill_2": "",
+        "pill_3": "",
+        "gif_url": ""
+      }
     }
   },
   "order": [
     "main",
-    "tw_image_banner_TYKM8W"
+    "tw_image_banner_TYKM8W",
+    "tw_text_with_button_VpDRLz",
+    "tw_memberships_DdNN4T",
+    "tw_text_with_gif_dY6bQq"
   ]
 }
