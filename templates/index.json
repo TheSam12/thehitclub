@@ -74,6 +74,49 @@
     },
     "tw_memberships_Q7cxVz": {
       "type": "tw-memberships",
+      "blocks": {
+        "product_GFnFgF": {
+          "type": "product",
+          "settings": {
+            "new_mark": false,
+            "title": "Card Title",
+            "price": "$10",
+            "custom_line_1": "Custom line 1",
+            "custom_line_2": "Custom line 2",
+            "btn_label": "Button",
+            "btn_url": ""
+          }
+        },
+        "product_kXCnNx": {
+          "type": "product",
+          "settings": {
+            "new_mark": false,
+            "title": "Card Title",
+            "price": "$10",
+            "custom_line_1": "Custom line 1",
+            "custom_line_2": "Custom line 2",
+            "btn_label": "Button",
+            "btn_url": ""
+          }
+        },
+        "product_npFmXr": {
+          "type": "product",
+          "settings": {
+            "new_mark": false,
+            "title": "Card Title",
+            "price": "$10",
+            "custom_line_1": "Custom line 1",
+            "custom_line_2": "Custom line 2",
+            "btn_label": "Button",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_GFnFgF",
+        "product_kXCnNx",
+        "product_npFmXr"
+      ],
       "settings": {
         "title": "planes de membresía",
         "product_list": [
