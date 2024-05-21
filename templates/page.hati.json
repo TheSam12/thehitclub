@@ -42,14 +42,67 @@
     },
     "tw_text_with_gif_dY6bQq": {
       "type": "tw-text-with-gif",
+      "blocks": {
+        "side_text_t6nRQC": {
+          "type": "side-text",
+          "settings": {
+            "title": "DAILY LIVES",
+            "content": "<p>¡De lunes a viernes entrenamos contigo haciendo la rutina del día EN VIVO!<\/p>"
+          }
+        },
+        "side_text_m7BMhw": {
+          "type": "side-text",
+          "settings": {
+            "title": "EXPRESS WORKOUTS",
+            "content": "<p>Acceso a cápsulas de rutinas de 15 y 30 minutos<\/p>"
+          }
+        },
+        "side_text_MfnDT9": {
+          "type": "side-text",
+          "settings": {
+            "title": "ABS, YOGA & MORE",
+            "content": "<p>Acceso a cápsulas de sesiones de Abs, Yoga y Movilidad<\/p>"
+          }
+        },
+        "side_text_BDaP8A": {
+          "type": "side-text",
+          "settings": {
+            "title": "DIRECT CONTACT",
+            "content": "<p>Contacto directo con Coach Isacu vía WhatsApp<\/p>"
+          }
+        },
+        "side_text_Kf7rzQ": {
+          "type": "side-text",
+          "settings": {
+            "title": "MUSCLE SPLIT",
+            "content": "<p>Trabajamos todos los músculos del cuerpo, enfocándonos en dos músculos por día.<\/p>"
+          }
+        },
+        "side_text_Yztyr8": {
+          "type": "side-text",
+          "settings": {
+            "title": "300+ CLASSES",
+            "content": "<p>Tendrás acceso a una biblioteca con más de 300 videos de rutínas de 1 hora.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "side_text_t6nRQC",
+        "side_text_m7BMhw",
+        "side_text_MfnDT9",
+        "side_text_BDaP8A",
+        "side_text_Kf7rzQ",
+        "side_text_Yztyr8"
+      ],
       "settings": {
-        "title": "",
-        "content": "Some text",
+        "title": "¿Qué incluye tu plan?",
+        "content": "",
         "capsules": false,
         "pill_1": "",
         "pill_2": "",
         "pill_3": "",
-        "gif_url": ""
+        "gif_url": "",
+        "image": "shopify:\/\/shop_images\/The_Hit_Club_Homepage_gif.gif"
       }
     }
   },
