@@ -325,7 +325,12 @@
 
     {% sections 'header-group' %}
 
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+    <main
+      id="MainContent"
+      class="content-for-layout focus-none {% if request.page_type == "index" %}-tw-top-28{% endif %}"
+      role="main"
+      tabindex="-1"
+    >
       {{ content_for_layout }}
     </main>
 
