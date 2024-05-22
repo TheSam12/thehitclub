@@ -3,9 +3,6 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   prefix: 'tw-',
-  corePlugins: {
-    preflight: false,
-  },
   content: [
     './config/*.json',
     './layout/*.liquid',
