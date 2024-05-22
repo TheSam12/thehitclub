@@ -1,0 +1,36 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "tw_image_banner_kjp8td": {
+      "type": "tw-image-banner",
+      "settings": {
+        "d_img": "shopify:\/\/shop_images\/Hit_club_marzo0053.jpg",
+        "pre_title": "Pre Title",
+        "title": "Title",
+        "btn_label": "",
+        "btn_link": ""
+      }
+    },
+    "tw_text_with_button_fnfzyV": {
+      "type": "tw-text-with-button",
+      "settings": {
+        "title": "The Q Family",
+        "content": "<p>Somos <strong>Q Fitness Partners Inc.<\/strong>, una empresa panameña dedicada a mejorar el estilo de vida de nuestros clientes. Desde el día uno nuestro propósito ha <strong>sido servir y ayudar a otros.<\/strong><\/p><p>En el 2019 nacen Home & Tone it ® y Gym & Tone it ®, plataformas de ejercicios online.<\/p>",
+        "btn_label": "",
+        "btn_link": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "tw_image_banner_kjp8td",
+    "tw_text_with_button_fnfzyV"
+  ]
+}
