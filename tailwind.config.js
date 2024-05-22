@@ -1,29 +1,31 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   prefix: 'tw-',
+  corePlugins: {
+    preflight: false,
+  },
   content: [
-    './config/*.json', 
-    './layout/*.liquid', 
-    './assets/*.liquid', 
-    './sections/*.liquid', 
-    './snippets/*.liquid', 
-    './templates/*.liquid', 
-    './templates/*.json', 
-    './templates/customers/*.liquid', 
+    './config/*.json',
+    './layout/*.liquid',
+    './assets/*.liquid',
+    './sections/*.liquid',
+    './snippets/*.liquid',
+    './templates/*.liquid',
+    './templates/*.json',
+    './templates/customers/*.liquid',
     './templates/customers/*.json',
   ],
   fontFamily: {
-    'body': ['Montserrat'],
+    body: ['Montserrat'],
   },
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['"Montserrat"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Montserrat"', ...defaultTheme.fontFamily.sans],
       },
     },
   },
   plugins: [],
-}
-
+};
