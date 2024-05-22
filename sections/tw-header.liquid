@@ -5,14 +5,6 @@
   assign icon = section.settings.icon
 %}
 
-{%- if settings.cart_type == 'drawer' -%}
-  {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
-  {{ 'component-cart.css' | asset_url | stylesheet_tag }}
-  {{ 'component-totals.css' | asset_url | stylesheet_tag }}
-  {{ 'component-price.css' | asset_url | stylesheet_tag }}
-  {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
-{%- endif -%}
-
 <div id="{{ section.id }}">
   <div
     :class="{ 'tw-bg-white tw-drop-shadow-md': scrollPosition >= 1, 'tw-bg-gradient-to-b tw-from-black/50 tw-to-transparent': scrollPosition < 1 }"
