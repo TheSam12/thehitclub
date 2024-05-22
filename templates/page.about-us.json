@@ -71,14 +71,14 @@
         "heading_NtX4kN": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
+            "heading": "",
+            "heading_size": "h2"
           }
         },
         "text_U9iEFL": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Mejor conocido como \"el docti\". Estudió medicina y tiene una trayectoria de 17 años en entrenamientos de pesas y 11 años en entrenamiento de acondicionamiento físico para competencias de cayuco de océano a océano.<br\/><br\/>Vegano y dedicado a la constante búsqueda de herramientas que puedan ayudar a construir la mejor versión de cada uno.<\/p>",
             "text_style": "body"
           }
         }
@@ -93,14 +93,14 @@
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "",
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
