@@ -29,7 +29,7 @@
   <div class="tw-m-auto md:tw-container">
     {% if title != blank %}
       <div>
-        <h2 class="tw-text-center">{{ title }}</h2>
+        <h2 class="tw-text-left tw-text-4xl tw-font-bold md:tw-text-center md:tw-text-7xl">{{ title }}</h2>
       </div>
     {% endif %}
     <div class="image-with-text image-with-text--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == section.settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
