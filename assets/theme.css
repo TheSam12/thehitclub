@@ -1227,6 +1227,10 @@ html, :host {
     }
   }
 
+  .md\:tw-m-auto {
+    margin: auto;
+  }
+
   .md\:tw-mb-14 {
     margin-bottom: 3.5rem;
   }
