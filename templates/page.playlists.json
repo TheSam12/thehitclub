@@ -52,8 +52,9 @@
           "type": "audio",
           "settings": {
             "audio": "http:\/\/www.archive.org\/download\/CanonInD_261\/CanoninD.mp3",
-            "title": "Canon in D",
-            "author": "Johann Pachelbel"
+            "title": "Home & Tone it Mix 1",
+            "author": "The Hit Club",
+            "image": "shopify:\/\/shop_images\/1.png"
           }
         }
       },
@@ -73,13 +74,13 @@
         "player_image_radius": 10,
         "title_custom": false,
         "title_font": "montserrat_n4",
-        "title_size": 44,
-        "title_size_mobile": 20,
+        "title_size": 60,
+        "title_size_mobile": 16,
         "title_height": 150,
         "author_custom": false,
         "author_font": "montserrat_n4",
-        "author_size": 14,
-        "author_size_mobile": 14,
+        "author_size": 22,
+        "author_size_mobile": 10,
         "author_height": 100,
         "playlist_height": 245,
         "playlist_title_custom": false,
