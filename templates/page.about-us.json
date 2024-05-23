@@ -30,33 +30,14 @@
     },
     "tw_image_with_text_cbYAJe": {
       "type": "tw-image-with-text",
-      "blocks": {
-        "text_eck9Mg": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Mejor conocida como Isacu, estudió psicología y tiene una trayectoria de 12 años en el rubro del fitness.<br\/><br\/>Creadora de dos programas de entrenamiento online y su propia línea de suplementos deportivos, KIU PERFORMANCE ®.<br\/><br\/>Amante de los animales y en constante lucha contra el maltrato animal.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "text_eck9Mg"
-      ],
       "settings": {
         "title": "The Coaches",
-        "image": "shopify:\/\/shop_images\/Hit_club_marzo1031-m.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "title_align": "center",
+        "reverse": "left",
+        "main_img": "shopify:\/\/shop_images\/Hit_club_marzo1031-m.jpg",
+        "signature_img": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_49f5bcc2-7d9e-4ab7-a025-c47fbb3cf9a4.png",
+        "content": "<p>Mejor conocida como Isacu, estudió psicología y tiene una trayectoria de 12 años en el rubro del fitness.Creadora de dos programas de entrenamiento online y su propia línea de suplementos deportivos, KIU PERFORMANCE ®.Amante de los animales y en constante lucha contra el maltrato animal.<\/p>",
+        "brand_img": "shopify:\/\/shop_images\/Coach_Features_1.png"
       }
     },
     "image_with_text_cbJXJA": {
