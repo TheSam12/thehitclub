@@ -45,86 +45,6 @@
         "padding_bottom": 52
       }
     },
-    "ss_audio_player_KCt4pV": {
-      "type": "ss-audio-player",
-      "blocks": {
-        "audio_f8KQrK": {
-          "type": "audio",
-          "settings": {
-            "audio": "http:\/\/www.archive.org\/download\/CanonInD_261\/CanoninD.mp3",
-            "title": "Home & Tone it Mix 2",
-            "author": "The Hit Club",
-            "image": "shopify:\/\/shop_images\/2.png"
-          }
-        }
-      },
-      "block_order": [
-        "audio_f8KQrK"
-      ],
-      "custom_css": [
-        ".simp-cover > div {width: 220px !important; height: 220px !important; margin: 0 auto;}",
-        " \/* Hide the .simp-playlist class *\/.simp-playlist {display: none !important;}",
-        " \/* Add a blue outline around the entire element *\/.simple-audio-player {outline: 1px solid #000000;}",
-        " \/* Ensure the .simp-cover is centered within its parent container *\/.simp-album {display: flex; justify-content: center; align-items: center;}"
-      ],
-      "settings": {
-        "player_width": 800,
-        "player_width_mobile": 80,
-        "player_radius": 20,
-        "player_image_radius": 10,
-        "title_custom": false,
-        "title_font": "montserrat_n4",
-        "title_size": 60,
-        "title_size_mobile": 16,
-        "title_height": 150,
-        "author_custom": false,
-        "author_font": "montserrat_n4",
-        "author_size": 22,
-        "author_size_mobile": 10,
-        "author_height": 100,
-        "playlist_height": 245,
-        "playlist_title_custom": false,
-        "playlist_title_font": "montserrat_n4",
-        "playlist_title_size": 44,
-        "playlist_title_size_mobile": 20,
-        "playlist_title_height": 150,
-        "playlist_author_custom": false,
-        "playlist_author_font": "montserrat_n4",
-        "playlist_author_size": 0,
-        "playlist_author_size_mobile": 0,
-        "playlist_author_height": 50,
-        "player_bg_color": "#ffffff",
-        "title_color": "#0e1621",
-        "author_color": "#0e1621",
-        "icons_color": "#0e1621",
-        "icons_disabled_color": "#636469",
-        "icons_active_color": "#dddddd",
-        "icons_active_bg_color": "#242f3d",
-        "icons_hover_color": "#ffffff",
-        "icons_hover_bg_color": "#dddd65",
-        "playlist_title_color": "#dddddd",
-        "playlist_author_color": "#dddddd",
-        "playlist_odd_bg_color": "#0e1621",
-        "playlist_hover_bg_color": "#242f3d",
-        "playlist_hover_color": "#dddddd",
-        "playlist_active_bg_color": "#dddd65",
-        "playlist_active_color": "#ffffff",
-        "playlist_scrollbar_bg_color": "#2f3841",
-        "playlist_scrollbar_thumb_color": "#73797f",
-        "background_color": "#ffffff",
-        "background_gradient": "",
-        "border_color": "#000000",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 20,
-        "padding_bottom": 20,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 1.5,
-        "full_width": false,
-        "content_width": 120,
-        "border_thickness": 0
-      }
-    },
     "ss_audio_player_kpn3yR": {
       "type": "ss-audio-player",
       "blocks": {
@@ -205,6 +125,86 @@
         "border_thickness": 0
       }
     },
+    "ss_audio_player_KCt4pV": {
+      "type": "ss-audio-player",
+      "blocks": {
+        "audio_f8KQrK": {
+          "type": "audio",
+          "settings": {
+            "audio": "http:\/\/www.archive.org\/download\/CanonInD_261\/CanoninD.mp3",
+            "title": "Home & Tone it Mix 2",
+            "author": "The Hit Club",
+            "image": "shopify:\/\/shop_images\/2.png"
+          }
+        }
+      },
+      "block_order": [
+        "audio_f8KQrK"
+      ],
+      "custom_css": [
+        ".simp-cover > div {width: 220px !important; height: 220px !important; margin: 0 auto;}",
+        " \/* Hide the .simp-playlist class *\/.simp-playlist {display: none !important;}",
+        " \/* Add a blue outline around the entire element *\/.simple-audio-player {outline: 1px solid #000000;}",
+        " \/* Ensure the .simp-cover is centered within its parent container *\/.simp-album {display: flex; justify-content: center; align-items: center;}"
+      ],
+      "settings": {
+        "player_width": 800,
+        "player_width_mobile": 80,
+        "player_radius": 20,
+        "player_image_radius": 10,
+        "title_custom": false,
+        "title_font": "montserrat_n4",
+        "title_size": 60,
+        "title_size_mobile": 16,
+        "title_height": 150,
+        "author_custom": false,
+        "author_font": "montserrat_n4",
+        "author_size": 22,
+        "author_size_mobile": 10,
+        "author_height": 100,
+        "playlist_height": 245,
+        "playlist_title_custom": false,
+        "playlist_title_font": "montserrat_n4",
+        "playlist_title_size": 44,
+        "playlist_title_size_mobile": 20,
+        "playlist_title_height": 150,
+        "playlist_author_custom": false,
+        "playlist_author_font": "montserrat_n4",
+        "playlist_author_size": 0,
+        "playlist_author_size_mobile": 0,
+        "playlist_author_height": 50,
+        "player_bg_color": "#ffffff",
+        "title_color": "#0e1621",
+        "author_color": "#0e1621",
+        "icons_color": "#0e1621",
+        "icons_disabled_color": "#636469",
+        "icons_active_color": "#dddddd",
+        "icons_active_bg_color": "#242f3d",
+        "icons_hover_color": "#ffffff",
+        "icons_hover_bg_color": "#dddd65",
+        "playlist_title_color": "#dddddd",
+        "playlist_author_color": "#dddddd",
+        "playlist_odd_bg_color": "#0e1621",
+        "playlist_hover_bg_color": "#242f3d",
+        "playlist_hover_color": "#dddddd",
+        "playlist_active_bg_color": "#dddd65",
+        "playlist_active_color": "#ffffff",
+        "playlist_scrollbar_bg_color": "#2f3841",
+        "playlist_scrollbar_thumb_color": "#73797f",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0
+      }
+    },
     "ss_audio_player_g6F6HR": {
       "type": "ss-audio-player",
       "blocks": {
@@ -212,9 +212,9 @@
           "type": "audio",
           "settings": {
             "audio": "http:\/\/www.archive.org\/download\/CanonInD_261\/CanoninD.mp3",
-            "title": "Home & Tone it Mix 1",
+            "title": "Home & Tone it Mix 3",
             "author": "The Hit Club",
-            "image": "shopify:\/\/shop_images\/1.png"
+            "image": "shopify:\/\/shop_images\/3.png"
           }
         }
       },
@@ -292,9 +292,9 @@
           "type": "audio",
           "settings": {
             "audio": "http:\/\/www.archive.org\/download\/CanonInD_261\/CanoninD.mp3",
-            "title": "Home & Tone it Mix 1",
+            "title": "Home & Tone it Mix 4",
             "author": "The Hit Club",
-            "image": "shopify:\/\/shop_images\/1.png"
+            "image": "shopify:\/\/shop_images\/4_cf4e85f1-a297-413e-8f1f-3f9da5048ae6.png"
           }
         }
       },
@@ -372,9 +372,9 @@
           "type": "audio",
           "settings": {
             "audio": "http:\/\/www.archive.org\/download\/CanonInD_261\/CanoninD.mp3",
-            "title": "Home & Tone it Mix 1",
+            "title": "Home & Tone it Mix 5",
             "author": "The Hit Club",
-            "image": "shopify:\/\/shop_images\/1.png"
+            "image": "shopify:\/\/shop_images\/5.png"
           }
         }
       },
@@ -610,8 +610,8 @@
     "main",
     "tw_image_banner_kjp8td",
     "rich_text_8gUVJd",
-    "ss_audio_player_KCt4pV",
     "ss_audio_player_kpn3yR",
+    "ss_audio_player_KCt4pV",
     "ss_audio_player_g6F6HR",
     "ss_audio_player_9XMUNn",
     "ss_audio_player_LFzDgT",
