@@ -1,0 +1,86 @@
+{% comment %} images-slideshow section {% endcomment %}
+
+<div id="images-slideshow" class="container m-auto px-10 mb-10 md:mb-20">
+  <div class="swiper images-slideshow">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" v-for="slide in slides" :key="slide.id">
+        <div v-html="slide.content"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  Vue.createApp({
+      delimiters: ['${', '}'],
+      data() {
+          return {
+          slides: [
+              {% for block in section.blocks %}
+                  {% if block.settings.img != blank %}
+                      { id: {{ forloop.index }}, content: '<img src="{{ block.settings.img | image_url }}" alt="{{ block.settings.img.alt }}" class="w-full">' },
+                  {% endif %}
+              {% endfor %}
+          ],
+          };
+      },
+      mounted() {
+          new Swiper('.images-slideshow', {
+              slidesPerView: 1,
+              spaceBetween: 10,
+              breakpoints: {
+                  768: {
+                      slidesPerView: 2,
+                      spaceBetween: 16,
+                  },
+                  1024: {
+                      slidesPerView: 3,
+                      spaceBetween: 32,
+                  },
+              },
+          });
+      },
+  }).mount('#images-slideshow');
+</script>
+
+{% schema %}
+{
+  "name": "Images Slideshow",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Settings"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "Images",
+      "name": "Images",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Image For Slideshow"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Images Slideshow",
+      "blocks": [
+        {
+          "type": "Images"
+        },
+        {
+          "type": "Images"
+        },
+        {
+          "type": "Images"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
