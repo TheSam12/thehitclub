@@ -1231,7 +1231,45 @@ html, :host {
       max-width: 1536px;
     }
   }
+}
 
+@media (min-width: 1280px) {
+  .xl\:tw-container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .xl\:tw-container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .xl\:tw-container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .xl\:tw-container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .xl\:tw-container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .xl\:tw-container {
+      max-width: 1536px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
   .md\:tw-m-auto {
     margin: auto;
   }
@@ -1441,6 +1479,10 @@ html, :host {
 @media (min-width: 1280px) {
   .xl\:tw-left-\[14rem\] {
     left: 14rem;
+  }
+
+  .xl\:tw-m-auto {
+    margin: auto;
   }
 
   .xl\:tw-w-1\/3 {
