@@ -1,9 +1,17 @@
 {% liquid
   assign title = section.settings.title
   assign content = section.settings.content
+  assign color_1 = section.settings.color_1
+  assign color_2 = section.settings.color_2
 %}
 
-<div class="tw-bg-gradient-to-br tw-from-cyan-400 tw-to-yellow-200">
+<style>
+  bg-gradient-{{ section.id }} {
+    background: rgb(2,0,36);
+    background: linear-gradient(to bottom right, {{ color_1 }} 0%, {{  color_2 }} 100%);
+  }
+</style>
+<div class="bg-gradient-{{ section.id }}">
   <div class="tw-container tw-mx-auto tw-px-10 tw-py-20">
     <h2 class="tw-font-bold tw-text-4xl md:tw-text-7xl tw-mb-10 tw-text-center md:tw-text-left">{{ title }}</h2>
     <div class="">
@@ -53,6 +61,18 @@
       "id": "content",
       "label": "Content",
       "default": "<p></p>"
+    },
+    {
+      "type": "color",
+      "id": "color_1",
+      "label": "Gradient color 1",
+      "default": "#2ED5E9"
+    },
+    {
+      "type": "color",
+      "id": "color_2",
+      "label": "Gradient color 2",
+      "default": "#F7EF8D"
     }
   ],
   "blocks": [
