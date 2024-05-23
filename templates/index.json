@@ -69,6 +69,7 @@
         "pill_1": "ENTRENA DESDE DÓNDE SEA",
         "pill_2": "A LA HORA QUE QUIERAS",
         "pill_3": "CON PROPS O SIN EQUIPOS",
+        "desktop_img": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_2x_3c89215c-9db2-4620-b7f6-532021c41443.gif",
         "mobile_img": "shopify:\/\/shop_images\/Mobile-Estaslistoparatorque-ezgif.com-optimize.gif"
       }
     },
@@ -120,8 +121,8 @@
       "settings": {
         "title": "planes de membresía",
         "content": "<p><\/p>",
-        "color_1": "#2ED5E9",
-        "color_2": "#F7EF8D"
+        "color_1": "#2ed5e9",
+        "color_2": "#f7ef8d"
       }
     },
     "tw_text_with_button_kiey4m": {
