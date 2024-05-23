@@ -1043,6 +1043,11 @@ html, :host {
   padding-bottom: 2rem;
 }
 
+.tw-px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
 .tw-pb-0 {
   padding-bottom: 0px;
 }

@@ -27,9 +27,9 @@
         >
       </div>
     {% endif %}
-    <div class="md:tw-flex md:tw-w-1/2 md:tw-flex-col md:tw-justify-center md:tw-pl-10">
+    <div class="tw-px-14 md:tw-flex md:tw-w-1/2 md:tw-flex-col md:tw-justify-center md:tw-pl-10">
       {% if signature_img != null %}
-        <div class="tw-mb-4 md:tw-mb-6">
+        <div class="md:justify-left tw-mb-4 tw-flex tw-justify-center md:tw-mb-6">
           <img src="{{ signature_img | image_url }}" width="" height="" alt="{{ signature_img.alt }}">
         </div>
       {% endif %}
@@ -37,7 +37,9 @@
         {{ content }}
       </div>
       {% if brand_img != null %}
-        <img src="{{ brand_img | image_url }}" width="243" height="" alt="{{ brand_img.alt }}">
+        <div class="md:tw-justify-left tw-flex tw-justify-center">
+          <img src="{{ brand_img | image_url }}" width="243" height="" alt="{{ brand_img.alt }}">
+        </div>
       {% endif %}
     </div>
   </div>
