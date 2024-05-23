@@ -1199,6 +1199,10 @@ html, :host {
     margin-top: 0px;
   }
 
+  .md\:tw-mb-20 {
+    margin-bottom: 5rem;
+  }
+
   .md\:tw-block {
     display: block;
   }

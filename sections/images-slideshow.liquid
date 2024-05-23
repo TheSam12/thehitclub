@@ -1,6 +1,6 @@
 {% comment %} images-slideshow section {% endcomment %}
 
-<div id="images-slideshow" class="container m-auto px-10 mb-10 md:mb-20">
+<div id="images-slideshow" class="tw-container tw-m-auto tw-px-10 tw-mb-10 md:tw-mb-20">
   <div class="swiper images-slideshow">
     <div class="swiper-wrapper">
       <div class="swiper-slide" v-for="slide in slides" :key="slide.id">
@@ -18,7 +18,7 @@
           slides: [
               {% for block in section.blocks %}
                   {% if block.settings.img != blank %}
-                      { id: {{ forloop.index }}, content: '<img src="{{ block.settings.img | image_url }}" alt="{{ block.settings.img.alt }}" class="w-full">' },
+                      { id: {{ forloop.index }}, content: '<img src="{{ block.settings.img | image_url }}" alt="{{ block.settings.img.alt }}" class="tw-w-full">' },
                   {% endif %}
               {% endfor %}
           ],
