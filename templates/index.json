@@ -205,6 +205,16 @@
       "settings": {
       }
     },
+    "tw_image_banner_QB3Uz9": {
+      "type": "tw-image-banner",
+      "settings": {
+        "d_img": "shopify:\/\/shop_images\/Hit_club_marzo1089_a0cdf9a1-8963-44dc-a021-81a0e53f7c34.jpg",
+        "pre_title": "Pre Title",
+        "title": "Title",
+        "btn_label": "",
+        "btn_link": ""
+      }
+    },
     "tw_featured_collection_PCQt6c": {
       "type": "tw-featured-collection",
       "settings": {
@@ -389,6 +399,7 @@
     "tw_text_with_button_kiey4m",
     "tw_reviews_xHykKm",
     "tw_images_slideshow_CrERLc",
+    "tw_image_banner_QB3Uz9",
     "tw_featured_collection_PCQt6c",
     "rich_text",
     "featured_collection",
