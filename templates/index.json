@@ -68,8 +68,8 @@
         "pill_1": "ENTRENA DESDE DÓNDE SEA",
         "pill_2": "A LA HORA QUE QUIERAS",
         "pill_3": "CON PROPS O SIN EQUIPOS",
-        "gif_url": "",
-        "image": "shopify:\/\/shop_images\/The_Hit_Club_Homepage_gif.gif"
+        "desktop_img": "shopify:\/\/shop_images\/The_Hit_Club_Homepage_gif.gif",
+        "mobile_img": "shopify:\/\/shop_images\/The_Hit_Club_Homepage_gif.gif"
       }
     },
     "tw_memberships_Q7cxVz": {
@@ -119,12 +119,7 @@
       ],
       "settings": {
         "title": "planes de membresía",
-        "product_list": [
-          "dumbbell-10lbs-1-unidad",
-          "dumbbell-4lbs-1-unidad",
-          "dumbbell-5lbs-1-unidad"
-        ],
-        "cards_btn_label": "SUSCRIBIRME"
+        "content": "<p><\/p>"
       }
     },
     "tw_text_with_button_kiey4m": {
