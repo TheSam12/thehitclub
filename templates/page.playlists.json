@@ -55,100 +55,10 @@
             "title": "Canon in D",
             "author": "Johann Pachelbel"
           }
-        },
-        "audio_Tw3y3q": {
-          "type": "audio",
-          "settings": {
-            "audio": "https:\/\/cdn.shopify.com\/s\/files\/1\/0670\/4834\/1753\/files\/05.mp3?v=1708077309",
-            "title": "Artist 5",
-            "author": ""
-          }
-        },
-        "audio_RxLyKH": {
-          "type": "audio",
-          "settings": {
-            "audio": "https:\/\/cdn.shopify.com\/s\/files\/1\/0670\/4834\/1753\/files\/Angklung_Preman_Pensiun.mp3?v=1708077241",
-            "title": "Angklung Preman Pensiun",
-            "author": ""
-          }
-        },
-        "audio_K8n4qK": {
-          "type": "audio",
-          "settings": {
-            "audio": "https:\/\/cdn.shopify.com\/s\/files\/1\/0670\/4834\/1753\/files\/Canon_Rock_JerryC_-_funtwo.mp3?v=1708077435",
-            "title": "Canon Rock (JerryC)",
-            "author": "by Funtwo"
-          }
-        },
-        "audio_Tpt3wN": {
-          "type": "audio",
-          "settings": {
-            "audio": "http:\/\/listento.ardanradio.com:1059\/;",
-            "title": "105.9 FM Ardan Radio",
-            "author": "Streaming Radio"
-          }
-        },
-        "audio_YAhXD6": {
-          "type": "audio",
-          "settings": {
-            "audio": "https:\/\/archive.org\/download\/78_jailhouse-rock_elvis-presley-jerry-leiber-mike-stoller_gbia0080595b\/Jailhouse%20Rock%20-%20Elvis%20Presley%20-%20Jerry%20Leiber-restored.mp3",
-            "title": "Jailhouse Rock",
-            "author": "Elvis Presley"
-          }
-        },
-        "audio_kwzmpj": {
-          "type": "audio",
-          "settings": {
-            "audio": "https:\/\/archive.org\/download\/J._Period_and_Michael_Jackson_-_Man_Or_The_Music-2010\/17%20Smooth%20Criminal.mp3",
-            "title": "Smooth Criminal",
-            "author": "Michael Jackson"
-          }
-        },
-        "audio_tymUPD": {
-          "type": "audio",
-          "settings": {
-            "audio": "https:\/\/archive.org\/download\/OldPop_256\/VillagePeople-Y.m.c.a.mp3",
-            "title": "Y.M.C.A",
-            "author": "Village People"
-          }
-        },
-        "audio_fxcR98": {
-          "type": "audio",
-          "settings": {
-            "audio": "https:\/\/archive.org\/download\/AnimalsTheHouseOfTheRisingSun_201811\/Animals%20-%20The%20House%20Of%20The%20Rising%20Sun.mp3",
-            "title": "House of the Rising Sun",
-            "author": "The Animals"
-          }
-        },
-        "audio_XykxDe": {
-          "type": "audio",
-          "settings": {
-            "audio": "https:\/\/archive.org\/download\/DontStopMeNow_255\/Queen-DontStopMeNow.mp3",
-            "title": "Don't Stop Me Now",
-            "author": "Queen"
-          }
-        },
-        "audio_wYHdrb": {
-          "type": "audio",
-          "settings": {
-            "audio": "https:\/\/archive.org\/download\/NeverGonnaGiveYouUpOriginal\/Never%20Gonna%20Give%20You%20Up%20Original.mp3",
-            "title": "Never Gonna Give You Up",
-            "author": "Rick Astley"
-          }
         }
       },
       "block_order": [
-        "audio_f8KQrK",
-        "audio_Tw3y3q",
-        "audio_RxLyKH",
-        "audio_K8n4qK",
-        "audio_Tpt3wN",
-        "audio_YAhXD6",
-        "audio_kwzmpj",
-        "audio_tymUPD",
-        "audio_fxcR98",
-        "audio_XykxDe",
-        "audio_wYHdrb"
+        "audio_f8KQrK"
       ],
       "custom_css": [
         ".simp-cover > div {width: 220px !important; height: 220px !important; margin: 0 auto;}",
