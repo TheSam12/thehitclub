@@ -28,17 +28,17 @@
         "btn_link": ""
       }
     },
-    "image_with_text_z6jzJx": {
-      "type": "image-with-text",
+    "tw_image_with_text_cbYAJe": {
+      "type": "tw-image-with-text",
       "blocks": {
-        "heading_9RqHdA": {
+        "heading_JV3kjL": {
           "type": "heading",
           "settings": {
             "heading": "The Coaches",
             "heading_size": "h2"
           }
         },
-        "text_M8XYpC": {
+        "text_eck9Mg": {
           "type": "text",
           "settings": {
             "text": "<p>Mejor conocida como Isacu, estudió psicología y tiene una trayectoria de 12 años en el rubro del fitness.<br\/><br\/>Creadora de dos programas de entrenamiento online y su propia línea de suplementos deportivos, KIU PERFORMANCE ®.<br\/><br\/>Amante de los animales y en constante lucha contra el maltrato animal.<\/p>",
@@ -47,36 +47,29 @@
         }
       },
       "block_order": [
-        "heading_9RqHdA",
-        "text_M8XYpC"
+        "heading_JV3kjL",
+        "text_eck9Mg"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Hit_club_marzo1031-m.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "middle",
+        "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-4871897c-36e2-44ce-bbe6-74930794e856",
-        "color_scheme": "scheme-4871897c-36e2-44ce-bbe6-74930794e856",
+        "section_color_scheme": "",
+        "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 0,
         "padding_bottom": 0
       }
     },
-    "image_with_text_aycN9a": {
+    "image_with_text_cbJXJA": {
       "type": "image-with-text",
       "blocks": {
-        "heading_NtX4kN": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h2"
-          }
-        },
-        "text_U9iEFL": {
+        "text_gghLqe": {
           "type": "text",
           "settings": {
             "text": "<p>Mejor conocido como \"el docti\". Estudió medicina y tiene una trayectoria de 17 años en entrenamientos de pesas y 11 años en entrenamiento de acondicionamiento físico para competencias de cayuco de océano a océano.<br\/><br\/>Vegano y dedicado a la constante búsqueda de herramientas que puedan ayudar a construir la mejor versión de cada uno.<\/p>",
@@ -85,23 +78,22 @@
         }
       },
       "block_order": [
-        "heading_NtX4kN",
-        "text_U9iEFL"
+        "text_gghLqe"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Hit_club_marzo0548.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
-        "desktop_content_position": "middle",
+        "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-4871897c-36e2-44ce-bbe6-74930794e856",
-        "color_scheme": "scheme-4871897c-36e2-44ce-bbe6-74930794e856",
+        "section_color_scheme": "",
+        "color_scheme": "",
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -109,7 +101,7 @@
     "main",
     "tw_image_banner_kjp8td",
     "tw_text_with_button_fnfzyV",
-    "image_with_text_z6jzJx",
-    "image_with_text_aycN9a"
+    "tw_image_with_text_cbYAJe",
+    "image_with_text_cbJXJA"
   ]
 }
