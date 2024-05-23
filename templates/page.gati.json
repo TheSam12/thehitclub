@@ -132,14 +132,15 @@
         "capsules": false,
         "pill_1": "",
         "pill_2": "",
-        "pill_3": ""
+        "pill_3": "",
+        "mobile_img": "shopify:\/\/shop_images\/Mobile_-_GATI_-_Features.png"
       }
     },
     "tw_image_banner_UxVVWc": {
       "type": "tw-image-banner",
       "settings": {
         "d_img": "shopify:\/\/shop_images\/Hit_club_marzo0670.jpg",
-        "m_img": "shopify:\/\/shop_images\/Hit_club_marzo0670-m.jpg",
+        "m_img": "shopify:\/\/shop_images\/Mobile_-_About_Coach_IsaCu_Mattias.png",
         "pre_title": "Pre Title",
         "title": "Title",
         "btn_label": "",
