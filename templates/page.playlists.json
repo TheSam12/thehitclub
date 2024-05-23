@@ -19,19 +19,200 @@
         "btn_link": ""
       }
     },
-    "tw_text_with_button_fnfzyV": {
-      "type": "tw-text-with-button",
+    "rich_text_8gUVJd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9kkMYz": {
+          "type": "heading",
+          "settings": {
+            "heading": "¡Goza, suda y perrea con nosotros!",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9kkMYz"
+      ],
+      "custom_css": [
+
+      ],
       "settings": {
-        "title": "¡Goza, suda y perrea con nosotros!",
-        "content": "",
-        "btn_label": "",
-        "btn_link": ""
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "ss_audio_player_KCt4pV": {
+      "type": "ss-audio-player",
+      "blocks": {
+        "audio_f8KQrK": {
+          "type": "audio",
+          "settings": {
+            "audio": "http:\/\/www.archive.org\/download\/CanonInD_261\/CanoninD.mp3",
+            "title": "Canon in D",
+            "author": "Johann Pachelbel"
+          }
+        },
+        "audio_Tw3y3q": {
+          "type": "audio",
+          "settings": {
+            "audio": "https:\/\/cdn.shopify.com\/s\/files\/1\/0670\/4834\/1753\/files\/05.mp3?v=1708077309",
+            "title": "Artist 5",
+            "author": ""
+          }
+        },
+        "audio_RxLyKH": {
+          "type": "audio",
+          "settings": {
+            "audio": "https:\/\/cdn.shopify.com\/s\/files\/1\/0670\/4834\/1753\/files\/Angklung_Preman_Pensiun.mp3?v=1708077241",
+            "title": "Angklung Preman Pensiun",
+            "author": ""
+          }
+        },
+        "audio_K8n4qK": {
+          "type": "audio",
+          "settings": {
+            "audio": "https:\/\/cdn.shopify.com\/s\/files\/1\/0670\/4834\/1753\/files\/Canon_Rock_JerryC_-_funtwo.mp3?v=1708077435",
+            "title": "Canon Rock (JerryC)",
+            "author": "by Funtwo"
+          }
+        },
+        "audio_Tpt3wN": {
+          "type": "audio",
+          "settings": {
+            "audio": "http:\/\/listento.ardanradio.com:1059\/;",
+            "title": "105.9 FM Ardan Radio",
+            "author": "Streaming Radio"
+          }
+        },
+        "audio_YAhXD6": {
+          "type": "audio",
+          "settings": {
+            "audio": "https:\/\/archive.org\/download\/78_jailhouse-rock_elvis-presley-jerry-leiber-mike-stoller_gbia0080595b\/Jailhouse%20Rock%20-%20Elvis%20Presley%20-%20Jerry%20Leiber-restored.mp3",
+            "title": "Jailhouse Rock",
+            "author": "Elvis Presley"
+          }
+        },
+        "audio_kwzmpj": {
+          "type": "audio",
+          "settings": {
+            "audio": "https:\/\/archive.org\/download\/J._Period_and_Michael_Jackson_-_Man_Or_The_Music-2010\/17%20Smooth%20Criminal.mp3",
+            "title": "Smooth Criminal",
+            "author": "Michael Jackson"
+          }
+        },
+        "audio_tymUPD": {
+          "type": "audio",
+          "settings": {
+            "audio": "https:\/\/archive.org\/download\/OldPop_256\/VillagePeople-Y.m.c.a.mp3",
+            "title": "Y.M.C.A",
+            "author": "Village People"
+          }
+        },
+        "audio_fxcR98": {
+          "type": "audio",
+          "settings": {
+            "audio": "https:\/\/archive.org\/download\/AnimalsTheHouseOfTheRisingSun_201811\/Animals%20-%20The%20House%20Of%20The%20Rising%20Sun.mp3",
+            "title": "House of the Rising Sun",
+            "author": "The Animals"
+          }
+        },
+        "audio_XykxDe": {
+          "type": "audio",
+          "settings": {
+            "audio": "https:\/\/archive.org\/download\/DontStopMeNow_255\/Queen-DontStopMeNow.mp3",
+            "title": "Don't Stop Me Now",
+            "author": "Queen"
+          }
+        },
+        "audio_wYHdrb": {
+          "type": "audio",
+          "settings": {
+            "audio": "https:\/\/archive.org\/download\/NeverGonnaGiveYouUpOriginal\/Never%20Gonna%20Give%20You%20Up%20Original.mp3",
+            "title": "Never Gonna Give You Up",
+            "author": "Rick Astley"
+          }
+        }
+      },
+      "block_order": [
+        "audio_f8KQrK",
+        "audio_Tw3y3q",
+        "audio_RxLyKH",
+        "audio_K8n4qK",
+        "audio_Tpt3wN",
+        "audio_YAhXD6",
+        "audio_kwzmpj",
+        "audio_tymUPD",
+        "audio_fxcR98",
+        "audio_XykxDe",
+        "audio_wYHdrb"
+      ],
+      "settings": {
+        "player_width": 600,
+        "player_width_mobile": 100,
+        "player_radius": 6,
+        "player_image_radius": 0,
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 18,
+        "title_size_mobile": 16,
+        "title_height": 100,
+        "author_custom": false,
+        "author_font": "josefin_sans_n4",
+        "author_size": 14,
+        "author_size_mobile": 14,
+        "author_height": 100,
+        "playlist_height": 245,
+        "playlist_title_custom": false,
+        "playlist_title_font": "josefin_sans_n4",
+        "playlist_title_size": 16,
+        "playlist_title_size_mobile": 16,
+        "playlist_title_height": 100,
+        "playlist_author_custom": false,
+        "playlist_author_font": "josefin_sans_n4",
+        "playlist_author_size": 14,
+        "playlist_author_size_mobile": 14,
+        "playlist_author_height": 100,
+        "player_bg_color": "#17212b",
+        "title_color": "#DDDDDD",
+        "author_color": "#6c7883",
+        "icons_color": "#DDDDDD",
+        "icons_disabled_color": "#636469",
+        "icons_active_color": "#DDDDDD",
+        "icons_active_bg_color": "#242f3d",
+        "icons_hover_color": "#FFFFFF",
+        "icons_hover_bg_color": "#4082bc",
+        "playlist_title_color": "#DDDDDD",
+        "playlist_author_color": "#DDDDDD",
+        "playlist_odd_bg_color": "#0e1621",
+        "playlist_hover_bg_color": "#242f3d",
+        "playlist_hover_color": "#DDDDDD",
+        "playlist_active_bg_color": "#4082bc",
+        "playlist_active_color": "#FFFFFF",
+        "playlist_scrollbar_bg_color": "#2f3841",
+        "playlist_scrollbar_thumb_color": "#73797f",
+        "background_color": "#FFFFFF",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0
       }
     }
   },
   "order": [
     "main",
     "tw_image_banner_kjp8td",
-    "tw_text_with_button_fnfzyV"
+    "rich_text_8gUVJd",
+    "ss_audio_player_KCt4pV"
   ]
 }
