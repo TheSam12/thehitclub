@@ -1288,6 +1288,10 @@ html, :host {
     flex-direction: column;
   }
 
+  .md\:tw-justify-normal {
+    justify-content: normal;
+  }
+
   .md\:tw-justify-center {
     justify-content: center;
   }
