@@ -75,12 +75,9 @@
       ],
       "settings": {
         "title": "Planes de Membresía",
-        "product_list": [
-          "dumbbell-10lbs-1-unidad",
-          "dumbbell-4lbs-1-unidad",
-          "dumbbell-5lbs-1-unidad"
-        ],
-        "cards_btn_label": "SUSCRIBIRME"
+        "content": "",
+        "color_1": "#ffa3d7",
+        "color_2": "#ffe89c"
       }
     },
     "tw_text_with_gif_dY6bQq": {
@@ -143,9 +140,7 @@
         "capsules": false,
         "pill_1": "",
         "pill_2": "",
-        "pill_3": "",
-        "gif_url": "",
-        "image": "shopify:\/\/shop_images\/The_Hit_Club_Homepage_gif.gif"
+        "pill_3": ""
       }
     },
     "tw_image_grid_itPJUP": {
