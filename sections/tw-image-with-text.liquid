@@ -33,11 +33,11 @@
           <img src="{{ signature_img | image_url }}" width="" height="" alt="{{ signature_img.alt }}">
         </div>
       {% endif %}
-      <div class="tw-mb-4 tw-mb-8 tw-text-center md:tw-mb-0 md:tw-mb-6 md:tw-text-left lg:tw-text-3xl xl:tw-text-4xl">
+      <div class="tw-mb-4 tw-text-center md:tw-mb-6 md:tw-text-left lg:tw-text-3xl xl:tw-text-4xl">
         {{ content }}
       </div>
       {% if brand_img != null %}
-        <div class="tw-flex tw-justify-center md:tw-justify-normal">
+        <div class="tw-mb-8 tw-flex tw-justify-center md:tw-mb-0 md:tw-justify-normal">
           <img src="{{ brand_img | image_url }}" width="243" height="" alt="{{ brand_img.alt }}">
         </div>
       {% endif %}
