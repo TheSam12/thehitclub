@@ -175,34 +175,44 @@
         "slider_label": "y esto es lo que opinan algunos de ellos..."
       }
     },
-    "images_slideshow_TCpFpy": {
-      "type": "images-slideshow",
+    "tw_images_slideshow_CrERLc": {
+      "type": "tw-images-slideshow",
       "blocks": {
-        "images_X3XhhY": {
+        "images_RMXqy4": {
           "type": "Images",
           "settings": {
             "img": "shopify:\/\/shop_images\/before_after_1.png"
           }
         },
-        "images_FYKkB3": {
+        "images_Nzpj6Y": {
           "type": "Images",
           "settings": {
             "img": "shopify:\/\/shop_images\/before_after_2.png"
           }
         },
-        "images_EiUNQk": {
+        "images_ihGTwq": {
           "type": "Images",
           "settings": {
-            "img": "shopify:\/\/shop_images\/2024.04.22_-_The_Hit_Club_Website_3.jpg"
+            "img": "shopify:\/\/shop_images\/before_after_3.png"
           }
         }
       },
       "block_order": [
-        "images_X3XhhY",
-        "images_FYKkB3",
-        "images_EiUNQk"
+        "images_RMXqy4",
+        "images_Nzpj6Y",
+        "images_ihGTwq"
       ],
       "settings": {
+      }
+    },
+    "tw_image_banner_QB3Uz9": {
+      "type": "tw-image-banner",
+      "settings": {
+        "d_img": "shopify:\/\/shop_images\/Hit_club_marzo1089_a0cdf9a1-8963-44dc-a021-81a0e53f7c34.jpg",
+        "pre_title": "Pre Title",
+        "title": "Title",
+        "btn_label": "",
+        "btn_link": ""
       }
     },
     "tw_featured_collection_PCQt6c": {
@@ -388,7 +398,8 @@
     "tw_memberships_Q7cxVz",
     "tw_text_with_button_kiey4m",
     "tw_reviews_xHykKm",
-    "images_slideshow_TCpFpy",
+    "tw_images_slideshow_CrERLc",
+    "tw_image_banner_QB3Uz9",
     "tw_featured_collection_PCQt6c",
     "rich_text",
     "featured_collection",
