@@ -7,9 +7,11 @@
   assign signature_img = var.signature_img
   assign content = var.content
   assign brand_img = var.brand_img
+  assign pt = var.pt
+  assign pb = var.pb
 %}
 
-<div class="xl:tw-container xl:tw-m-auto">
+<div class="xl:tw-container xl:tw-m-auto padding-{{ section.id }}">
   {% if title != blank %}
     <div class="tw-mb-6 md:tw-mb-14">
       <h2 class="tw-text-center tw-text-4xl tw-font-bold md:tw-text-{{ title_align }} md:tw-text-7xl">{{ title }}</h2>
@@ -44,7 +46,12 @@
     </div>
   </div>
 </div>
-
+<style>
+  .padding-{{ section.id }}{
+    padding-top: {{ pt }}px;
+    padding-bottom: {{ pb }}px;
+  }
+</style>
 {% schema %}
 {
   "name": "Images With Text",
@@ -52,6 +59,22 @@
     {
       "type": "header",
       "content": "Section Settings"
+    },
+    {
+      "type": "range",
+      "id": "pt",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "pb",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "default": 0
     },
     {
       "type": "text",
