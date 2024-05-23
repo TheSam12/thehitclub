@@ -740,6 +740,10 @@ html, :host {
   height: max-content;
 }
 
+.tw-max-h-screen {
+  max-height: 100vh;
+}
+
 .tw-w-3\/4 {
   width: 75%;
 }
