@@ -39,12 +39,24 @@
         "content": "<p>Mejor conocida como Isacu, estudió psicología y tiene una trayectoria de 12 años en el rubro del fitness.<\/p><p>Creadora de dos programas de entrenamiento online y su propia línea de suplementos deportivos, KIU PERFORMANCE ®.<\/p><p>Amante de los animales y en constante lucha contra el maltrato animal.<\/p>",
         "brand_img": "shopify:\/\/shop_images\/Coach_Features_1.png"
       }
+    },
+    "tw_image_with_text_VBcaAt": {
+      "type": "tw-image-with-text",
+      "settings": {
+        "title": "",
+        "title_align": "center",
+        "reverse": "right",
+        "main_img": "shopify:\/\/shop_images\/Hit_club_marzo0548.jpg",
+        "signature_img": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_1_8763565a-7d09-4757-90d0-c8fd1dbdc8cf.png",
+        "content": "<p>Mejor conocido como \"el docti\". Estudió medicina y tiene una trayectoria de 17 años en entrenamientos de pesas y 11 años en entrenamiento de acondicionamiento físico para competencias de cayuco de océano a océano.<\/p><p>Vegano y dedicado a la constante búsqueda de herramientas que puedan ayudar a construir la mejor versión de cada uno.<\/p>"
+      }
     }
   },
   "order": [
     "main",
     "tw_image_banner_kjp8td",
     "tw_text_with_button_fnfzyV",
-    "tw_image_with_text_cbYAJe"
+    "tw_image_with_text_cbYAJe",
+    "tw_image_with_text_VBcaAt"
   ]
 }
