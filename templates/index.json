@@ -65,10 +65,10 @@
         "title": "¿Estás listo para entrenar con torque?",
         "content": "Nuestros programas te dan la flexibilidad de entrenar desde la cómodidad de tu hogar o desde un gimnasio. WE GOT YOU!",
         "capsules": true,
+        "gif_url": "shopify:\/\/shop_images\/The_Hit_Club_Homepage_gif.gif",
         "pill_1": "ENTRENA DESDE DÓNDE SEA",
         "pill_2": "A LA HORA QUE QUIERAS",
         "pill_3": "CON PROPS O SIN EQUIPOS",
-        "desktop_img": "shopify:\/\/shop_images\/The_Hit_Club_Homepage_gif.gif",
         "mobile_img": "shopify:\/\/shop_images\/Mobile-Estaslistoparatorque-ezgif.com-optimize.gif"
       }
     },
@@ -119,7 +119,9 @@
       ],
       "settings": {
         "title": "planes de membresía",
-        "content": "<p><\/p>"
+        "content": "<p><\/p>",
+        "color_1": "#2ED5E9",
+        "color_2": "#F7EF8D"
       }
     },
     "tw_text_with_button_kiey4m": {
