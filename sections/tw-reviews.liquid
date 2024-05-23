@@ -7,7 +7,7 @@
   assign sticker_img = var.sticker_img
 %}
 
-<div class="tw-mt-16 tw-mb-6 md:tw-mb-8">
+<div class="tw-mb-6 tw-mt-16 md:tw-mb-8">
   <div>
     {% if bg_img != null %}
       <div class="tw-relative">
@@ -15,13 +15,13 @@
           <img
             src="{{ bg_img | image_url: width: 1920  }}"
             alt="{{ bg_img.alt }}"
-            class="tw-absolute tw-w-full tw-h-full"
+            class="tw-absolute tw-h-full tw-w-full"
             width=""
             height=""
           >
         {% endif %}
         <div class="tw-relative tw-py-20 lg:tw-py-32">
-          <h2 class="tw-text-5xl md:tw-text-8xl lg:tw-text-9xl tw-font-bold tw-text-center tw-drop-shadow-lg tw-text-white tw-flex tw-flex-col tw-gap-1 md:tw-gap-5">
+          <h2 class="tw-flex tw-flex-col tw-gap-1 tw-text-center tw-text-5xl tw-font-bold tw-text-white tw-drop-shadow-lg md:tw-gap-5 md:tw-text-8xl lg:tw-text-9xl">
             {{ title }}
             <span class="tw-text-2xl md:tw-text-6xl">
               {{ sub_title }}
@@ -32,15 +32,15 @@
           <img
             src="{{ sticker_img | image_url }}"
             alt="{{ sticker_img.alt }}"
-            class="tw-absolute tw-drop-shadow-lg review-sticker"
+            class="review-sticker tw-absolute tw-drop-shadow-lg"
             width="100"
             height="100"
           >
         {% endif %}
       </div>
     {% endif %}
-    <div class="tw-container tw-m-auto tw-px-4 md:tw-px-20 tw-pt-10 md:tw-pt-0">
-      <h3 class="tw-hidden md:tw-block tw-text-center tw-py-10 tw-text-2xl">
+    <div class="tw-container tw-m-auto tw-px-4 tw-pt-10 md:tw-px-20 md:tw-pt-0">
+      <h3 class="tw-hidden tw-py-10 tw-text-center tw-text-2xl md:tw-block">
         {{ slider_label }}
       </h3>
       <div class="swiper reviews_slider">
@@ -48,14 +48,14 @@
           {% for block in section.blocks %}
             {% if block.type == 'review' %}
               <div class="swiper-slide">
-                <div class="tw-w-5/6 tw-m-auto">
-                  <p class="tw-text-center tw-text-lg md:tw-text-3xl lg:tw-text-5xl tw-font-bold ">
+                <div class="tw-m-auto tw-w-5/6">
+                  <p class="tw-text-center tw-text-lg tw-font-bold md:tw-text-3xl lg:tw-text-5xl ">
                     {{ block.settings.content }}
                   </p>
                   {% if block.settings.customer_img != null %}
                     <div class="tw-flex tw-justify-center tw-py-4">
                       <img
-                        class="tw-rounded-full tw-overflow-hidden tw-h-16"
+                        class="tw-h-16 tw-overflow-hidden tw-rounded-full"
                         src="{{ block.settings.customer_img | image_url: width: 64, height: 64}}"
                         alt="{{ block.settings.customer_img.alt }}"
                         width="64"
@@ -63,7 +63,7 @@
                       >
                     </div>
                   {% endif %}
-                  <h3 class="tw-text-base md:tw-text-2xl tw-text-center">{{ block.settings.customer_name }}</h3>
+                  <h3 class="tw-text-center tw-text-base md:tw-text-2xl">{{ block.settings.customer_name }}</h3>
                 </div>
               </div>
             {% endif %}

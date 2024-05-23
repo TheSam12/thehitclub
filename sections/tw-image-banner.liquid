@@ -30,7 +30,7 @@
 </style>
 
 <div class="tw-m-auto {{ section.id }}-bg">
-  <div class="tw-relative tw-overflow-hidden tw-h-full tw-px-4">
+  <div class="tw-relative tw-h-full tw-overflow-hidden tw-px-4">
     {% comment %}
       <div class="tw-absolute tw-inset-0">
         <picture>
@@ -44,13 +44,13 @@
       </div>
     {% endcomment %}
     {% if pre_title and title and btn_label != blank %}
-      <div class="tw-relative tw-flex tw-flex-col tw-items-center tw-justify-center tw-w-full tw-h-full tw-gap-6">
-        <h1 class="tw-text-white tw-font-bold tw-text-3xl md:tw-text-6xl tw-text-center tw-mb-20 tw-drop-shadow-lg">
+      <div class="tw-relative tw-flex tw-h-full tw-w-full tw-flex-col tw-items-center tw-justify-center tw-gap-6">
+        <h1 class="tw-mb-20 tw-text-center tw-text-3xl tw-font-bold tw-text-white tw-drop-shadow-lg md:tw-text-6xl">
           <span class="tw-text-xl md:tw-text-3xl">{{ pre_title }}</span><br>
           {{ title }}
         </h1>
         <a
-          class="tw-bg-gradient-to-r tw-from-yellow-300 tw-to-orange-600 tw-py-3 tw-px-8 tw-rounded-full tw-font-bold tw-text-base md:tw-text-2xl tw-text-center tw-text-black tw-uppercase"
+          class="tw-rounded-full tw-bg-gradient-to-r tw-from-yellow-300 tw-to-orange-600 tw-px-8 tw-py-3 tw-text-center tw-text-base tw-font-bold tw-uppercase tw-text-black md:tw-text-2xl"
           href="{{ btn_link }}"
         >
           {{- btn_label -}}

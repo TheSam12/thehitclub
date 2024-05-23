@@ -6,25 +6,25 @@
   assign btn_link = section.settings.btn_link
 %}
 
-<div class="tw-container tw-m-auto md:tw-pt-20 tw-p-10 tw-relative">
+<div class="tw-container tw-relative tw-m-auto tw-p-10 md:tw-pt-20">
   {% if sticker != blank %}
     <div class="tw-relative">
       <img
         src="{{ sticker | image_url }}"
         width="90"
         height="90"
-        class="tw-rotate-45 tw-drop-shadow-xl sticker-button tw-absolute"
+        class="sticker-button tw-absolute tw-rotate-45 tw-drop-shadow-xl"
       >
     </div>
   {% endif %}
   <div class="tw-flex tw-flex-col tw-gap-6 md:tw-gap-14">
-    <h2 class="tw-text-4xl md:tw-text-7xl tw-font-bold tw-text-center md:tw-text-left">{{ title }}</h2>
-    <div class="tw-text-left xl:tw-text-4xl lg:tw-text-3xl">
+    <h2 class="tw-text-center tw-text-4xl tw-font-bold md:tw-text-left md:tw-text-7xl">{{ title }}</h2>
+    <div class="tw-text-left lg:tw-text-3xl xl:tw-text-4xl">
       {{ content }}
     </div>
     <div class="tw-flex tw-justify-center">
       <a
-        class="tw-bg-black tw-px-7 tw-py-3 tw-rounded-full tw-font-semibold md:tw-text-3xl tw-text-white tw-uppercase tw-mt-3 md:tw-mt-0 tw-text-center"
+        class="tw-mt-3 tw-rounded-full tw-bg-black tw-px-7 tw-py-3 tw-text-center tw-font-semibold tw-uppercase tw-text-white md:tw-mt-0 md:tw-text-3xl"
         href="{{ btn_link }}"
       >
         {{- btn_label -}}

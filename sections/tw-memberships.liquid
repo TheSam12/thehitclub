@@ -13,26 +13,26 @@
 </style>
 <div class="bg-gradient-{{ section.id }}">
   <div class="tw-container tw-mx-auto tw-px-10 tw-py-20">
-    <h2 class="tw-font-bold tw-text-4xl md:tw-text-7xl tw-mb-10 tw-text-center md:tw-text-left">{{ title }}</h2>
+    <h2 class="tw-mb-10 tw-text-center tw-text-4xl tw-font-bold md:tw-text-left md:tw-text-7xl">{{ title }}</h2>
     <div class="">
       {{ content }}
     </div>
-    <div class="tw-grid lg:tw-grid-cols-3 tw-gap-10">
+    <div class="tw-grid tw-gap-10 lg:tw-grid-cols-3">
       {% for block in section.blocks %}
-        <div class="tw-bg-white tw-flex tw-flex-col tw-gap-4 md:tw-gap-8 tw-justify-around tw-p-5 tw-px-8 tw-py-10 tw-rounded-3xl tw-text-center tw-relative">
+        <div class="tw-relative tw-flex tw-flex-col tw-justify-around tw-gap-4 tw-rounded-3xl tw-bg-white tw-p-5 tw-px-8 tw-py-10 tw-text-center md:tw-gap-8">
           {% if block.settings.new_mark %}
             <div class="tw-absolute" style="top:-5px;right:-5px">
               <img src="{{ 'new-mark.png' | asset_img_url }}" width="70" height="70">
             </div>
           {% endif %}
-          <h3 class="tw-font-bold tw-text-xl">{{ block.settings.title }}</h3>
-          <span class="tw-font-bold tw-text-6xl md:tw-text-8xl">
+          <h3 class="tw-text-xl tw-font-bold">{{ block.settings.title }}</h3>
+          <span class="tw-text-6xl tw-font-bold md:tw-text-8xl">
             {{- block.settings.price -}}
           </span>
           <span>{{ block.settings.custom_line_1 }}</span>
           <div class="tw-tw-flex tw-tw-justify-center">
             <a
-              class="tw-bg-black tw-px-7 tw-py-2 tw-rounded-full tw-font-semibold tw-text-white"
+              class="tw-rounded-full tw-bg-black tw-px-7 tw-py-2 tw-font-semibold tw-text-white"
               href="{{ block.settings.btn_url }}"
             >
               {{- block.settings.btn_label -}}

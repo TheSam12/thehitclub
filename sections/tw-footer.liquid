@@ -3,9 +3,9 @@
   assign copy = section.settings.copy
 %}
 
-<footer class="tw-container tw-m-auto tw-py-16 tw-px-10">
+<footer class="tw-container tw-m-auto tw-px-10 tw-py-16">
   <div class="tw-pb-6">
-    <div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-between tw-gap-8">
+    <div class="tw-flex tw-flex-col tw-justify-between tw-gap-8 md:tw-flex-row">
       <div class="">
         {{ logo | image_url: width: 200 | image_tag: class: 'tw-m-auto' }}
       </div>
@@ -13,7 +13,7 @@
         {% case block.type` %}
           {% when 'menu' %}
             <div>
-              <h3 class="tw-font-bold tw-mb-4 tw-text-white">
+              <h3 class="tw-mb-4 tw-font-bold tw-text-white">
                 {{ block.settings.title }}
               </h3>
               <div class="tw-flex tw-gap-6">
@@ -29,7 +29,7 @@
             </div>
           {% when 'icons' %}
             <div>
-              <h3 class="tw-font-bold tw-mb-4 tw-text-white">Nuestras redes sociales</h3>
+              <h3 class="tw-mb-4 tw-font-bold tw-text-white">Nuestras redes sociales</h3>
               <div class="tw-flex tw-gap-4">
                 {% liquid
                   assign facebook = block.settings.facebook
@@ -59,7 +59,7 @@
                   </a>
                 {% endif %}
                 {% if twitter != blank %}
-                  <a class="tw-flex tw-item-center tw-p-4 tw-text-white " href="{{ twitter }}">
+                  <a class="tw-item-center tw-flex tw-p-4 tw-text-white " href="{{ twitter }}">
                     {% render 'tw-social-icons', icon: 'twitter' %}
                   </a>
                 {% endif %}

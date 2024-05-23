@@ -1,9 +1,21 @@
 {
+  "plugins": [
+    "@shopify/prettier-plugin-liquid",
+    "prettier-plugin-tailwindcss"
+  ],
   "printWidth": 120,
   "singleQuote": true,
   "overrides": [
     {
-      "files": "*.liquid",
+      "files": ["./config/*.json",
+      "./layout/*.liquid",
+      "./assets/*.liquid",
+      "./sections/*.liquid",
+      "./snippets/*.liquid",
+      "./templates/*.liquid",
+      "./templates/*.json",
+      "./templates/customers/*.liquid"
+      ],
       "options": {
         "singleQuote": false
       }

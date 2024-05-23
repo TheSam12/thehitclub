@@ -2,9 +2,9 @@
   assign title = section.settings.title
   assign align = section.settings.align
 %}
-<div class="tw-m-auto tw-container tw-py-10">
-  <div class="tw-text-{{ align }} lg:tw-w-3/4 tw-m-auto tw-pb-14">
-    <h2 class="tw-text-4xl md:tw-text-7xl tw-font-bold tw-pb-4">{{ title }}</h2>
+<div class="tw-container tw-m-auto tw-py-10">
+  <div class="tw-text-{{ align }} tw-m-auto tw-pb-14 lg:tw-w-3/4">
+    <h2 class="tw-pb-4 tw-text-4xl tw-font-bold md:tw-text-7xl">{{ title }}</h2>
   </div>
   <div id="faq">
     <div class="tw-mb-4 tw-w-full">
@@ -16,14 +16,14 @@
                 href="#"
                 @click.prevent="toggleAnswer(faq)"
                 v-html="faq.question"
-                class="tw-cursor-pointer lg:tw-text-2xl xl:tw-text-3xl tw-text-xl tw-font-bold question tw-block tw-w-full tw-pr-10 tw-h-20 tw-flex tw-items-center"
+                class="question tw-block tw-flex tw-h-20 tw-w-full tw-cursor-pointer tw-items-center tw-pr-10 tw-text-xl tw-font-bold lg:tw-text-2xl xl:tw-text-3xl"
                 :class="{ show: faq.showAnswer }"
               ></a>
             </div>
             <div
               v-if="faq.showAnswer"
               v-html="faq.answer"
-              class="lg:tw-text-xl xl:tw-text-2xl tw-text-lg tw-px-2 tw-pt-5 tw-pb-2 answer"
+              class="answer tw-px-2 tw-pb-2 tw-pt-5 tw-text-lg lg:tw-text-xl xl:tw-text-2xl"
             ></div>
           </div>
         </li>
