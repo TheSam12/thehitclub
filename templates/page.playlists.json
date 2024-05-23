@@ -152,9 +152,9 @@
       ],
       "custom_css": [
         ".simp-cover > div {width: 220px !important; height: 220px !important; margin: 0 auto;}",
-        " \/* Hide the .simp-playlist class *\/.simp-playlist {display: none !important;}",
-        " \/* Add a blue outline around the entire element *\/.simple-audio-player {outline: 1px solid #000000;}",
-        " \/* Ensure the .simp-cover is centered within its parent container *\/.simp-album {display: flex; justify-content: center; align-items: center;}"
+        ".simp-playlist {display: none !important;}",
+        ".simple-audio-player {outline: 1px solid #000000;}",
+        " .simp-album {display: flex; justify-content: center; align-items: center;}"
       ],
       "settings": {
         "player_width": 600,
