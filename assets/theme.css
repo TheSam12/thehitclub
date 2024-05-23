@@ -796,6 +796,10 @@ html, :host {
   flex-direction: column;
 }
 
+.tw-flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
 .tw-items-center {
   align-items: center;
 }
@@ -1239,6 +1243,10 @@ html, :host {
     margin-top: 0px;
   }
 
+  .md\:tw-mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
   .md\:tw-block {
     display: block;
   }
@@ -1261,6 +1269,14 @@ html, :host {
 
   .md\:tw-flex-row {
     flex-direction: row;
+  }
+
+  .md\:tw-flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .md\:tw-flex-col {
+    flex-direction: column;
   }
 
   .md\:tw-justify-center {
@@ -1304,6 +1320,10 @@ html, :host {
 
   .md\:tw-pt-20 {
     padding-top: 5rem;
+  }
+
+  .md\:tw-pl-10 {
+    padding-left: 2.5rem;
   }
 
   .md\:tw-text-left {
