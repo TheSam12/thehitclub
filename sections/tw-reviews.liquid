@@ -16,6 +16,8 @@
             src="{{ bg_img | image_url: width: 1920  }}"
             alt="{{ bg_img.alt }}"
             class="tw-absolute tw-w-full tw-h-full"
+            width=""
+            height=""
           >
         {% endif %}
         <div class="tw-relative tw-py-20 lg:tw-py-32">
@@ -69,25 +71,6 @@
         </div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-      </div>
-    </div>
-    <div class="tw-container tw-m-auto tw-pt-10 tw-px-9">
-      <div class="tw-flex tw-justify-between tw-w-full tw-gap-8">
-        {% for block in section.blocks %}
-          {% if block.type == 'sample_images' %}
-            {% if block.settings.sample_images != null %}
-              <div class="tw-w-1/3">
-                <img
-                  src="{{ block.settings.sample_images | image_url }}"
-                  alt="{{ block.settings.sample_images.alt }}"
-                  class="tw-w-full"
-                  width="200"
-                  height="500"
-                >
-              </div>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
       </div>
     </div>
   </div>
@@ -175,18 +158,6 @@
           "type": "text",
           "id": "customer_name",
           "label": "Customer name"
-        }
-      ]
-    },
-    {
-      "type": "sample_images",
-      "name": "Bodies Examples",
-      "limit": 3,
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "sample_images",
-          "label": "Body Example"
         }
       ]
     }
