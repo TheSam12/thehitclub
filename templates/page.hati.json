@@ -145,6 +145,17 @@
         "mobile_img": "shopify:\/\/shop_images\/Mobile_-_HATI_-_Features.png"
       }
     },
+    "tw_image_banner_njtx3Y": {
+      "type": "tw-image-banner",
+      "settings": {
+        "d_img": "shopify:\/\/shop_images\/Hit_club_marzo1031.jpg",
+        "m_img": "shopify:\/\/shop_images\/Mobile_-_About_Coach_IsaCu.png",
+        "pre_title": "Pre Title",
+        "title": "Title",
+        "btn_label": "",
+        "btn_link": ""
+      }
+    },
     "tw_image_grid_itPJUP": {
       "type": "tw-image-grid",
       "blocks": {
@@ -261,6 +272,7 @@
     "tw_text_with_button_VpDRLz",
     "tw_memberships_DdNN4T",
     "tw_text_with_gif_dY6bQq",
+    "tw_image_banner_njtx3Y",
     "tw_image_grid_itPJUP",
     "tw_faq_gzWTaD"
   ]
