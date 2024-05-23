@@ -160,33 +160,12 @@
             "customer_img": "shopify:\/\/shop_images\/modern-male-fashion-with-glasses.jpg",
             "customer_name": "Juan Quintero - Tijuana, México"
           }
-        },
-        "sample_images_NWfbcE": {
-          "type": "sample_images",
-          "settings": {
-            "sample_images": "shopify:\/\/shop_images\/before_after_1.png"
-          }
-        },
-        "sample_images_mCG97a": {
-          "type": "sample_images",
-          "settings": {
-            "sample_images": "shopify:\/\/shop_images\/before_after_2.png"
-          }
-        },
-        "sample_images_Nj8Pq3": {
-          "type": "sample_images",
-          "settings": {
-            "sample_images": "shopify:\/\/shop_images\/before_after_3.png"
-          }
         }
       },
       "block_order": [
         "review_4k4PRV",
         "review_WC78ez",
-        "review_jpyHcF",
-        "sample_images_NWfbcE",
-        "sample_images_mCG97a",
-        "sample_images_Nj8Pq3"
+        "review_jpyHcF"
       ],
       "settings": {
         "bg_img": "shopify:\/\/shop_images\/2024.04.22_-_The_Hit_Club_Website_233eb994-a619-4c5e-8cbd-e8e6f22a78d2.jpg",
