@@ -31,13 +31,6 @@
     "tw_image_with_text_cbYAJe": {
       "type": "tw-image-with-text",
       "blocks": {
-        "heading_JV3kjL": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Coaches",
-            "heading_size": "h2"
-          }
-        },
         "text_eck9Mg": {
           "type": "text",
           "settings": {
@@ -47,10 +40,10 @@
         }
       },
       "block_order": [
-        "heading_JV3kjL",
         "text_eck9Mg"
       ],
       "settings": {
+        "title": "The Coaches",
         "image": "shopify:\/\/shop_images\/Hit_club_marzo1031-m.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
