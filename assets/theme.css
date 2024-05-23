@@ -1256,6 +1256,10 @@ html, :host {
     margin-bottom: 1.5rem;
   }
 
+  .md\:tw-mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:tw-block {
     display: block;
   }
