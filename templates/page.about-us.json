@@ -23,7 +23,8 @@
       "type": "tw-text-with-button",
       "custom_css": [
         "div,h2 {text-align: center;}",
-        "div p {margin-bottom: 20px;}"
+        "div p {margin-bottom: 20px;}",
+        "div {padding-top: 0px; padding-bottom: 0px;}"
       ],
       "settings": {
         "title": "The Q Family",
