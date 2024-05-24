@@ -1,13 +1,13 @@
 {% comment %} images-slideshow section {% endcomment %}
 
 <div id="images-slideshow" class="tw-container tw-m-auto tw-mb-10 tw-px-10 md:tw-mb-20">
-  <div class="swiper images-slideshow tw-pb-8 ">
+  <div class="swiper images-slideshow">
     <div class="swiper-wrapper">
       <div class="swiper-slide" v-for="slide in slides" :key="slide.id">
         <div v-html="slide.content"></div>
       </div>
     </div>
-    <div class="swiper-pagination images__pagination"></div>
+    <div class="swiper-pagination images__pagination md:hidden"></div>
   </div>
 </div>
 
@@ -46,6 +46,11 @@
       },
   }).mount('#images-slideshow');
 </script>
+<style>
+  .images-slideshow.swiper {
+    padding-bottom: 30px;
+  }
+</style>
 
 {% schema %}
 {
