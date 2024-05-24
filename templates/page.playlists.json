@@ -12,7 +12,7 @@
       "type": "tw-image-banner",
       "settings": {
         "d_img": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_011278b1-651a-41bc-9117-af8255b0b01e.png",
-        "m_img": "shopify:\/\/shop_images\/Desktop.jpg",
+        "m_img": "shopify:\/\/shop_images\/playlistheader-mobile.png",
         "pre_title": "Pre Title",
         "title": "Title",
         "btn_label": "",
@@ -41,7 +41,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-4871897c-36e2-44ce-bbe6-74930794e856",
         "full_width": true,
-        "padding_top": 40,
+        "padding_top": 0,
         "padding_bottom": 52
       }
     },
