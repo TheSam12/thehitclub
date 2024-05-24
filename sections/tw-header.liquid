@@ -5,7 +5,7 @@
   assign icon = section.settings.icon
 %}
 
-<div id="{{ section.id }}" :class="{ 'tw-sticky tw-top-0': scrollPosition >= 1, 'tw-absolute': scrollPosition < 1 }">
+<div id="{{ section.id }}">
   <div
     :class="{ 'tw-bg-white tw-drop-shadow-md': scrollPosition >= 1, 'tw-bg-gradient-to-b tw-from-black/50 tw-to-transparent': scrollPosition < 1 }"
   >
@@ -130,7 +130,7 @@
 {% schema %}
 {
   "name": "Custom header",
-  "class": "tw-z-10",
+  "class": "tw-sticky tw-top-0 tw-z-10",
   "settings": [
     {
       "type": "image_picker",
