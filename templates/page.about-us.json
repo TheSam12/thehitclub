@@ -31,6 +31,8 @@
     "tw_image_with_text_cbYAJe": {
       "type": "tw-image-with-text",
       "settings": {
+        "pt": 0,
+        "pb": 0,
         "title": "The Coaches",
         "title_align": "center",
         "reverse": "left",
@@ -43,12 +45,176 @@
     "tw_image_with_text_VBcaAt": {
       "type": "tw-image-with-text",
       "settings": {
+        "pt": 0,
+        "pb": 0,
         "title": "",
         "title_align": "center",
         "reverse": "right",
         "main_img": "shopify:\/\/shop_images\/Hit_club_marzo0548.jpg",
         "signature_img": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_1_8763565a-7d09-4757-90d0-c8fd1dbdc8cf.png",
         "content": "<p>Mejor conocido como \"el docti\". Estudió medicina y tiene una trayectoria de 17 años en entrenamientos de pesas y 11 años en entrenamiento de acondicionamiento físico para competencias de cayuco de océano a océano.<br\/><br\/><\/p><p>Vegano y dedicado a la constante búsqueda de herramientas que puedan ayudar a construir la mejor versión de cada uno.<\/p>"
+      }
+    },
+    "ss_slider_4_9qMMzK": {
+      "type": "ss-slider-4",
+      "blocks": {
+        "slide_gJjmeL": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hit_club_marzo0089.jpg",
+            "title": "<p>Title<\/p>",
+            "url": ""
+          }
+        },
+        "slide_NmxBha": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hit_club_marzo0132.jpg",
+            "title": "<p>Title<\/p>",
+            "url": ""
+          }
+        },
+        "slide_JPk7ka": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hit_club_marzo0199.jpg",
+            "title": "<p>Title<\/p>",
+            "url": ""
+          }
+        },
+        "slide_eq9BLz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hit_club_marzo0301.jpg",
+            "title": "<p>Title<\/p>",
+            "url": ""
+          }
+        },
+        "slide_g9znDF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hit_club_marzo0158.jpg",
+            "title": "<p>Title<\/p>",
+            "url": ""
+          }
+        },
+        "slide_rRXYGw": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hit_club_marzo0183.jpg",
+            "title": "<p>Title<\/p>",
+            "url": ""
+          }
+        },
+        "slide_FHGcLz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hit_club_marzo0271.jpg",
+            "title": "<p>Title<\/p>",
+            "url": ""
+          }
+        },
+        "slide_xbz6pc": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hit_club_marzo0342.jpg",
+            "title": "<p>Title<\/p>",
+            "url": ""
+          }
+        },
+        "slide_dkEgyM": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hit_club_marzo0380.jpg",
+            "title": "<p>Title<\/p>",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_gJjmeL",
+        "slide_NmxBha",
+        "slide_JPk7ka",
+        "slide_eq9BLz",
+        "slide_g9znDF",
+        "slide_rRXYGw",
+        "slide_FHGcLz",
+        "slide_xbz6pc",
+        "slide_dkEgyM"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 48,
+        "heading_size_mobile": 28,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "slider_view": 3.5,
+        "slider_view_mobile": 1.5,
+        "slider_gap": 24,
+        "slider_gap_mobile": 24,
+        "slider_mt": 40,
+        "slider_mt_mobile": 24,
+        "image_ratio": "portrait",
+        "image_ratio_mobile": "portrait",
+        "image_shape": "none",
+        "image_top_left_radius": 200,
+        "image_top_right_radius": 200,
+        "image_bottom_left_radius": 16,
+        "image_bottom_right_radius": 16,
+        "image_border_thickness": 0,
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 20,
+        "title_size_mobile": 16,
+        "title_height": 130,
+        "title_mt": 20,
+        "title_align": "left",
+        "title_align_mobile": "left",
+        "navigation_mt": 40,
+        "navigation_gap": 20,
+        "navigation_align": "center",
+        "navigation_align_mobile": "center",
+        "arrow_position": "top",
+        "arrow_size": 64,
+        "arrow_size_mobile": 44,
+        "arrow_icon_size": 20,
+        "arrow_icon_size_mobile": 20,
+        "arrow_border_thickness": 1,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "dots_size": 10,
+        "dots_size_mobile": 10,
+        "dots_show_desktop": false,
+        "dots_show_mobile": false,
+        "image_border_color": "#000000",
+        "title_color": "#35312E",
+        "arrow_color": "#35312E",
+        "arrow_hover_color": "#35312E",
+        "arrow_bg_color": "",
+        "arrow_bg_hover_color": "",
+        "arrow_border_color": "#35312E",
+        "arrow_border_hover_color": "#35312E",
+        "dots_color": "#35312E",
+        "heading_color": "#35312E",
+        "background_color": "#FFFFFF",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 40,
+        "margin_bottom": 40,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 140,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
       }
     }
   },
@@ -57,6 +223,7 @@
     "tw_image_banner_kjp8td",
     "tw_text_with_button_fnfzyV",
     "tw_image_with_text_cbYAJe",
-    "tw_image_with_text_VBcaAt"
+    "tw_image_with_text_VBcaAt",
+    "ss_slider_4_9qMMzK"
   ]
 }
