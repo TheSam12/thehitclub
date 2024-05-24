@@ -100,7 +100,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 @media screen and (min-width: 1440px) {
   .page-width {
     max-width: 1440px;
-    padding: 0;
+    padding: 0px;
   }
 }
 
