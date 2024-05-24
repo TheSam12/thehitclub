@@ -25,20 +25,20 @@
               <img src="{{ 'new-mark.png' | asset_img_url }}" width="70" height="70">
             </div>
           {% endif %}
-          <h3 class="tw-text-xl tw-font-bold">{{ block.settings.title }}</h3>
+          <h3 class="tw-text-xl tw-font-bold lg:tw-text-2xl xl:tw-text-3xl ">{{ block.settings.title }}</h3>
           <span class="tw-text-6xl tw-font-bold md:tw-text-8xl">
             {{- block.settings.price -}}
           </span>
-          <span>{{ block.settings.custom_line_1 }}</span>
+          <span class="tw-text-lg lg:tw-text-xl xl:tw-text-2xl">{{ block.settings.custom_line_1 }}</span>
           <div class="tw-tw-flex tw-tw-justify-center">
             <a
-              class="tw-rounded-full tw-bg-black tw-px-7 tw-py-2 tw-font-semibold tw-text-white"
+              class="tw-rounded-full tw-bg-black tw-px-7 tw-py-2 tw-text-base tw-font-semibold tw-text-white lg:tw-text-lg xl:tw-text-xl"
               href="{{ block.settings.btn_url }}"
             >
               {{- block.settings.btn_label -}}
             </a>
           </div>
-          <p class="tw-text-gray-500">{{ block.settings.custom_line_2 }}</p>
+          <p class="tw-text-lg tw-text-gray-500 lg:tw-text-2xl xl:tw-text-3xl">{{ block.settings.custom_line_2 }}</p>
         </div>
       {% endfor %}
     </div>
