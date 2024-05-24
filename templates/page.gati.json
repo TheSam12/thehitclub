@@ -22,7 +22,7 @@
     "tw_text_with_button_epEtkc": {
       "type": "tw-text-with-button",
       "settings": {
-        "title": "Gym & Tone ites para tí si:",
+        "title": "Gym & Tone it es para tí si:",
         "content": "<p>⚡️ Quieres sentirte <strong>cómodo en el gym<\/strong><\/p><p>⚡️ Te gusta entrenar con máquinas en un<strong> <\/strong>gimnasio.<\/p><p><strong>⚡️ <\/strong>Quieres 6 rutinas nuevas a la semana a un <strong>precio accesible<\/strong><\/p><p>⚡️ Necesitas un coach que te prepare las <strong>rutinas de la semana<\/strong><\/p><p>⚡️ Quieres <strong>aprender <\/strong>a usar las máquinas y sacarles provecho<\/p>",
         "btn_label": "¡ESTOY LISTO PARA EMPEZAR!",
         "btn_link": "shopify:\/\/products\/gym-tone-it-1-mes"
@@ -129,11 +129,8 @@
       "settings": {
         "title": "¿Qué incluye tu plan?",
         "content": "",
-        "capsules": false,
         "gif_url": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage.gif",
-        "pill_1": "",
-        "pill_2": "",
-        "pill_3": "",
+        "enable_secondary": false,
         "mobile_img": "shopify:\/\/shop_images\/Mobile_-_GATI_-_Features.png"
       }
     },
