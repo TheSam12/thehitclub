@@ -19,6 +19,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      screens: {
+        '2xl': '1440px',
+      },
       fontFamily: {
         sans: ['"Montserrat"', ...defaultTheme.fontFamily.sans],
       },
@@ -74,9 +77,6 @@ module.exports = {
       72: '288px',
       80: '320px',
       96: '384px',
-    },
-    screens: {
-      '2xl': '1440px',
     },
   },
   plugins: [],
