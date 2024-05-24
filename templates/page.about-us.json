@@ -19,42 +19,6 @@
         "btn_link": ""
       }
     },
-    "tw_text_with_button_fnfzyV": {
-      "type": "tw-text-with-button",
-      "settings": {
-        "title": "The Q Family",
-        "content": "<p>Somos <strong>Q Fitness Partners Inc.<\/strong>, una empresa panameña dedicada a mejorar el estilo de vida de nuestros clientes. Desde el día uno nuestro propósito ha <strong>sido servir y ayudar a otros.<\/strong><\/p><p>En el 2019 nacen Home & Tone it ® y Gym & Tone it ®, plataformas de ejercicios online.<\/p>",
-        "btn_label": "",
-        "btn_link": ""
-      }
-    },
-    "tw_image_with_text_cbYAJe": {
-      "type": "tw-image-with-text",
-      "settings": {
-        "pt": 0,
-        "pb": 0,
-        "title": "The Coaches",
-        "title_align": "center",
-        "reverse": "left",
-        "main_img": "shopify:\/\/shop_images\/Hit_club_marzo1031-m.jpg",
-        "signature_img": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_49f5bcc2-7d9e-4ab7-a025-c47fbb3cf9a4.png",
-        "content": "<p>Mejor conocida como Isacu, estudió psicología y tiene una trayectoria de 12 años en el rubro del fitness.<br\/><br\/><\/p><p>Creadora de dos programas de entrenamiento online y su propia línea de suplementos deportivos, KIU PERFORMANCE ®.<br\/><br\/><\/p><p>Amante de los animales y en constante lucha contra el maltrato animal.<\/p>",
-        "brand_img": "shopify:\/\/shop_images\/Coach_Features_1.png"
-      }
-    },
-    "tw_image_with_text_VBcaAt": {
-      "type": "tw-image-with-text",
-      "settings": {
-        "pt": 0,
-        "pb": 0,
-        "title": "",
-        "title_align": "center",
-        "reverse": "right",
-        "main_img": "shopify:\/\/shop_images\/Hit_club_marzo0548.jpg",
-        "signature_img": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_1_8763565a-7d09-4757-90d0-c8fd1dbdc8cf.png",
-        "content": "<p>Mejor conocido como \"el docti\". Estudió medicina y tiene una trayectoria de 17 años en entrenamientos de pesas y 11 años en entrenamiento de acondicionamiento físico para competencias de cayuco de océano a océano.<br\/><br\/><\/p><p>Vegano y dedicado a la constante búsqueda de herramientas que puedan ayudar a construir la mejor versión de cada uno.<\/p>"
-      }
-    },
     "ss_slider_4_9qMMzK": {
       "type": "ss-slider-4",
       "blocks": {
@@ -154,16 +118,16 @@
         "slider_view": 5,
         "slider_view_mobile": 3,
         "slider_gap": 12,
-        "slider_gap_mobile": 12,
+        "slider_gap_mobile": 8,
         "slider_mt": 0,
         "slider_mt_mobile": 0,
-        "image_ratio": "portrait",
+        "image_ratio": "original",
         "image_ratio_mobile": "portrait",
         "image_shape": "none",
-        "image_top_left_radius": 200,
-        "image_top_right_radius": 200,
-        "image_bottom_left_radius": 16,
-        "image_bottom_right_radius": 16,
+        "image_top_left_radius": 20,
+        "image_top_right_radius": 20,
+        "image_bottom_left_radius": 20,
+        "image_bottom_right_radius": 20,
         "image_border_thickness": 0,
         "title_custom": false,
         "title_font": "josefin_sans_n4",
@@ -216,14 +180,50 @@
         "section_radius": 0,
         "lazy": true
       }
+    },
+    "tw_text_with_button_fnfzyV": {
+      "type": "tw-text-with-button",
+      "settings": {
+        "title": "The Q Family",
+        "content": "<p>Somos <strong>Q Fitness Partners Inc.<\/strong>, una empresa panameña dedicada a mejorar el estilo de vida de nuestros clientes. Desde el día uno nuestro propósito ha <strong>sido servir y ayudar a otros.<\/strong><\/p><p>En el 2019 nacen Home & Tone it ® y Gym & Tone it ®, plataformas de ejercicios online.<\/p>",
+        "btn_label": "",
+        "btn_link": ""
+      }
+    },
+    "tw_image_with_text_cbYAJe": {
+      "type": "tw-image-with-text",
+      "settings": {
+        "pt": 0,
+        "pb": 0,
+        "title": "The Coaches",
+        "title_align": "center",
+        "reverse": "left",
+        "main_img": "shopify:\/\/shop_images\/Hit_club_marzo1031-m.jpg",
+        "signature_img": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_49f5bcc2-7d9e-4ab7-a025-c47fbb3cf9a4.png",
+        "content": "<p>Mejor conocida como Isacu, estudió psicología y tiene una trayectoria de 12 años en el rubro del fitness.<br\/><br\/><\/p><p>Creadora de dos programas de entrenamiento online y su propia línea de suplementos deportivos, KIU PERFORMANCE ®.<br\/><br\/><\/p><p>Amante de los animales y en constante lucha contra el maltrato animal.<\/p>",
+        "brand_img": "shopify:\/\/shop_images\/Coach_Features_1.png"
+      }
+    },
+    "tw_image_with_text_VBcaAt": {
+      "type": "tw-image-with-text",
+      "settings": {
+        "pt": 0,
+        "pb": 0,
+        "title": "",
+        "title_align": "center",
+        "reverse": "right",
+        "main_img": "shopify:\/\/shop_images\/Hit_club_marzo0548.jpg",
+        "signature_img": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_1_8763565a-7d09-4757-90d0-c8fd1dbdc8cf.png",
+        "content": "<p>Mejor conocido como \"el docti\". Estudió medicina y tiene una trayectoria de 17 años en entrenamientos de pesas y 11 años en entrenamiento de acondicionamiento físico para competencias de cayuco de océano a océano.<br\/><br\/><\/p><p>Vegano y dedicado a la constante búsqueda de herramientas que puedan ayudar a construir la mejor versión de cada uno.<\/p>"
+      }
     }
   },
   "order": [
     "main",
     "tw_image_banner_kjp8td",
+    "ss_slider_4_9qMMzK",
     "tw_text_with_button_fnfzyV",
     "tw_image_with_text_cbYAJe",
-    "tw_image_with_text_VBcaAt",
-    "ss_slider_4_9qMMzK"
+    "tw_image_with_text_VBcaAt"
   ]
 }
