@@ -1003,6 +1003,11 @@ html, :host {
   padding-bottom: 4px;
 }
 
+.tw-px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 .tw-pb-0 {
   padding-bottom: 0;
 }
