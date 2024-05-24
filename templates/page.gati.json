@@ -16,7 +16,9 @@
         "pre_title": "",
         "title": "Lift like a boss.",
         "btn_label": "¡PRUEBA UNA CLASE GRÁTIS!",
-        "btn_link": "https:\/\/www.youtube.com\/watch?v=8rj4Po4QSpM&ab_channel=CoachIsaQ."
+        "btn_link": "https:\/\/www.youtube.com\/watch?v=8rj4Po4QSpM&ab_channel=CoachIsaQ.",
+        "color_1": "#dddd65",
+        "color_2": "#dddd65"
       }
     },
     "tw_text_with_button_epEtkc": {
@@ -142,7 +144,9 @@
         "pre_title": "Pre Title",
         "title": "Title",
         "btn_label": "",
-        "btn_link": ""
+        "btn_link": "",
+        "color_1": "",
+        "color_2": ""
       }
     },
     "tw_faq_4GXP46": {
