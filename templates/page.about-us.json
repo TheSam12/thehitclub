@@ -156,7 +156,7 @@
         "slider_gap": 12,
         "slider_gap_mobile": 12,
         "slider_mt": 0,
-        "slider_mt_mobile": 24,
+        "slider_mt_mobile": 0,
         "image_ratio": "portrait",
         "image_ratio_mobile": "portrait",
         "image_shape": "none",
