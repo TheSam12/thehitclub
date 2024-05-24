@@ -756,6 +756,10 @@ html, :host {
   height: max-content;
 }
 
+.tw-h-28 {
+  height: 112px;
+}
+
 .tw-w-3\/5 {
   width: 60%;
 }
