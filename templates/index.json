@@ -64,11 +64,9 @@
       "settings": {
         "title": "¿Estás listo para entrenar con torque?",
         "content": "Nuestros programas te dan la flexibilidad de entrenar desde la cómodidad de tu hogar o desde un gimnasio. WE GOT YOU!",
-        "capsules": false,
+        "capsules": true,
         "gif_url": "shopify:\/\/shop_images\/input-ezgif.com-video-to-gif-converter.gif",
-        "pill_1": "CONTACTO DIRECTO CON TU  COACH",
-        "pill_2": "ENTRENA A LA HORA QUE SEA",
-        "pill_3": "ACCESO A EVENTOS EXCLUSIVOS",
+        "secondary_img": "shopify:\/\/shop_images\/pills.png",
         "mobile_img": "shopify:\/\/shop_images\/Mobile-Estaslistoparatorque-ezgif.com-optimize.gif"
       }
     },
