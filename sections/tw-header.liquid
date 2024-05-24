@@ -23,7 +23,7 @@
             </a>
           {% endif %}
         </div>
-        <div class="tw-flex tw-items-center tw-gap-8">
+        <div class="relative tw-flex tw-items-center tw-gap-8">
           <div class="tw-hidden tw-gap-4 md:tw-flex">
             {% for link in menu.links %}
               <ul>
@@ -87,7 +87,7 @@
                 </a>
               </div>
             {% endif %}
-            <div class="md:tw-hidden">
+            <div class="tw-absolute tw-right-5 md:tw-hidden ">
               <span :class="{ 'tw-fill-black': scrollPosition >= 1, 'tw-fill-white': scrollPosition < 1 }">
                 {% render 'tw-icon-hamburger' %}
               </span>
