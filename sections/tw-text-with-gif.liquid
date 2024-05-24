@@ -66,11 +66,7 @@
       <div class="tw-flex tw-justify-center {% if desktop_img == blank %}md:tw-hidden{% endif %}">
         <picture>
           <source media="(min-width: 768px)" srcset="{{ desktop_img | image_url: width: 400 }}">
-          {{
-            mobile_img
-            | image_url: width: 700
-            | image_tag: class: '{% unless template.name == "index" %}tw-mb-11{% endunless %}'
-          }}
+          {{ mobile_img | image_url: width: 700 | image_tag: class: 'tw-mb-11' }}
         </picture>
       </div>
     {% endif %}
