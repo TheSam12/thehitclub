@@ -1104,14 +1104,17 @@ html, :host {
 
 .tw-text-5xl {
   font-size: 48px;
+  line-height: 1;
 }
 
 .tw-text-6xl {
   font-size: 60px;
+  line-height: 1;
 }
 
 .tw-text-7xl {
   font-size: 72px;
+  line-height: 1;
 }
 
 .tw-text-base {
@@ -1381,14 +1384,17 @@ html, :host {
 
   .md\:tw-text-6xl {
     font-size: 60px;
+    line-height: 1;
   }
 
   .md\:tw-text-7xl {
     font-size: 72px;
+    line-height: 1;
   }
 
   .md\:tw-text-8xl {
     font-size: 96px;
+    line-height: 1;
   }
 
   .md\:tw-text-xl {
@@ -1439,10 +1445,12 @@ html, :host {
 
   .lg\:tw-text-5xl {
     font-size: 48px;
+    line-height: 1;
   }
 
   .lg\:tw-text-9xl {
     font-size: 128px;
+    line-height: 1;
   }
 
   .lg\:tw-text-xl {
