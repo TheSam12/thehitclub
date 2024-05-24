@@ -10,6 +10,9 @@
     },
     "tw_image_banner_TYKM8W": {
       "type": "tw-image-banner",
+      "custom_css": [
+
+      ],
       "settings": {
         "d_img": "shopify:\/\/shop_images\/Hit_club_marzo0780.jpg",
         "m_img": "shopify:\/\/shop_images\/Hit_club_marzo0786.jpg",
@@ -22,7 +25,7 @@
     "tw_text_with_button_VpDRLz": {
       "type": "tw-text-with-button",
       "settings": {
-        "title": "Home & Tone ites para tí si:",
+        "title": "Home & Tone It es para tí si:",
         "content": "<p>🌶️ Quieres <strong>gozar <\/strong>y <strong>disfrutar <\/strong>mientras entrenas<\/p><p>💦 Necesitas entrenamientos <strong>EN VIVO<\/strong> para motivarte<\/p><p>🔥 Quieres tener <strong>contacto directo<\/strong> con tu coach<\/p><p>⏰ No tienes <strong>tiempo <\/strong>para ir a un gym presencial<\/p><p>⚡️ Te cuesta mantener la <strong>disciplina <\/strong>y motivación<\/p>",
         "btn_label": "¡ESTOY LISTO PARA EMPEZAR!",
         "btn_link": "shopify:\/\/products\/home-tone-it-1-mes"
@@ -137,11 +140,8 @@
       "settings": {
         "title": "¿Qué incluye tu plan?",
         "content": "",
-        "capsules": false,
         "gif_url": "shopify:\/\/shop_images\/The_Hit_Club_Homepage_gif.gif",
-        "pill_1": "",
-        "pill_2": "",
-        "pill_3": "",
+        "enable_secondary": false,
         "mobile_img": "shopify:\/\/shop_images\/Mobile_-_HATI_-_Features.png"
       }
     },
