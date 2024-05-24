@@ -703,6 +703,10 @@ html, :host {
   margin-left: 12px;
 }
 
+.tw-ml-5 {
+  margin-left: 20px;
+}
+
 .tw-block {
   display: block;
 }
