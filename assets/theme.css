@@ -707,6 +707,10 @@ html, :host {
   display: flex;
 }
 
+.tw-inline-flex {
+  display: inline-flex;
+}
+
 .tw-grid {
   display: grid;
 }
@@ -758,6 +762,10 @@ html, :host {
 
 .tw-w-full {
   width: 100%;
+}
+
+.tw-w-1\/2 {
+  width: 50%;
 }
 
 .tw-w-\[300px\] {
@@ -1247,6 +1255,10 @@ html, :host {
     width: 50%;
   }
 
+  .md\:tw-w-1\/3 {
+    width: 33.333333%;
+  }
+
   .md\:tw-flex-row {
     flex-direction: row;
   }
@@ -1341,10 +1353,6 @@ html, :host {
     width: 75%;
   }
 
-  .lg\:tw-w-\[400px\] {
-    width: 400px;
-  }
-
   .lg\:tw-w-\[390px\] {
     width: 390px;
   }
@@ -1399,10 +1407,6 @@ html, :host {
 
   .xl\:tw-w-1\/3 {
     width: 33.333333%;
-  }
-
-  .xl\:tw-w-\[487px\] {
-    width: 487px;
   }
 
   .xl\:tw-w-\[420px\] {
