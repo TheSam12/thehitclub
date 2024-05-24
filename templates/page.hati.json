@@ -191,7 +191,7 @@
           "type": "images",
           "settings": {
             "image": "shopify:\/\/shop_images\/mat.png",
-            "content": "Mat"
+            "content": ""
           }
         }
       },
