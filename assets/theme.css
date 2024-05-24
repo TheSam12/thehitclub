@@ -695,6 +695,10 @@ html, :host {
   margin-top: 32px;
 }
 
+.tw-mb-11 {
+  margin-bottom: 44px;
+}
+
 .tw-block {
   display: block;
 }
@@ -762,6 +766,10 @@ html, :host {
 
 .tw-w-1\/2 {
   width: 50%;
+}
+
+.tw-w-\[300px\] {
+  width: 300px;
 }
 
 .tw-rotate-45 {
@@ -1345,6 +1353,10 @@ html, :host {
     width: 75%;
   }
 
+  .lg\:tw-w-\[390px\] {
+    width: 390px;
+  }
+
   .lg\:tw-grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1397,6 +1409,10 @@ html, :host {
     width: 33.333333%;
   }
 
+  .xl\:tw-w-\[420px\] {
+    width: 420px;
+  }
+
   .xl\:tw-text-2xl {
     font-size: 24px;
     line-height: 32px;
@@ -1410,5 +1426,11 @@ html, :host {
   .xl\:tw-text-4xl {
     font-size: 36px;
     line-height: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .\32xl\:tw-w-\[487px\] {
+    width: 487px;
   }
 }
