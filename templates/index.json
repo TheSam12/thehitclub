@@ -56,7 +56,9 @@
         "pre_title": "THE HOUSE OF",
         "title": "SABROSURA LATINA",
         "btn_label": "¡PRUEBA UNA CLASE GRATIS!",
-        "btn_link": "https:\/\/www.youtube.com\/watch?v=8rj4Po4QSpM&ab_channel=CoachIsaQ."
+        "btn_link": "https:\/\/www.youtube.com\/watch?v=8rj4Po4QSpM&ab_channel=CoachIsaQ.",
+        "color_1": "#ffd959",
+        "color_2": "#ff964e"
       }
     },
     "tw-text_with_gif": {
@@ -213,7 +215,9 @@
         "pre_title": "Pre Title",
         "title": "Title",
         "btn_label": "",
-        "btn_link": ""
+        "btn_link": "",
+        "color_1": "",
+        "color_2": ""
       }
     },
     "tw_featured_collection_PCQt6c": {
