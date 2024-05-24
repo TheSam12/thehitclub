@@ -652,6 +652,10 @@ html, :host {
   top: -128px;
 }
 
+.-tw-top-16 {
+  top: -64px;
+}
+
 .tw-z-10 {
   z-index: 10;
 }
@@ -798,6 +802,10 @@ html, :host {
 
 .tw-w-full {
   width: 100%;
+}
+
+.tw-w-1\/2 {
+  width: 50%;
 }
 
 .tw-rotate-45 {
@@ -1416,12 +1424,20 @@ html, :host {
 }
 
 @media (min-width: 1024px) {
+  .lg\:-tw-top-32 {
+    top: -128px;
+  }
+
   .lg\:tw-w-3\/4 {
     width: 75%;
   }
 
   .lg\:tw-w-\[390px\] {
     width: 390px;
+  }
+
+  .lg\:tw-w-full {
+    width: 100%;
   }
 
   .lg\:tw-grid-cols-3 {

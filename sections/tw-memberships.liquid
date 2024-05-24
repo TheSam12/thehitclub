@@ -15,8 +15,8 @@
 <div class="bg-gradient-{{ section.id }}">
   <div class="tw-container tw-relative tw-mx-auto tw-px-10 tw-py-10 md:tw-py-20">
     {% if sticker != null %}
-      <div class="tw-absolute -tw-top-32 tw-right-0">
-        <img src="{{ sticker | image_url }}" width="240" height="240">
+      <div class="tw-absolute -tw-top-16 tw-right-0 lg:-tw-top-32">
+        <img src="{{ sticker | image_url }}" width="240" height="240" class="tw-w-1/2 lg:tw-w-full">
       </div>
     {% endif %}
     <h2 class="tw-mb-10 tw-text-center tw-text-4xl tw-font-bold md:tw-text-left md:tw-text-7xl">{{ title }}</h2>
