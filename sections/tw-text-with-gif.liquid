@@ -2,15 +2,13 @@
   assign title = section.settings.title
   assign content = section.settings.content
   assign capsules = section.settings.capsules
-  assign pill_1 = section.settings.pill_1
-  assign pill_2 = section.settings.pill_2
-  assign pill_3 = section.settings.pill_3
   assign gif_url = section.settings.gif_url
   assign desktop_img = section.settings.desktop_img
+  assign secondary_img = section.settings.secondary_img
   assign mobile_img = section.settings.mobile_img
 %}
 
-<div class="mb:tw-px-10 mb:tw-py-10 tw-container tw-m-auto tw-px-4 tw-pb-0 tw-pt-10">
+<div class="tw-container tw-m-auto tw-px-4 tw-pb-0 tw-pt-10 md:tw-px-10 md:tw-py-10">
   <div class="">
     <div class="tw-m-auto tw-text-center lg:tw-w-3/4">
       <h2 class="tw-pb-4 tw-text-4xl tw-font-bold md:tw-text-7xl">{{ title }}</h2>
@@ -21,32 +19,11 @@
 
     <div class="tw-relative tw-hidden tw-items-center tw-justify-end tw-gap-6 md:tw-flex md:tw-justify-center">
       {% if capsules %}
-        <div class="tw-top-15 tw-absolute tw-left-0 tw-flex tw-flex-col tw-gap-4 md:tw-gap-8 xl:tw-left-[14rem]">
-          <div class="tw-relative tw-flex tw-w-3/4 tw-rotate-12 tw-items-center tw-self-center tw-rounded-full tw-bg-gradient-to-br tw-from-amber-200 tw-to-rose-500 tw-px-4 tw-py-3 md:tw-w-4/5 md:tw-self-start md:tw-px-6 md:tw-py-4 lg:tw-left-20 lg:tw-w-2/3">
-            <p
-              class="tw-text-center tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-drop-shadow-lg md:tw-text-xl md:tw-leading-7"
-              style="font-family: 'Univers-Extrablack';"
-            >
-              {{ pill_1 }}
-            </p>
+        {% if secondary_img != null %}
+          <div class="tw-top-15 tw-absolute tw-left-0 tw-flex tw-flex-col tw-gap-4 md:tw-gap-8 xl:tw-left-[14rem]">
+            <img src="{{ secondary_img | image_url }}" width="" height="" alt="{{ secondary_img.alt }}">
           </div>
-          <div class="tw-flex tw-w-3/4 tw-rotate-3 tw-items-center tw-rounded-full tw-bg-gradient-to-br tw-from-fuchsia-500 tw-to-sky-500 tw-px-4 tw-py-3 md:tw-w-4/5 md:tw-self-start md:tw-px-6 md:tw-py-4 lg:tw-w-2/3">
-            <p
-              class="tw-text-center tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-drop-shadow-lg md:tw-text-xl md:tw-leading-7"
-              style="font-family: 'Univers-Extrablack';"
-            >
-              {{ pill_2 }}
-            </p>
-          </div>
-          <div class="tw-relative tw-flex tw-w-3/4 tw--rotate-12 tw-items-center tw-self-center tw-rounded-full tw-bg-gradient-to-br tw-from-lime-400 tw-to-green-600 tw-px-4 tw-py-3 md:tw-w-4/5 md:tw-self-start md:tw-px-6 md:tw-py-4 lg:tw-left-20 lg:tw-w-2/3">
-            <p
-              class="tw-text-center tw-text-xs tw-font-bold tw-uppercase tw-text-white tw-drop-shadow-lg md:tw-text-xl md:tw-leading-7"
-              style="font-family: 'Univers-Extrablack';"
-            >
-              {{ pill_3 }}
-            </p>
-          </div>
-        </div>
+        {% endif %}
       {% endif %}
 
       {% unless capsules %}
@@ -128,24 +105,14 @@
       "label": "Image for capsules and sife text"
     },
     {
-      "type": "text",
-      "id": "pill_1",
-      "label": "Pill 1"
-    },
-    {
-      "type": "text",
-      "id": "pill_2",
-      "label": "Pill 2"
-    },
-    {
-      "type": "text",
-      "id": "pill_3",
-      "label": "Pill 3"
-    },
-    {
       "type": "image_picker",
       "id": "desktop_img",
       "label": "Desktop image"
+    },
+    {
+      "type": "image_picker",
+      "id": "secondary_img",
+      "label": "Secondary Desktop Image"
     },
     {
       "type": "image_picker",
