@@ -3,6 +3,7 @@
   assign content = section.settings.content
   assign color_1 = section.settings.color_1
   assign color_2 = section.settings.color_2
+  assign sticker = section.settings.sticker
 %}
 
 <style>
@@ -12,7 +13,12 @@
   }
 </style>
 <div class="bg-gradient-{{ section.id }}">
-  <div class="tw-container tw-mx-auto tw-px-10 tw-py-10 md:tw-py-20 ">
+  <div class="tw-container tw-relative tw-mx-auto tw-px-10 tw-py-10 md:tw-py-20">
+    {% if sticker != null %}
+      <div class="tw-absolute -tw-top-10 tw-right-0">
+        <img src="{{ sticker | image_url }}" width="120" height="120">
+      </div>
+    {% endif %}
     <h2 class="tw-mb-10 tw-text-center tw-text-4xl tw-font-bold md:tw-text-left md:tw-text-7xl">{{ title }}</h2>
     <div class="">
       {{ content }}
@@ -55,6 +61,11 @@
       "id": "title",
       "label": "Title",
       "default": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "sticker",
+      "label": "Sticker Image"
     },
     {
       "type": "richtext",
