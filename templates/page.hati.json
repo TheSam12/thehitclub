@@ -187,7 +187,7 @@
           "type": "images",
           "settings": {
             "image": "shopify:\/\/shop_images\/mat.png",
-            "content": ""
+            "content": "Mat"
           }
         }
       },
@@ -212,6 +212,13 @@
           "settings": {
             "question": "¿La rutina del día es en vivo o pre-grabada?",
             "answer": "¡Coach Isacu entrena contigo EN VIVO de lunes a viernes! La rutina tiene una duración de 60 minutos ya que incluimos pre & post stretching stretching + un mini set extra de abs (ñapa) si el tiempo lo permite."
+          }
+        },
+        "questions_hrLNWJ": {
+          "type": "questions",
+          "settings": {
+            "question": "Test",
+            "answer": "Answer Test"
           }
         },
         "questions_DB7bwp": {
@@ -259,6 +266,7 @@
       },
       "block_order": [
         "questions_aYHELk",
+        "questions_hrLNWJ",
         "questions_DB7bwp",
         "questions_i9VhmL",
         "questions_xz9Jt8",
