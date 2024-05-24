@@ -1351,6 +1351,11 @@ html, :host {
     font-size: 96px;
     line-height: 1;
   }
+
+  .md\:tw-text-lg {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 @media (min-width: 1024px) {
