@@ -1444,6 +1444,10 @@ html, :host {
     width: 100%;
   }
 
+  .lg\:tw-w-60 {
+    width: 240px;
+  }
+
   .lg\:tw-grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
