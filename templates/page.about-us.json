@@ -120,6 +120,9 @@
         "slide_xbz6pc",
         "slide_dkEgyM"
       ],
+      "custom_css": [
+        "div {margin: 0px;}"
+      ],
       "settings": {
         "heading": "",
         "heading_custom": false,
@@ -281,6 +284,9 @@
         "slide_3UrVJi",
         "slide_BBTzFN",
         "slide_ViYEnp"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "heading": "",
