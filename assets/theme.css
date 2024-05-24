@@ -998,6 +998,11 @@ html, :host {
   padding-bottom: 32px;
 }
 
+.tw-py-1 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
 .tw-pb-0 {
   padding-bottom: 0;
 }
