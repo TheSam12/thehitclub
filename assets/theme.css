@@ -1312,6 +1312,11 @@ html, :host {
     padding-right: 80px;
   }
 
+  .md\:tw-py-20 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   .md\:tw-pl-10 {
     padding-left: 40px;
   }
