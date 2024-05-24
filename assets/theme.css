@@ -648,6 +648,10 @@ html, :host {
   right: 0;
 }
 
+.-tw-top-32 {
+  top: -128px;
+}
+
 .tw-z-10 {
   z-index: 10;
 }
