@@ -1401,6 +1401,10 @@ html, :host {
     width: 487px;
   }
 
+  .xl\:tw-w-\[420px\] {
+    width: 420px;
+  }
+
   .xl\:tw-text-2xl {
     font-size: 24px;
     line-height: 32px;
@@ -1414,5 +1418,11 @@ html, :host {
   .xl\:tw-text-4xl {
     font-size: 36px;
     line-height: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .\32xl\:tw-w-\[487px\] {
+    width: 487px;
   }
 }
