@@ -63,9 +63,9 @@
       "type": "tw-text-with-gif",
       "settings": {
         "title": "¿Estás listo para entrenar con torque?",
-        "content": "Nuestros programas te dan la <b>flexibilidad<\/b> de entrenar desde la cómodidad de tu <em>hogar<\/em> o desde un <em>gimnasio<\/em>. <b>WE GOT YOU!<\/b>",
-        "capsules": true,
+        "content": "Nuestros programas te dan la flexibilidad de entrenar desde la cómodidad de tu hogar o desde un gimnasio. WE GOT YOU!",
         "gif_url": "shopify:\/\/shop_images\/input-ezgif.com-video-to-gif-converter.gif",
+        "enable_secondary": true,
         "secondary_img": "shopify:\/\/shop_images\/pills.png",
         "mobile_img": "shopify:\/\/shop_images\/Mobile-Estaslistoparatorque-ezgif.com-optimize.gif"
       }
