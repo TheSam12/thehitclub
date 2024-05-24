@@ -7,7 +7,7 @@
 
 <div
   id="{{ section.id }}"
-  class=" {% if request.page_type == 'index' or page.template_suffix == 'hati' or page.template_suffix == 'gati' or page.template_suffix == 'about-us' or page.template_suffix == 'playlists' %}-tw-mb-28{% endif %}"
+  class=" {% if request.page_type == 'index' or page.template_suffix == 'hati' or page.template_suffix == 'gati' or page.template_suffix == 'about-us' or page.template_suffix == 'playlists' %}-tw-mb-28 {% endif %}"
 >
   <div
     :class="{ 'tw-bg-white tw-drop-shadow-md': scrollPosition >= 1, 'tw-bg-gradient-to-b tw-from-black/50 tw-to-transparent': scrollPosition < 1 }"
