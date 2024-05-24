@@ -21,11 +21,7 @@
       {% if capsules %}
         {% if secondary_img != null %}
           <div class="tw-top-15 tw-absolute tw-left-0 tw-flex tw-flex-col tw-gap-4 md:tw-gap-8 xl:tw-left-[14rem]">
-            <picture>
-              <source media="(min-width:1280px)" srcset="{{ secondary_img | image_url: width: 487 }}">
-              <source media="(min-width:1024px)" srcset="{{ secondary_img | image_url: width: 400 }}">
-              {{ secondary_img | image_url: width: 300 | image_tag }}
-            </picture>
+            {{ secondary_img | image_url: width: 300 | image_tag: class: 'lg:tw-w-[400px] xl:tw-w-[487px]' }}
           </div>
         {% endif %}
       {% endif %}
