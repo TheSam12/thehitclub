@@ -198,38 +198,6 @@
     "ss_slider_4_tckJPA": {
       "type": "ss-slider-4",
       "blocks": {
-        "slide_3pCHAQ": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Hit_club_marzo0089.jpg",
-            "title": "",
-            "url": ""
-          }
-        },
-        "slide_3UrVJi": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Hit_club_marzo0132.jpg",
-            "title": "",
-            "url": ""
-          }
-        },
-        "slide_BBTzFN": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Hit_club_marzo0199.jpg",
-            "title": "",
-            "url": ""
-          }
-        },
-        "slide_ViYEnp": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Hit_club_marzo0301.jpg",
-            "title": "",
-            "url": ""
-          }
-        },
         "slide_AWb4G8": {
           "type": "slide",
           "settings": {
@@ -269,18 +237,50 @@
             "title": "",
             "url": ""
           }
+        },
+        "slide_3pCHAQ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hit_club_marzo0089.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "slide_3UrVJi": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hit_club_marzo0132.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "slide_BBTzFN": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hit_club_marzo0199.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "slide_ViYEnp": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hit_club_marzo0301.jpg",
+            "title": "",
+            "url": ""
+          }
         }
       },
       "block_order": [
-        "slide_3pCHAQ",
-        "slide_3UrVJi",
-        "slide_BBTzFN",
-        "slide_ViYEnp",
         "slide_AWb4G8",
         "slide_mVrBCa",
         "slide_9HVxxh",
         "slide_4FndXE",
-        "slide_hQUH84"
+        "slide_hQUH84",
+        "slide_3pCHAQ",
+        "slide_3UrVJi",
+        "slide_BBTzFN",
+        "slide_ViYEnp"
       ],
       "settings": {
         "heading": "",
