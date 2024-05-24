@@ -1,8 +1,14 @@
 {% liquid
   assign title = section.settings.title
   assign align = section.settings.align
+  assign sticker = section.settings.sticker
 %}
-<div class="tw-container tw-m-auto lg:tw-py-10 ">
+<div class="tw-container tw-relative tw-m-auto lg:tw-py-10">
+  {% if sticker != null %}
+    <div class="tw-absolute -tw-top-10 tw-right-0">
+      <img src="{{ sticker | image_url }}" width="120" height="120">
+    </div>
+  {% endif %}
   <div class="tw-text-{{ align }} tw-m-auto tw-pb-5 lg:tw-w-3/4 lg:tw-pb-14">
     <h2 class="tw-pb-4 tw-text-4xl tw-font-bold md:tw-text-7xl">{{ title }}</h2>
   </div>
@@ -91,6 +97,11 @@
       "id": "title",
       "label": "FAQ Title",
       "default": "Frequently Asked Questions"
+    },
+    {
+      "type": "image_picker",
+      "id": "sticker",
+      "label": "Sticker Image"
     },
     {
       "type": "select",

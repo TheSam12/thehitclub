@@ -640,6 +640,14 @@ html, :host {
   top: -103.98px;
 }
 
+.-tw-top-10 {
+  top: -40px;
+}
+
+.tw-right-0 {
+  right: 0;
+}
+
 .tw-z-10 {
   z-index: 10;
 }
