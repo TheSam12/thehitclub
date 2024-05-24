@@ -7,6 +7,7 @@
         <div v-html="slide.content"></div>
       </div>
     </div>
+    <div class="swiper-pagination images__pagination"></div>
   </div>
 </div>
 
@@ -28,6 +29,9 @@
           new Swiper('.images-slideshow', {
               slidesPerView: 1,
               spaceBetween: 10,
+              pagination: {
+                el: ".images__pagination"
+              },
               breakpoints: {
                   768: {
                       slidesPerView: 2,
