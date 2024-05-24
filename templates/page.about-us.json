@@ -121,7 +121,8 @@
         "slide_dkEgyM"
       ],
       "custom_css": [
-        "div {margin: 0px;}"
+        "div {margin: 0px;}",
+        "@media (min-width: 749px) {div {display: none; }}"
       ],
       "settings": {
         "heading": "",
