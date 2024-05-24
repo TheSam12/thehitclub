@@ -361,7 +361,7 @@
         "content_width": 140,
         "border_thickness": 0,
         "section_radius": 0,
-        "lazy": true
+        "lazy": false
       }
     },
     "tw_image_with_text_cbYAJe": {
