@@ -24,6 +24,9 @@
     },
     "tw_text_with_button_VpDRLz": {
       "type": "tw-text-with-button",
+      "custom_css": [
+
+      ],
       "settings": {
         "title": "Home & Tone It es para tí si:",
         "content": "<p>🌶️ Quieres <strong>gozar <\/strong>y <strong>disfrutar <\/strong>mientras entrenas<\/p><p>💦 Necesitas entrenamientos <strong>EN VIVO<\/strong> para motivarte<\/p><p>🔥 Quieres tener <strong>contacto directo<\/strong> con tu coach<\/p><p>⏰ No tienes <strong>tiempo <\/strong>para ir a un gym presencial<\/p><p>⚡️ Te cuesta mantener la <strong>disciplina <\/strong>y motivación<\/p>",
@@ -77,7 +80,7 @@
         "product_kXfqit"
       ],
       "settings": {
-        "title": "Planes de Membresía",
+        "title": "planes de membresía",
         "content": "",
         "color_1": "#ffa3d7",
         "color_2": "#ffe89c"
