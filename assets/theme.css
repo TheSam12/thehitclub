@@ -1060,6 +1060,10 @@ html, :host {
   padding-bottom: 32px;
 }
 
+.tw-pb-5 {
+  padding-bottom: 20px;
+}
+
 .tw-text-left {
   text-align: left;
 }
@@ -1419,6 +1423,10 @@ html, :host {
   .lg\:tw-py-32 {
     padding-top: 128px;
     padding-bottom: 128px;
+  }
+
+  .lg\:tw-pb-14 {
+    padding-bottom: 56px;
   }
 
   .lg\:tw-text-2xl {
