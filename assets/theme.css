@@ -695,6 +695,10 @@ html, :host {
   margin-top: 32px;
 }
 
+.tw-mb-11 {
+  margin-bottom: 44px;
+}
+
 .tw-block {
   display: block;
 }
