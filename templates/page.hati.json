@@ -197,6 +197,9 @@
         "images_3TVVrD",
         "images_J9DdFV"
       ],
+      "custom_css": [
+        "@media (max-width: 749px) {h2 {font-size: 36px; }}"
+      ],
       "settings": {
         "title": "¿Qué necesitas?"
       }
