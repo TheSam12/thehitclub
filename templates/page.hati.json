@@ -165,29 +165,29 @@
         "images_bMxEGB": {
           "type": "images",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage.png",
-            "content": "Pesas"
+            "image": "shopify:\/\/shop_images\/pesas.png",
+            "content": ""
           }
         },
         "images_z9CM8q": {
           "type": "images",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_3.png",
-            "content": "Bandas"
+            "image": "shopify:\/\/shop_images\/bandas.png",
+            "content": ""
           }
         },
         "images_3TVVrD": {
           "type": "images",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_1.png",
-            "content": "Soga"
+            "image": "shopify:\/\/shop_images\/sogas.png",
+            "content": ""
           }
         },
         "images_J9DdFV": {
           "type": "images",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_2.png",
-            "content": "Mat"
+            "image": "shopify:\/\/shop_images\/mat.png",
+            "content": ""
           }
         }
       },
