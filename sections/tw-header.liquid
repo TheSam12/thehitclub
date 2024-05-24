@@ -11,7 +11,7 @@
   >
     <nav class="tw-container tw-m-auto tw-py-8">
       <div class="tw-mx-4 tw-flex tw-items-center tw-justify-between">
-        <div class="md:tw-w-unset tw-flex tw-w-full tw-justify-center md:tw-block">
+        <div class="tw-flex tw-w-full tw-justify-center md:tw-block md:tw-w-fit">
           {% if logo_black != blank %}
             <a href="/" :class="{ 'tw-hidden': scrollPosition < 1 }">
               {{ logo_black | image_url: width: 200 | image_tag }}
