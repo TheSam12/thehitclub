@@ -524,6 +524,80 @@
         "content_width": 120,
         "border_thickness": 0
       }
+    },
+    "ss_audio_player_TdirpK": {
+      "type": "ss-audio-player",
+      "blocks": {
+        "audio_Y7itDY": {
+          "type": "audio",
+          "settings": {
+            "audio": "https:\/\/nels.mykajabi.com\/resource_redirect\/downloads\/file-uploads\/sites\/2147647070\/themes\/2157499770\/downloads\/b21550-f844-5cf8-78dd-3f1bc65333e4_Home_Tone_It_Mixtape_Vol._6.mp3",
+            "title": "Home & Tone it Mix 6",
+            "author": "The Hit Club",
+            "image": "shopify:\/\/shop_images\/6.png"
+          }
+        }
+      },
+      "block_order": [
+        "audio_Y7itDY"
+      ],
+      "settings": {
+        "player_width": 800,
+        "player_width_mobile": 80,
+        "player_radius": 20,
+        "player_image_radius": 10,
+        "title_custom": false,
+        "title_font": "montserrat_n4",
+        "title_size": 60,
+        "title_size_mobile": 16,
+        "title_height": 150,
+        "author_custom": false,
+        "author_font": "montserrat_n4",
+        "author_size": 22,
+        "author_size_mobile": 10,
+        "author_height": 100,
+        "playlist_height": 245,
+        "playlist_title_custom": false,
+        "playlist_title_font": "montserrat_n4",
+        "playlist_title_size": 44,
+        "playlist_title_size_mobile": 20,
+        "playlist_title_height": 150,
+        "playlist_author_custom": false,
+        "playlist_author_font": "montserrat_n4",
+        "playlist_author_size": 0,
+        "playlist_author_size_mobile": 0,
+        "playlist_author_height": 50,
+        "player_bg_color": "#ffffff",
+        "title_color": "#0e1621",
+        "author_color": "#0e1621",
+        "icons_color": "#0e1621",
+        "icons_disabled_color": "#636469",
+        "icons_active_color": "#dddddd",
+        "icons_active_bg_color": "#242f3d",
+        "icons_hover_color": "#ffffff",
+        "icons_hover_bg_color": "#dddd65",
+        "playlist_title_color": "#dddddd",
+        "playlist_author_color": "#dddddd",
+        "playlist_odd_bg_color": "#0e1621",
+        "playlist_hover_bg_color": "#242f3d",
+        "playlist_hover_color": "#dddddd",
+        "playlist_active_bg_color": "#dddd65",
+        "playlist_active_color": "#ffffff",
+        "playlist_scrollbar_bg_color": "#2f3841",
+        "playlist_scrollbar_thumb_color": "#73797f",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0
+      }
     }
   },
   "order": [
@@ -535,6 +609,7 @@
     "ss_audio_player_g6F6HR",
     "ss_audio_player_9XMUNn",
     "ss_audio_player_LFzDgT",
-    "ss_audio_player_heykxE"
+    "ss_audio_player_heykxE",
+    "ss_audio_player_TdirpK"
   ]
 }
