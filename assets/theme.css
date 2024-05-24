@@ -699,6 +699,10 @@ html, :host {
   margin-bottom: 44px;
 }
 
+.tw-ml-3 {
+  margin-left: 12px;
+}
+
 .tw-block {
   display: block;
 }
@@ -1237,6 +1241,10 @@ html, :host {
 
   .md\:tw-mt-0 {
     margin-top: 0;
+  }
+
+  .md\:tw-ml-0 {
+    margin-left: 0;
   }
 
   .md\:tw-block {
