@@ -605,7 +605,7 @@ html, :host {
 }
 
 .tw-inset-0 {
-  inset: 0px;
+  inset: 0;
 }
 
 .-tw-top-28 {
@@ -621,11 +621,11 @@ html, :host {
 }
 
 .tw-left-0 {
-  left: 0px;
+  left: 0;
 }
 
 .tw-top-0 {
-  top: 0px;
+  top: 0;
 }
 
 .tw-z-10 {
@@ -652,7 +652,7 @@ html, :host {
 }
 
 .tw-mb-0 {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .tw-mb-10 {
@@ -680,7 +680,7 @@ html, :host {
 }
 
 .tw-mr-0 {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .tw-mt-16 {
@@ -734,10 +734,6 @@ html, :host {
 .tw-h-max {
   height: -moz-max-content;
   height: max-content;
-}
-
-.tw-max-h-screen {
-  max-height: 100vh;
 }
 
 .tw-w-3\/4 {
@@ -961,11 +957,6 @@ html, :host {
   fill: #fff;
 }
 
-.tw-object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .tw-p-10 {
   padding: 2.5rem;
 }
@@ -981,6 +972,11 @@ html, :host {
 .tw-px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.tw-px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 .tw-px-2 {
@@ -1043,13 +1039,8 @@ html, :host {
   padding-bottom: 2rem;
 }
 
-.tw-px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-}
-
 .tw-pb-0 {
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 .tw-pb-14 {
@@ -1270,8 +1261,8 @@ html, :host {
 }
 
 @media (min-width: 768px) {
-  .md\:tw-m-auto {
-    margin: auto;
+  .md\:tw-mb-0 {
+    margin-bottom: 0;
   }
 
   .md\:tw-mb-14 {
@@ -1282,20 +1273,16 @@ html, :host {
     margin-bottom: 5rem;
   }
 
+  .md\:tw-mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
   .md\:tw-mb-8 {
     margin-bottom: 2rem;
   }
 
   .md\:tw-mt-0 {
-    margin-top: 0px;
-  }
-
-  .md\:tw-mb-6 {
-    margin-bottom: 1.5rem;
-  }
-
-  .md\:tw-mb-0 {
-    margin-bottom: 0px;
+    margin-top: 0;
   }
 
   .md\:tw-block {
@@ -1369,24 +1356,20 @@ html, :host {
     padding-bottom: 1rem;
   }
 
+  .md\:tw-pl-10 {
+    padding-left: 2.5rem;
+  }
+
   .md\:tw-pt-0 {
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .md\:tw-pt-20 {
     padding-top: 5rem;
   }
 
-  .md\:tw-pl-10 {
-    padding-left: 2.5rem;
-  }
-
   .md\:tw-text-left {
     text-align: left;
-  }
-
-  .md\:tw-text-center {
-    text-align: center;
   }
 
   .md\:tw-text-2xl {
