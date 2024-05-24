@@ -206,7 +206,7 @@
     "tw_image_banner_QB3Uz9": {
       "type": "tw-image-banner",
       "custom_css": [
-        "@media (max-width: 749px) {.my-section {display: none; }}"
+        "@media (max-width: 749px) {div {display: none; }}"
       ],
       "settings": {
         "d_img": "shopify:\/\/shop_images\/Hit_club_marzo1089_a0cdf9a1-8963-44dc-a021-81a0e53f7c34.jpg",
