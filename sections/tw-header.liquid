@@ -40,7 +40,7 @@
             {% endfor %}
           </div>
           <div class="tw-flex tw-items-center tw-gap-4">
-            <div>
+            <div class="tw-hidden md:tw-block">
               <a
                 href="{{ routes.cart_url }}"
                 class="tw-relative"
@@ -66,7 +66,7 @@
               </a>
             </div>
             {% if shop.customer_accounts_enabled %}
-              <div>
+              <div class="tw-hidden md:tw-block">
                 <a
                   href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.acount_login_url }}{% endif %}"
                   :class="{ 'tw-fill-black': scrollPosition >= 1, 'tw-fill-white': scrollPosition < 1 }"
