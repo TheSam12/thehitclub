@@ -34,14 +34,14 @@
                   <a
                     href="{{ link.url }}"
                     :class="{ 'tw-text-black': scrollPosition >= 1, 'tw-text-white': scrollPosition < 1 }"
-                    class="tw-text-base tw-capitalize"
+                    class="tw-group tw-peer tw-text-base tw-capitalize"
                   >
                     {{ link.title }}
                   </a>
                 </li>
               </ul>
               {% for child_link in link.links %}
-                <div>
+                <div class="tw--left-px tw-group-hover:visible tw-group-hover:opacity-100 tw-shadow-ln tw-rounded-b-cl tw-invisible tw-absolute tw-z-20 tw-w-[100%] tw-overflow-hidden tw-font-bold tw-opacity-0 tw-transition-all tw-duration-300 tw-ease-in-out">
                   <p>{{ child_link.title }}</p>
                 </div>
               {% endfor %}
