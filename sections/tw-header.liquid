@@ -38,8 +38,8 @@
                   >
                     {{ link.title }}
                   </a>
-                  {% for link in link.links %}
-                    {{ link }}
+                  {% for sublink in link.links %}
+                    {{ sublink.title }}
                   {% endfor %}
                 </li>
               </ul>
