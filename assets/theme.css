@@ -1440,6 +1440,11 @@ html, :host {
     font-size: 20px;
     line-height: 28px;
   }
+
+  .lg\:tw-text-6xl {
+    font-size: 60px;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1280px) {
