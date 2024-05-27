@@ -12,7 +12,7 @@
   <div
     :class="{ 'tw-bg-white tw-drop-shadow-md': scrollPosition >= 1, 'tw-bg-gradient-to-b tw-from-black/50 tw-to-transparent': scrollPosition < 1 }"
   >
-    <nav class="tw-container tw-m-auto tw-py-8 ">
+    <nav class="tw-container tw-relative tw-m-auto tw-py-8">
       <div class="tw-mx-4 tw-flex tw-items-center tw-justify-between">
         <div class="tw-flex tw-w-full tw-justify-center md:tw-block md:tw-w-fit">
           {% if logo_black != blank %}
@@ -38,11 +38,13 @@
                   >
                     {{ link.title }}
                   </a>
-                  {% for child_link in link.links %}
-                    <p>{{ child_link.title }}</p>
-                  {% endfor %}
                 </li>
               </ul>
+              {% for child_link in link.links %}
+                <div>
+                  <p>{{ child_link.title }}</p>
+                </div>
+              {% endfor %}
             {% endfor %}
           </div>
           <div class="tw-flex tw-items-center tw-gap-4">
