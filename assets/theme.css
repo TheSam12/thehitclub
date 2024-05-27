@@ -1189,6 +1189,10 @@ html, :host {
   transition-duration: 300ms;
 }
 
+.tw-duration-500 {
+  transition-duration: 500ms;
+}
+
 .tw-ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
