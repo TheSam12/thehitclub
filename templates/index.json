@@ -51,10 +51,10 @@
     "tw_image_banner_jhYmQg": {
       "type": "tw-image-banner",
       "settings": {
-        "d_img": "shopify:\/\/shop_images\/Hit_club_marzo0725.jpg",
-        "m_img": "shopify:\/\/shop_images\/Hit_club_marzo1031-m.jpg",
-        "pre_title": "THE HOUSE OF",
-        "title": "SABROSURA LATINA",
+        "d_img": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage.jpg",
+        "m_img": "shopify:\/\/shop_images\/MOVIL_1.png",
+        "pre_title": "",
+        "title": "",
         "btn_label": "¡PRUEBA UNA CLASE GRATIS!",
         "btn_link": "https:\/\/www.youtube.com\/watch?v=8rj4Po4QSpM&ab_channel=CoachIsaQ.",
         "color_1": "#ffd959",
@@ -203,6 +203,7 @@
         "images_ihGTwq"
       ],
       "settings": {
+        "title": "Cambios Reales"
       }
     },
     "tw_image_banner_QB3Uz9": {
