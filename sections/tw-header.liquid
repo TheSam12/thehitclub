@@ -38,13 +38,13 @@
                   >
                     {{ link.title }}
                   </a>
+                  {% for child_link in link.links %}
+                    <div class="tw--left-px tw-group-hover:visible tw-group-hover:opacity-100 tw-shadow-ln tw-rounded-b-cl tw-invisible tw-absolute tw-z-20 tw-w-[100%] tw-overflow-hidden tw-font-bold tw-opacity-0 tw-transition-all tw-duration-300 tw-ease-in-out">
+                      <p>{{ child_link.title }}</p>
+                    </div>
+                  {% endfor %}
                 </li>
               </ul>
-              {% for child_link in link.links %}
-                <div class="tw--left-px tw-group-hover:visible tw-group-hover:opacity-100 tw-shadow-ln tw-rounded-b-cl tw-invisible tw-absolute tw-z-20 tw-w-[100%] tw-overflow-hidden tw-font-bold tw-opacity-0 tw-transition-all tw-duration-300 tw-ease-in-out">
-                  <p>{{ child_link.title }}</p>
-                </div>
-              {% endfor %}
             {% endfor %}
           </div>
           <div class="tw-flex tw-items-center tw-gap-4">
