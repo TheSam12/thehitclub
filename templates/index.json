@@ -79,7 +79,7 @@
           "type": "product",
           "settings": {
             "new_mark": false,
-            "title": "1 MES",
+            "title": "PLAN 1 MES",
             "price": "$32",
             "custom_line_1": "",
             "custom_line_2": "Pago recurrente cada 30 días",
@@ -91,7 +91,7 @@
           "type": "product",
           "settings": {
             "new_mark": false,
-            "title": "3 MESES",
+            "title": "PLAN 3 MESES",
             "price": "$76",
             "custom_line_1": "(Ahorra $20)",
             "custom_line_2": "Pago recurrente cada 90 días",
@@ -103,7 +103,7 @@
           "type": "product",
           "settings": {
             "new_mark": true,
-            "title": "6 MESES",
+            "title": "PLAN 6 MESES",
             "price": "$140",
             "custom_line_1": "(Ahorra $52)",
             "custom_line_2": "Pago recurrente cada 160 días",
@@ -203,6 +203,7 @@
         "images_ihGTwq"
       ],
       "settings": {
+        "title": "Cambios Reales"
       }
     },
     "tw_image_banner_QB3Uz9": {
