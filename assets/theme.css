@@ -878,6 +878,10 @@ html, :host {
   align-self: flex-end;
 }
 
+.tw-overflow-auto {
+  overflow: auto;
+}
+
 .tw-overflow-hidden {
   overflow: hidden;
 }
