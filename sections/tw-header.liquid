@@ -96,9 +96,15 @@
               </div>
             {% endif %}
             <div class="tw-absolute tw-right-5 md:tw-hidden ">
-              <span :class="{ 'tw-fill-black': scrollPosition >= 1, 'tw-fill-white': scrollPosition < 1 }">
-                {% render 'tw-icon-hamburger' %}
-              </span>
+              <button @click="toggleMenu">
+                <span
+                  v-if="!isMenuOpen"
+                  :class="{ 'tw-fill-black': scrollPosition >= 1, 'tw-fill-white': scrollPosition < 1 }"
+                >
+                  {% render 'tw-icon-hamburger' %}
+                </span>
+                <span v-else>✕</span>
+              </button>
             </div>
           </div>
         </div>
@@ -114,6 +120,7 @@
       const scrollPosition = 0;
       return {
         scrollPosition,
+        isMenuOpen: false,
       };
     },
     methods: {
