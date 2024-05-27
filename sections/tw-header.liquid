@@ -38,8 +38,8 @@
                   >
                     {{ link.title }}
                   </a>
-                  {% for link in menu.levels %}
-                    {{ link }}
+                  {% for sublink in link.links %}
+                    {{ sublink }}
                   {% endfor %}
                 </li>
               </ul>
