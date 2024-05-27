@@ -105,25 +105,6 @@
                 </span>
                 <span v-else>✕</span>
               </button>
-              <nav v-if="isMenuOpen">
-                <ul>
-                  <li><a href="#">Inicio</a></li>
-                  <li><a href="#">Trabajos</a></li>
-                  <li class="submenu">
-                    <a href="#">Proyectos<span class="caret icon-arrow-down6"></span></a>
-                    <ul class="children">
-                      <li>
-                        <a href="#">SubElemento #1 <span class="icon-dot"></span></a>
-                      </li>
-                      <li>
-                        <a href="#">SubElemento #2 <span class="icon-dot"></span></a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Servicios</a></li>
-                  <li><a href="#">Contacto</a></li>
-                </ul>
-              </nav>
             </div>
           </div>
         </div>
@@ -131,6 +112,25 @@
     </nav>
   </div>
 </div>
+<nav v-if="isMenuOpen" class="tw-absolute tw-z-20 tw-h-screen tw-w-screen tw-bg-white">
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Trabajos</a></li>
+    <li class="submenu">
+      <a href="#">Proyectos<span class="caret icon-arrow-down6"></span></a>
+      <ul class="children">
+        <li>
+          <a href="#">SubElemento #1 <span class="icon-dot"></span></a>
+        </li>
+        <li>
+          <a href="#">SubElemento #2 <span class="icon-dot"></span></a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
 <script>
   var { createApp } = Vue;
   const appHeader = createApp({
