@@ -1202,6 +1202,10 @@ html, :host {
   font-weight: 600;
 }
 
+.tw-font-normal {
+  font-weight: 400;
+}
+
 .tw-uppercase {
   text-transform: uppercase;
 }
