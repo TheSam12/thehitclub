@@ -3,6 +3,9 @@
   assign logo_white = section.settings.logo_white
   assign menu = section.settings.menu
   assign icon = section.settings.icon
+  for child_link in link.links
+    assign title = child_link.title
+  endfor
 %}
 
 <link
@@ -51,13 +54,21 @@
           <div class="tw-hidden tw-gap-4 lg:tw-flex">
             {% for link in menu.links %}
               <ul>
-                <li>
+                <li class="tw-group tw-peer">
                   <a
                     href="{{ link.url }}"
                     :class="{ 'tw-text-black': scrollPosition >= 1, 'tw-text-white': scrollPosition < 1 }"
-                    class="tw-group tw-peer tw-text-base tw-capitalize"
+                    class="tw-text-base tw-capitalize"
                   >
                     {{ link.title }}
+                    {% if title != blank %}
+                      <span class="tw-group-hover:rotate-180 tw-transition-all tw-duration-300 tw-ease-in-out">
+                        <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.00024 1.14673L7.22241 7.14673" stroke="#7992EB" stroke-width="1.1" stroke-linecap="round"></path>
+                          <path d="M7.22217 7.14673L13.5154 1.14671" stroke="#7992EB" stroke-width="1.1" stroke-linecap="round"></path>
+                        </svg>
+                      </span>
+                    {% endif %}
                   </a>
                   {% for child_link in link.links %}
                     <div class="-tw-left-px tw-group-hover:visible tw-group-hover:opacity-100 tw-shadow-ln tw-rounded-b-cl tw-invisible tw-absolute tw-right-0 tw-z-20 tw-w-full tw-overflow-hidden tw-font-bold tw-opacity-0 tw-transition-all tw-duration-300 tw-ease-in-out">
