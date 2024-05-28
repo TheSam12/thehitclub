@@ -69,10 +69,14 @@
                       {% endif %}
                     </a>
                     {% for child_link in link.links %}
-                      <div class="group-hover:visible group-hover:opacity-100 tw-invisible tw-absolute tw-right-0 tw-top-[103.98px] tw-z-20 tw-w-full tw-overflow-hidden tw-rounded-b-xl tw-bg-white tw-px-20 tw-py-8 tw-font-bold tw-opacity-0 tw-shadow-lg tw-transition-all tw-duration-300 tw-ease-in-out">
+                      <div
+                        class="group-hover:visible group-hover:opacity-100 tw-invisible tw-absolute tw-right-0 tw-top-[103.98px] tw-z-20 tw-w-full tw-overflow-hidden tw-rounded-b-xl tw-px-20 tw-py-8 tw-font-bold tw-opacity-0 tw-shadow-lg tw-transition-all tw-duration-300 tw-ease-in-out"
+                        :class="{ 'tw-bg-white tw-drop-shadow-md': scrollPosition >= 1, 'tw-bg-gradient-to-b tw-from-black/50 tw-to-transparent': scrollPosition < 1 }"
+                      >
                         <a
                           href="{{ child_link.url }}"
-                          class="tw-flex tw-items-center tw-gap-3 tw-text-base tw-capitalize tw-text-black"
+                          class="tw-flex tw-items-center tw-gap-3 tw-text-base tw-capitalize"
+                          :class="{ 'tw-text-black': scrollPosition >= 1, 'tw-text-white': scrollPosition < 1 }"
                         >
                           {{- child_link.title -}}
                         </a>
