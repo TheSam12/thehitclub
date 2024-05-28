@@ -3,11 +3,6 @@
   assign logo_white = section.settings.logo_white
   assign menu = section.settings.menu
   assign icon = section.settings.icon
-  for link in menu.links
-    for child_link in link.links
-      assign title = child_link.title
-    endfor
-  endfor
 %}
 
 <link
@@ -63,7 +58,7 @@
                     class="tw-text-base tw-capitalize"
                   >
                     {{ link.title }}
-                    {% if title != blank %}
+                    {% if link.links.size > 0 %}
                       <span class="tw-group-hover:rotate-180 tw-transition-all tw-duration-300 tw-ease-in-out">
                         <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1.00024 1.14673L7.22241 7.14673" stroke="#7992EB" stroke-width="1.1" stroke-linecap="round"></path>
