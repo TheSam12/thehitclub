@@ -123,7 +123,7 @@
       <ul>
         {% for link in menu.links %}
           {% if link != null %}
-            <li class="{% if forloop.first %}tw-border-t-1{% endif %} tw-border-b-1 tw-px-5 tw-py-4">
+            <li class="{% if forloop.first %}tw-border-t-1{% endif %} tw-border-b-1 tw-border-black tw-px-5 tw-py-4">
               <a
                 href="{{ link.url }}"
                 class="tw-group tw-peer tw-text-base tw-capitalize"
