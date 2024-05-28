@@ -224,7 +224,7 @@
     "tw_featured_collection_PCQt6c": {
       "type": "tw-featured-collection",
       "settings": {
-        "collection": "frontpage"
+        "collection": "los-bestsellers"
       }
     },
     "rich_text": {
