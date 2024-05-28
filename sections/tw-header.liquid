@@ -125,7 +125,7 @@
             {% if shop.customer_accounts_enabled %}
               <div class="tw-hidden lg:tw-block">
                 <a
-                  href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.acount_login_url }}{% endif %}"
+                  href="{% if customer %}{{ routes.account_url }}{% else %}/account/login{% endif %}"
                   :class="{ 'tw-fill-black': scrollPosition >= 1, 'tw-fill-white': scrollPosition < 1 }"
                 >
                   {% if icon %}
