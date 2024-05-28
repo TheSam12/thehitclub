@@ -592,6 +592,10 @@ html, :host {
   }
 }
 
+.tw-visible {
+  visibility: visible;
+}
+
 .tw-invisible {
   visibility: hidden;
 }
@@ -638,6 +642,14 @@ html, :host {
 
 .tw-top-0 {
   top: 0;
+}
+
+.-tw-left-0 {
+  left: 0;
+}
+
+.-tw-left-\[480px\] {
+  left: -480px;
 }
 
 .tw-z-10 {
