@@ -155,17 +155,8 @@
         this.isMenuOpen = !this.isMenuOpen;
         const mobileMenu = document.getElementById('mobileMenu');
         const mobileNav = document.getElementById('mobileNav');
-        if (this.isMenuOpen) {
-          mobileMenu.classList.remove('tw-invisible');
-          mobileMenu.classList.add('tw-visible');
-          monileNav.classList.remove('-tw-left-[480px]');
-          monileNav.classList.add('-tw-left-0');
-        } else {
-          mobileMenu.classList.add('tw-invisible');
-          mobileMenu.classList.remove('tw-visible');
-          monileNav.classList.add('-tw-left-[480px]');
-          monileNav.classList.remove('-tw-left-0');
-        }
+        mobileMenu.classList.toggle('tw-invisible');
+        monileNav.classList.toggle('-tw-left-[480px]');
       },
     },
     mounted() {
