@@ -69,7 +69,12 @@
                   </a>
                   {% for child_link in link.links %}
                     <div class="tw-group-hover:visible tw-group-hover:opacity-100 tw-invisible tw-absolute tw-right-0 tw-z-20 tw-w-full tw-overflow-hidden tw-rounded-b-xl tw-bg-white tw-px-20 tw-py-8 tw-font-bold tw-opacity-0 tw-shadow-lg tw-transition-all tw-duration-300 tw-ease-in-out">
-                      <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+                      <a
+                        href="{{ child_link.url }}"
+                        class="tw-flex tw-items-center tw-gap-3 tw-text-base tw-capitalize tw-text-black"
+                      >
+                        {{- child_link.title -}}
+                      </a>
                     </div>
                   {% endfor %}
                 </li>
