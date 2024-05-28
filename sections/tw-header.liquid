@@ -5,13 +5,6 @@
   assign icon = section.settings.icon
 %}
 
-{{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
-{{ 'component-cart.css' | asset_url | stylesheet_tag }}
-{{ 'component-totals.css' | asset_url | stylesheet_tag }}
-{{ 'component-price.css' | asset_url | stylesheet_tag }}
-{{ 'component-discounts.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
-
 <div
   id="{{ section.id }}"
   class=" {% if request.page_type == 'index' or page.template_suffix == 'hati' or page.template_suffix == 'gati' or page.template_suffix == 'about-us' or page.template_suffix == 'playlists' %}-tw-mb-28{% endif %}"
