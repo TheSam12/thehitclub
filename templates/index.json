@@ -51,7 +51,7 @@
     "tw_image_banner_jhYmQg": {
       "type": "tw-image-banner",
       "custom_css": [
-        ".tw-rounded-full {margin-top: 100px;}"
+        "@media only screen and (min-width: 749px) {.tw-rounded-full {margin-top: 100px; }}"
       ],
       "settings": {
         "d_img": "shopify:\/\/shop_images\/topfold-image-desktop-2.0.png",
