@@ -616,6 +616,14 @@ html, :host {
   inset: 0;
 }
 
+.-tw-left-0 {
+  left: 0;
+}
+
+.-tw-left-\[480px\] {
+  left: -480px;
+}
+
 .-tw-top-16 {
   top: -64px;
 }
@@ -642,14 +650,6 @@ html, :host {
 
 .tw-top-0 {
   top: 0;
-}
-
-.-tw-left-0 {
-  left: 0;
-}
-
-.-tw-left-\[480px\] {
-  left: -480px;
 }
 
 .tw-z-10 {
@@ -800,6 +800,10 @@ html, :host {
   width: 36px;
 }
 
+.tw-w-\[100\%\] {
+  width: 100%;
+}
+
 .tw-w-\[300px\] {
   width: 300px;
 }
@@ -808,17 +812,8 @@ html, :host {
   width: 100%;
 }
 
-.tw-w-\[100\%\] {
-  width: 100%;
-}
-
 .tw-w-screen {
   width: 100vw;
-}
-
-.tw-rotate-45 {
-  --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .tw-rotate-\[25deg\] {
@@ -927,10 +922,6 @@ html, :host {
   border-top-width: 0px;
 }
 
-.tw-border-solid {
-  border-style: solid;
-}
-
 .tw-border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -1009,6 +1000,11 @@ html, :host {
   padding-right: 16px;
 }
 
+.tw-px-5 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .tw-px-7 {
   padding-left: 28px;
   padding-right: 28px;
@@ -1034,11 +1030,6 @@ html, :host {
   padding-bottom: 8px;
 }
 
-.tw-py-20 {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
 .tw-py-3 {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -1057,11 +1048,6 @@ html, :host {
 .tw-py-8 {
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.tw-px-5 {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .tw-pb-0 {
@@ -1121,11 +1107,6 @@ html, :host {
 .tw-text-4xl {
   font-size: 36px;
   line-height: 40px;
-}
-
-.tw-text-5xl {
-  font-size: 48px;
-  line-height: 1;
 }
 
 .tw-text-6xl {
@@ -1496,11 +1477,6 @@ html, :host {
     line-height: 32px;
   }
 
-  .lg\:tw-text-3xl {
-    font-size: 30px;
-    line-height: 36px;
-  }
-
   .lg\:tw-text-5xl {
     font-size: 48px;
     line-height: 1;
@@ -1519,11 +1495,6 @@ html, :host {
   .lg\:tw-text-xl {
     font-size: 20px;
     line-height: 28px;
-  }
-
-  .lg\:tw-text-6xl {
-    font-size: 60px;
-    line-height: 1;
   }
 }
 
@@ -1552,11 +1523,6 @@ html, :host {
   .xl\:tw-text-3xl {
     font-size: 30px;
     line-height: 36px;
-  }
-
-  .xl\:tw-text-4xl {
-    font-size: 36px;
-    line-height: 40px;
   }
 
   .xl\:tw-text-xl {
