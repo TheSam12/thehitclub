@@ -115,7 +115,7 @@
       id="mobileNav"
       class="tw-absolute -tw-left-[480px] tw-top-0 tw-z-20 tw-h-screen tw-w-screen tw-overflow-auto tw-bg-white tw-transition-all tw-duration-500 tw-ease-in-out"
     >
-      <div class="tw-flex tw-justify-end tw-p-10">
+      <div class="tw-flex tw-justify-end tw-p-5">
         <button @click="toggleMenu">
           <span class="tw-text-xl tw-font-bold">✕</span>
         </button>
@@ -123,7 +123,7 @@
       <ul>
         {% for link in menu.links %}
           {% if link != null %}
-            <li class="{% if forloop.first %}tw-border-t-1{% endif %} tw-border-b-1 tw-px-10 tw-py-4">
+            <li class="{% if forloop.first %}tw-border-t-1{% endif %} tw-border-b-1 tw-px-5 tw-py-4">
               <a
                 href="{{ link.url }}"
                 class="tw-group tw-peer tw-text-base tw-capitalize"

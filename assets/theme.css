@@ -1046,6 +1046,11 @@ html, :host {
   padding-bottom: 32px;
 }
 
+.tw-px-5 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .tw-pb-0 {
   padding-bottom: 0;
 }
