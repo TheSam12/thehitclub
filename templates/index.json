@@ -230,14 +230,17 @@
     },
     "featured_collection_6DCrVp": {
       "type": "featured-collection",
+      "custom_css": [
+        "h2 {text-align: center;}"
+      ],
       "settings": {
         "title": "Los Bestsellers",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "description": "",
         "show_description": false,
         "description_style": "body",
         "collection": "los-bestsellers",
-        "products_to_show": 5,
+        "products_to_show": 8,
         "columns_desktop": 5,
         "full_width": false,
         "show_view_all": true,
@@ -251,9 +254,9 @@
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 16
       }
     }
   },
