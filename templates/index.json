@@ -52,9 +52,9 @@
       "type": "tw-image-banner",
       "settings": {
         "d_img": "shopify:\/\/shop_images\/Hit_club_marzo0725.jpg",
-        "m_img": "shopify:\/\/shop_images\/Hit_club_marzo1031-m.jpg",
-        "pre_title": "THE HOUSE OF",
-        "title": "SABROSURA LATINA",
+        "m_img": "shopify:\/\/shop_images\/topfold-image-3.0.png",
+        "pre_title": "",
+        "title": "",
         "btn_label": "¡PRUEBA UNA CLASE GRATIS!",
         "btn_link": "https:\/\/www.youtube.com\/watch?v=8rj4Po4QSpM&ab_channel=CoachIsaQ.",
         "color_1": "#ffd959",
@@ -221,13 +221,6 @@
         "color_2": ""
       }
     },
-    "tw_featured_collection_PCQt6c": {
-      "type": "tw-featured-collection",
-      "disabled": true,
-      "settings": {
-        "collection": "los-bestsellers"
-      }
-    },
     "featured_collection_6DCrVp": {
       "type": "featured-collection",
       "custom_css": [
@@ -258,6 +251,13 @@
         "padding_top": 36,
         "padding_bottom": 16
       }
+    },
+    "tw_featured_collection_PCQt6c": {
+      "type": "tw-featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "los-bestsellers"
+      }
     }
   },
   "order": [
@@ -269,7 +269,7 @@
     "tw_reviews_xHykKm",
     "tw_images_slideshow_CrERLc",
     "tw_image_banner_QB3Uz9",
-    "tw_featured_collection_PCQt6c",
-    "featured_collection_6DCrVp"
+    "featured_collection_6DCrVp",
+    "tw_featured_collection_PCQt6c"
   ]
 }
