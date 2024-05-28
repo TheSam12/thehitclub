@@ -913,6 +913,11 @@ html, :host {
   border-radius: 9999px;
 }
 
+.tw-rounded-b-xl {
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
 .tw-border {
   border-width: 1px;
 }
@@ -1066,6 +1071,11 @@ html, :host {
   padding-bottom: 32px;
 }
 
+.tw-px-20 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 .tw-pb-0 {
   padding-bottom: 0;
 }
@@ -1193,6 +1203,12 @@ html, :host {
 
 .tw-opacity-0 {
   opacity: 0;
+}
+
+.tw-shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .tw-drop-shadow-lg {

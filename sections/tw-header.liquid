@@ -68,8 +68,8 @@
                     {% endif %}
                   </a>
                   {% for child_link in link.links %}
-                    <div class="tw-group-hover:visible tw-group-hover:opacity-100 tw-shadow-ln tw-rounded-b-cl tw-invisible tw-absolute tw-right-0 tw-z-20 tw-w-full tw-overflow-hidden tw-font-bold tw-opacity-0 tw-transition-all tw-duration-300 tw-ease-in-out">
-                      <p>{{ child_link.title }}</p>
+                    <div class="tw-group-hover:visible tw-group-hover:opacity-100 tw-invisible tw-absolute tw-right-0 tw-z-20 tw-w-full tw-overflow-hidden tw-rounded-b-xl tw-bg-white tw-px-20 tw-py-8 tw-font-bold tw-opacity-0 tw-shadow-lg tw-transition-all tw-duration-300 tw-ease-in-out">
+                      <a href="{{ child_link.url }}">{{ child_link.title }}</a>
                     </div>
                   {% endfor %}
                 </li>
