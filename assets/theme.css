@@ -971,6 +971,10 @@ html, :host {
   padding: 20px;
 }
 
+.tw-p-8 {
+  padding: 32px;
+}
+
 .tw-px-10 {
   padding-left: 40px;
   padding-right: 40px;
