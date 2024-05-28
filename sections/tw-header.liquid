@@ -110,10 +110,11 @@
       </div>
     </nav>
   </div>
-  <div id="mobileMenu" class="tw-invisible -tw-left-[480px]">
+  <div id="mobileMenu" class="tw-invisible">
     <nav
       v-if="isMenuOpen"
-      class="tw-absolute tw-top-0 tw-z-20 tw-h-screen tw-w-screen tw-overflow-auto tw-bg-white tw-p-10 tw-transition-all tw-duration-500 tw-ease-in-out"
+      id="mobileNav"
+      class="tw-absolute -tw-left-[480px] tw-top-0 tw-z-20 tw-h-screen tw-w-screen tw-overflow-auto tw-bg-white tw-p-10 tw-transition-all tw-duration-500 tw-ease-in-out"
     >
       <button @click="toggleMenu">
         <span>✕</span>
@@ -153,16 +154,17 @@
       toggleMenu() {
         this.isMenuOpen = !this.isMenuOpen;
         const mobileMenu = document.getElementById('mobileMenu');
+        const mobileNav = document.getElementById('mobileNav');
         if (this.isMenuOpen) {
           mobileMenu.classList.remove('tw-invisible');
           mobileMenu.classList.add('tw-visible');
-          monileMenu.classList.remove('-tw-left-[480px]');
-          monileMenu.classList.add('-tw-left-0');
+          mobileNav.classList.remove('-tw-left-[480px]');
+          mobileNav.classList.add('-tw-left-0');
         } else {
           mobileMenu.classList.add('tw-invisible');
           mobileMenu.classList.remove('tw-visible');
-          monileMenu.classList.add('-tw-left-[480px]');
-          monileMenu.classList.remove('-tw-left-0');
+          mobileNav.classList.add('-tw-left-[480px]');
+          mobileNav.classList.remove('-tw-left-0');
         }
       },
     },
