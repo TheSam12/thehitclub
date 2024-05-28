@@ -1438,6 +1438,18 @@ html, :host {
     top: -128px;
   }
 
+  .lg\:tw-block {
+    display: block;
+  }
+
+  .lg\:tw-flex {
+    display: flex;
+  }
+
+  .lg\:tw-hidden {
+    display: none;
+  }
+
   .lg\:tw-w-3\/4 {
     width: 75%;
   }

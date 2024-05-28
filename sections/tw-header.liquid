@@ -48,7 +48,7 @@
           {% endif %}
         </div>
         <div class="relative tw-flex tw-items-center tw-gap-8">
-          <div class="tw-hidden tw-gap-4 md:tw-flex">
+          <div class="tw-hidden tw-gap-4 lg:tw-flex">
             {% for link in menu.links %}
               <ul>
                 <li>
@@ -60,7 +60,7 @@
                     {{ link.title }}
                   </a>
                   {% for child_link in link.links %}
-                    <div class="tw--left-px tw-group-hover:visible tw-group-hover:opacity-100 tw-shadow-ln tw-rounded-b-cl tw-invisible tw-absolute tw-z-20 tw-w-[100%] tw-overflow-hidden tw-font-bold tw-opacity-0 tw-transition-all tw-duration-300 tw-ease-in-out">
+                    <div class="-tw-left-px tw-group-hover:visible tw-group-hover:opacity-100 tw-shadow-ln tw-rounded-b-cl tw-invisible tw-absolute tw-right-0 tw-z-20 tw-w-full tw-overflow-hidden tw-font-bold tw-opacity-0 tw-transition-all tw-duration-300 tw-ease-in-out">
                       <p>{{ child_link.title }}</p>
                     </div>
                   {% endfor %}
@@ -96,7 +96,7 @@
               </a>
             </div>
             {% if shop.customer_accounts_enabled %}
-              <div class="tw-hidden md:tw-block">
+              <div class="tw-hidden lg:tw-block">
                 <a
                   href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.acount_login_url }}{% endif %}"
                   :class="{ 'tw-fill-black': scrollPosition >= 1, 'tw-fill-white': scrollPosition < 1 }"
@@ -117,7 +117,7 @@
                 </a>
               </div>
             {% endif %}
-            <div class="tw-absolute tw-right-5 md:tw-hidden ">
+            <div class="tw-absolute tw-right-5 lg:tw-hidden ">
               <button @click="toggleMenu">
                 <span
                   v-if="!isMenuOpen"
