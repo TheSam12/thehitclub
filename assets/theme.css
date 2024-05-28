@@ -1379,6 +1379,10 @@ html, :host {
     margin-top: 32px;
   }
 
+  .md\:tw-mt-36 {
+    margin-top: 144px;
+  }
+
   .md\:tw-block {
     display: block;
   }
