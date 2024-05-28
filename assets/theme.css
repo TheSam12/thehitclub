@@ -780,6 +780,10 @@ html, :host {
   height: 100vh;
 }
 
+.tw-h-2 {
+  height: 8px;
+}
+
 .tw-w-3\/5 {
   width: 60%;
 }
