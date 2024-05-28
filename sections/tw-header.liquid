@@ -51,11 +51,11 @@
           <div class="tw-hidden tw-gap-4 lg:tw-flex">
             {% for link in menu.links %}
               <ul>
-                <li class="tw-group tw-peer">
+                <li class="">
                   <a
                     href="{{ link.url }}"
                     :class="{ 'tw-text-black': scrollPosition >= 1, 'tw-text-white': scrollPosition < 1 }"
-                    class="tw-flex tw-items-center tw-gap-3 tw-text-base tw-capitalize"
+                    class="tw-group tw-peer tw-flex tw-items-center tw-gap-3 tw-text-base tw-capitalize"
                   >
                     {{ link.title }}
                     {% if link.links.size > 0 %}
