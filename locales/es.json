@@ -543,5 +543,14 @@
         "credit_card_details_accessibility_label": "termina en {{lastDigits}}"
       }
     }
+  },
+  "shopify": {
+    "checkout": {
+      "thank_you": {
+        "subscriptions_management": {
+          "description": "Crea una cuenta para ver y gestionar tus suscripciones."
+        }
+      }
+    }
   }
 }
