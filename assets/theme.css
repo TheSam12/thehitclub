@@ -918,6 +918,10 @@ html, :host {
   border-bottom-width: 1px;
 }
 
+.tw-border-solid {
+  border-style: solid;
+}
+
 .tw-border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
