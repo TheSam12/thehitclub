@@ -881,6 +881,10 @@ html, :host {
   gap: 32px;
 }
 
+.tw-gap-3 {
+  gap: 12px;
+}
+
 .tw-self-end {
   align-self: flex-end;
 }
