@@ -967,6 +967,14 @@ html, :host {
   fill: #fff;
 }
 
+.tw-stroke-black {
+  stroke: #000;
+}
+
+.tw-stroke-white {
+  stroke: #fff;
+}
+
 .tw-p-10 {
   padding: 40px;
 }

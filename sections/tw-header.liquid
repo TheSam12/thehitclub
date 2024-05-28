@@ -61,8 +61,8 @@
                     {% if link.links.size > 0 %}
                       <span class="tw-group-hover:rotate-180 tw-h-2 tw-transition-all tw-duration-300 tw-ease-in-out">
                         <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1.00024 1.14673L7.22241 7.14673" stroke="#fff" stroke-width="1.1" stroke-linecap="round"></path>
-                          <path d="M7.22217 7.14673L13.5154 1.14671" stroke="#fff" stroke-width="1.1" stroke-linecap="round"></path>
+                          <path d="M1.00024 1.14673L7.22241 7.14673" stroke-width="1.1" stroke-linecap="round" :class="{ 'tw-stroke-black': scrollPosition >= 1, 'tw-stroke-white': scrollPosition < 1 }"></path>
+                          <path d="M7.22217 7.14673L13.5154 1.14671" stroke-width="1.1" stroke-linecap="round" :class="{ 'tw-stroke-black': scrollPosition >= 1, 'tw-stroke-white': scrollPosition < 1 }"></path>
                         </svg>
                       </span>
                     {% endif %}
