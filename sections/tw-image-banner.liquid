@@ -23,12 +23,16 @@
         background-image: url({{ m_img | image_url: width: 1920 }});
         height: 600px;
       }
-      .{{ section.id }}-bg .tw-rounded-full.tw-px-3{
-        margin-top: 144px
-      }
     }
   {% endif %}
 
+  @media (min-width:768px){
+
+    .{{ section.id }}-bg .tw-rounded-full.tw-px-3{
+      margin-top: 144px
+    }
+
+  }
   .{{ section.id }}-bg h1 {
     font-family: 'Univers-Extrablack';
   }
