@@ -68,7 +68,7 @@
                     {% endif %}
                   </a>
                   {% for child_link in link.links %}
-                    <div class="-tw-left-px tw-group-hover:visible tw-group-hover:opacity-100 tw-shadow-ln tw-rounded-b-cl tw-invisible tw-absolute tw-right-0 tw-z-20 tw-w-full tw-overflow-hidden tw-font-bold tw-opacity-0 tw-transition-all tw-duration-300 tw-ease-in-out">
+                    <div class="tw-group-hover:visible tw-group-hover:opacity-100 tw-shadow-ln tw-rounded-b-cl tw-invisible tw-absolute tw-right-0 tw-z-20 tw-w-full tw-overflow-hidden tw-font-bold tw-opacity-0 tw-transition-all tw-duration-300 tw-ease-in-out">
                       <p>{{ child_link.title }}</p>
                     </div>
                   {% endfor %}
@@ -220,10 +220,19 @@
   .change-color {
     background-color: #fff !important;
   }
+
   .tw-group:hover .tw-group-hover\:rotate-180 {
     --tw-rotate: 180deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x))
       skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .tw-group:hover .tw-group-hover\:opacity-100 {
+    opacity: 1;
+  }
+
+  .tw-group:hover .tw-group-hover\:visible {
+    visibility: visible;
   }
 </style>
 
