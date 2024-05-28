@@ -656,12 +656,12 @@ html, :host {
   top: 0;
 }
 
-.tw-top-12 {
-  top: 48px;
-}
-
 .tw-top-\[103\.98px\] {
   top: 103.98px;
+}
+
+.-tw-z-10 {
+  z-index: -10;
 }
 
 .tw-z-10 {
@@ -670,10 +670,6 @@ html, :host {
 
 .tw-z-20 {
   z-index: 20;
-}
-
-.-tw-z-10 {
-  z-index: -10;
 }
 
 .tw-m-auto {
@@ -771,6 +767,10 @@ html, :host {
   height: 64px;
 }
 
+.tw-h-2 {
+  height: 8px;
+}
+
 .tw-h-20 {
   height: 80px;
 }
@@ -796,10 +796,6 @@ html, :host {
   height: 100vh;
 }
 
-.tw-h-2 {
-  height: 8px;
-}
-
 .tw-w-3\/5 {
   width: 60%;
 }
@@ -818,10 +814,6 @@ html, :host {
 
 .tw-w-9 {
   width: 36px;
-}
-
-.tw-w-\[100\%\] {
-  width: 100%;
 }
 
 .tw-w-\[300px\] {
@@ -889,6 +881,10 @@ html, :host {
   gap: 8px;
 }
 
+.tw-gap-3 {
+  gap: 12px;
+}
+
 .tw-gap-4 {
   gap: 16px;
 }
@@ -899,10 +895,6 @@ html, :host {
 
 .tw-gap-8 {
   gap: 32px;
-}
-
-.tw-gap-3 {
-  gap: 12px;
 }
 
 .tw-self-end {
@@ -961,13 +953,13 @@ html, :host {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.tw-bg-gray-600\/50 {
+  background-color: rgb(75 85 99 / 0.5);
+}
+
 .tw-bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.tw-bg-gray-600\/50 {
-  background-color: rgb(75 85 99 / 0.5);
 }
 
 .tw-bg-gradient-to-b {
@@ -1035,6 +1027,11 @@ html, :host {
   padding-right: 8px;
 }
 
+.tw-px-20 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 .tw-px-3 {
   padding-left: 12px;
   padding-right: 12px;
@@ -1093,11 +1090,6 @@ html, :host {
 .tw-py-8 {
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.tw-px-20 {
-  padding-left: 80px;
-  padding-right: 80px;
 }
 
 .tw-pb-0 {
@@ -1198,12 +1190,12 @@ html, :host {
   font-weight: 700;
 }
 
-.tw-font-semibold {
-  font-weight: 600;
-}
-
 .tw-font-normal {
   font-weight: 400;
+}
+
+.tw-font-semibold {
+  font-weight: 600;
 }
 
 .tw-uppercase {
@@ -1224,13 +1216,13 @@ html, :host {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.tw-text-transparent {
+  color: transparent;
+}
+
 .tw-text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.tw-text-transparent {
-  color: transparent;
 }
 
 .tw-opacity-0 {
@@ -1381,6 +1373,10 @@ html, :host {
 
   .md\:tw-mt-0 {
     margin-top: 0;
+  }
+
+  .md\:tw-mt-8 {
+    margin-top: 32px;
   }
 
   .md\:tw-block {
