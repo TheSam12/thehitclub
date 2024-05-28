@@ -3,8 +3,10 @@
   assign logo_white = section.settings.logo_white
   assign menu = section.settings.menu
   assign icon = section.settings.icon
-  for child_link in link.links
-    assign title = child_link.title
+  for link in menu.links
+    for child_link in link.links
+      assign title = child_link.title
+    endfor
   endfor
 %}
 
