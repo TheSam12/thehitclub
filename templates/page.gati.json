@@ -178,6 +178,7 @@
     },
     "tw_image_banner_UxVVWc": {
       "type": "tw-image-banner",
+      "disabled": true,
       "custom_css": [
         "img {margin-top: 100px;}"
       ],
