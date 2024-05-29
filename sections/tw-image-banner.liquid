@@ -51,7 +51,7 @@
       </div>
     {% endcomment %}
     {% if pre_title and title and btn_label != blank %}
-      <div class="tw-relative tw-flex tw-h-full tw-w-full tw-flex-col tw-items-center tw-justify-center tw-gap-6">
+      <div class="tw-relative tw-flex tw-h-full tw-w-full tw-flex-col tw-items-center tw-justify-center tw-gap-6 md:tw-p-8">
         {%- if title != blank -%}
           <h1 class="tw-mb-20 tw-text-center tw-text-xl tw-font-bold tw-text-white tw-drop-shadow-lg md:tw-text-6xl">
             <span class="tw-text-lg md:tw-text-3xl">{{ pre_title }}</span><br>
@@ -59,7 +59,7 @@
           </h1>
         {%- endif -%}
         {%- if title_image != blank -%}
-          {{ title_image | image_url: width: 800 | image_tag: class: 'tw-w-2/3' }}
+          {{ title_image | image_url: width: 800 | image_tag }}
         {%- endif -%}
         {%- if btn_label != blank -%}
           <a

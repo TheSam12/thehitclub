@@ -816,6 +816,10 @@ html, :host {
   width: 36px;
 }
 
+.tw-w-\[200px\] {
+  width: 200px;
+}
+
 .tw-w-\[300px\] {
   width: 300px;
 }
@@ -826,10 +830,6 @@ html, :host {
 
 .tw-w-screen {
   width: 100vw;
-}
-
-.tw-w-\[200px\] {
-  width: 200px;
 }
 
 .tw-rotate-\[25deg\] {
@@ -1185,11 +1185,6 @@ html, :host {
   line-height: 28px;
 }
 
-.tw-text-xs {
-  font-size: 12px;
-  line-height: 16px;
-}
-
 .tw-font-bold {
   font-weight: 700;
 }
@@ -1379,14 +1374,6 @@ html, :host {
     margin-top: 0;
   }
 
-  .md\:tw-mt-8 {
-    margin-top: 32px;
-  }
-
-  .md\:tw-mt-36 {
-    margin-top: 144px;
-  }
-
   .md\:tw-block {
     display: block;
   }
@@ -1440,6 +1427,10 @@ html, :host {
     gap: 32px;
   }
 
+  .md\:tw-p-8 {
+    padding: 32px;
+  }
+
   .md\:tw-px-20 {
     padding-left: 80px;
     padding-right: 80px;
@@ -1453,11 +1444,6 @@ html, :host {
   .md\:tw-py-20 {
     padding-top: 80px;
     padding-bottom: 80px;
-  }
-
-  .md\:tw-py-4 {
-    padding-top: 16px;
-    padding-bottom: 16px;
   }
 
   .md\:tw-pl-10 {
