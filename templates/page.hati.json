@@ -18,6 +18,7 @@
         "title_image": "shopify:\/\/shop_images\/train_anytime.png",
         "btn_label": "¡PRUEBA UNA CLASE GRÁTIS!",
         "btn_link": "https:\/\/youtu.be\/8rj4Po4QSpM?si=QKACCdCGLGGlnDtK",
+        "direction": "right",
         "color_1": "#fd70ba",
         "color_2": "#fed36c"
       }
@@ -158,6 +159,7 @@
         "title": "Title",
         "btn_label": "",
         "btn_link": "",
+        "direction": "right",
         "color_1": "",
         "color_2": ""
       }
