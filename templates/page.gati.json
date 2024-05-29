@@ -12,9 +12,9 @@
       "type": "tw-image-banner",
       "settings": {
         "d_img": "shopify:\/\/shop_images\/Hit_club_marzo0746.jpg",
-        "m_img": "shopify:\/\/shop_images\/Hit_club_marzo0746-m.jpg",
+        "m_img": "shopify:\/\/shop_images\/gati-banner-m.jpg",
         "pre_title": "",
-        "title": "Lift like a boss.",
+        "title": "",
         "btn_label": "¡PRUEBA UNA CLASE GRÁTIS!",
         "btn_link": "https:\/\/www.youtube.com\/watch?v=8rj4Po4QSpM&ab_channel=CoachIsaQ.",
         "color_1": "#dddd65",
@@ -140,7 +140,7 @@
       "type": "tw-image-banner",
       "settings": {
         "d_img": "shopify:\/\/shop_images\/Hit_club_marzo0670.jpg",
-        "m_img": "shopify:\/\/shop_images\/Mobile_-_About_Coach_IsaCu_Mattias.png",
+        "m_img": "shopify:\/\/shop_images\/gati-coaches-banner-m.jpg",
         "pre_title": "Pre Title",
         "title": "Title",
         "btn_label": "",
