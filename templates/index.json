@@ -50,9 +50,6 @@
     },
     "tw_image_banner_jhYmQg": {
       "type": "tw-image-banner",
-      "custom_css": [
-        "@media only screen and (min-width: 749px) {.tw-rounded-full {margin-top: 100px; }}"
-      ],
       "settings": {
         "d_img": "shopify:\/\/shop_images\/Hit_club_marzo0725.jpg",
         "m_img": "shopify:\/\/shop_images\/Hit_club_marzo1031-m.jpg",
