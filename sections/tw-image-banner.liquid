@@ -20,7 +20,8 @@
   {% if m_img != blank %}
     @media (max-width: 768px) {
       .{{ section.id }}-bg {
-        background-image: url({{ m_img | image_url: width: 1920 }});
+        background-image: url({{ m_img | image_url: width: 1080 }});
+        background-size: 100%;
         height: 600px;
       }
     }
