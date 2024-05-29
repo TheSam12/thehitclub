@@ -10,9 +10,6 @@
     },
     "tw_image_banner_TYKM8W": {
       "type": "tw-image-banner",
-      "custom_css": [
-        "@media only screen and (min-width: 749px) {.tw-rounded-full {margin-top: 140px; }}"
-      ],
       "settings": {
         "d_img": "shopify:\/\/shop_images\/HATI-desktop-3.0.png",
         "m_img": "shopify:\/\/shop_images\/hati-banner-m.jpg",
