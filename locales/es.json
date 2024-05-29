@@ -431,7 +431,7 @@
     "log_out": "Cerrar sesión",
     "login_page": {
       "cancel": "Cancelar",
-      "create_account": "Crear cuenta",
+      "create_account": "Crear Cuenta",
       "email": "Correo electrónico",
       "forgot_password": "¿Olvidaste tu contraseña?",
       "guest_continue": "Continuar",
@@ -458,12 +458,12 @@
       "success": "Te hemos enviado un correo electrónico con un enlace para actualizar tu contraseña."
     },
     "register": {
-      "title": "Crear cuenta",
+      "title": "Crear Cuenta",
       "first_name": "Nombre",
       "last_name": "Apellido",
       "email": "Correo electrónico",
       "password": "Contraseña",
-      "submit": "Crear"
+      "submit": "Crear Cuenta"
     },
     "reset_password": {
       "title": "Restablecer contraseña de cuenta",
