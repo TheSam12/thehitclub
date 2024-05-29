@@ -18,6 +18,7 @@
         "title_image": "shopify:\/\/shop_images\/lift_like_a_boss.png",
         "btn_label": "¡PRUEBA UNA CLASE GRÁTIS!",
         "btn_link": "https:\/\/www.youtube.com\/watch?v=8rj4Po4QSpM&ab_channel=CoachIsaQ.",
+        "direction": "right",
         "color_1": "#dddd65",
         "color_2": "#dddd65"
       }
@@ -139,13 +140,17 @@
     },
     "tw_image_banner_UxVVWc": {
       "type": "tw-image-banner",
+      "custom_css": [
+        "img {margin-top: 100px;}"
+      ],
       "settings": {
-        "d_img": "shopify:\/\/shop_images\/Hit_club_marzo0670.jpg",
+        "d_img": "shopify:\/\/shop_images\/coach_matias.png",
         "m_img": "shopify:\/\/shop_images\/gati-coaches-banner-m.jpg",
         "pre_title": "Pre Title",
         "title": "Title",
         "btn_label": "",
         "btn_link": "",
+        "direction": "right",
         "color_1": "",
         "color_2": ""
       }
