@@ -249,7 +249,7 @@
         "questions_tTeAKY"
       ],
       "custom_css": [
-        "div {margin-top: 30px;}"
+        "h2 {margin-top: 30px;}"
       ],
       "settings": {
         "title": "Preguntas Frecuentes",
