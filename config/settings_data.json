@@ -169,12 +169,6 @@
           "supporting_text_title": "Purchase options",
           "subscription_policy_url": ""
         }
-      },
-      "13115749693783828969": {
-        "type": "shopify:\/\/apps\/appstle-loyalty-rewards\/blocks\/appstle-review-helper\/1886c0f8-77b6-4a85-af11-b43cc17ae1c1",
-        "disabled": false,
-        "settings": {
-        }
       }
     },
     "color_schemes": {
