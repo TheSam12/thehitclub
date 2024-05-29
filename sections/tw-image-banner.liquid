@@ -3,6 +3,7 @@
   assign m_img = section.settings.m_img
   assign pre_title = section.settings.pre_title
   assign title = section.settings.title
+  assign title_image = section.settings.title_image
   assign btn_label = section.settings.btn_label
   assign btn_link = section.settings.btn_link
   assign color_1 = section.settings.color_1
@@ -63,6 +64,9 @@
           <span class="tw-text-lg md:tw-text-3xl">{{ pre_title }}</span><br>
           {{ title }}
         </h1>
+        {%- if title_image =! blank -%}
+          {{ title_image | image_url: width: 800 | image_tag: class: 'tw-w-2/3' }}"
+        {%- endif -%}
         <a
           class="tw-rounded-full bg-gradient-{{ section.id }} tw-px-3 tw-py-2 tw-text-center tw-text-base tw-text-xs tw-font-bold tw-uppercase tw-text-black md:tw-mt-36 md:tw-px-6 md:tw-text-3xl"
           href="{{ btn_link }}"
