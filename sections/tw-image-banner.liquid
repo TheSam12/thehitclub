@@ -60,20 +60,24 @@
     {% endcomment %}
     {% if pre_title and title and btn_label != blank %}
       <div class="tw-relative tw-flex tw-h-full tw-w-full tw-flex-col tw-items-center tw-justify-center tw-gap-6">
-        <h1 class="tw-mb-20 tw-text-center tw-text-xl tw-font-bold tw-text-white tw-drop-shadow-lg md:tw-text-6xl">
-          <span class="tw-text-lg md:tw-text-3xl">{{ pre_title }}</span><br>
-          {{ title }}
-        </h1>
-        {%- if title_image =! blank -%}
+        {%- if title != blank -%}
+          <h1 class="tw-mb-20 tw-text-center tw-text-xl tw-font-bold tw-text-white tw-drop-shadow-lg md:tw-text-6xl">
+            <span class="tw-text-lg md:tw-text-3xl">{{ pre_title }}</span><br>
+            {{ title }}
+          </h1>
+        {%- endif -%}
+        {%- if title_image != blank -%}
           {{ title_image | image_url: width: 800 | image_tag: class: 'tw-w-2/3' }}"
         {%- endif -%}
-        <a
-          class="tw-rounded-full bg-gradient-{{ section.id }} tw-px-3 tw-py-2 tw-text-center tw-text-base tw-text-xs tw-font-bold tw-uppercase tw-text-black md:tw-mt-36 md:tw-px-6 md:tw-text-3xl"
-          href="{{ btn_link }}"
-          target="_blank"
-        >
-          {{- btn_label -}}
-        </a>
+        {%- if btn_label != blank -%}
+          <a
+            class="tw-rounded-full bg-gradient-{{ section.id }} tw-px-3 tw-py-2 tw-text-center tw-text-base tw-text-xs tw-font-bold tw-uppercase tw-text-black md:tw-mt-36 md:tw-px-6 md:tw-text-3xl"
+            href="{{ btn_link }}"
+            target="_blank"
+          >
+            {{- btn_label -}}
+          </a>
+        {%- endif -%}
       </div>
     {% endif %}
   </div>
@@ -105,6 +109,11 @@
       "id": "title",
       "label": "Title",
       "default": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "title_image",
+      "label": "Title image"
     },
     {
       "type": "header",
