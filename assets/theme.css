@@ -1423,6 +1423,10 @@ html, :host {
     width: fit-content;
   }
 
+  .md\:tw-w-1\/5 {
+    width: 20%;
+  }
+
   .md\:tw-flex-row {
     flex-direction: row;
   }

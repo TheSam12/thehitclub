@@ -6,13 +6,13 @@
 <footer class="tw-container tw-m-auto tw-px-10 tw-py-16">
   <div class="tw-pb-6">
     <div class="tw-flex tw-flex-col tw-justify-between tw-gap-8 md:tw-flex-row">
-      <div class="tw-w-1/5">
+      <div class="md:tw-w-1/5">
         {{ logo | image_url: width: 600 | image_tag: class: 'tw-m-auto' }}
       </div>
       {% for block in section.blocks %}
         {% case block.type` %}
           {% when 'menu' %}
-            <div class="tw-w-1/5">
+            <div class="md:tw-w-1/5">
               <h3 class="tw-mb-4 tw-font-bold tw-text-white">
                 {{ block.settings.title }}
               </h3>
@@ -28,9 +28,9 @@
               </div>
             </div>
           {% when 'icons' %}
-            <div class="tw-w-1/5">
+            <div class="md:tw-w-1/5">
               <h3 class="tw-mb-4 tw-font-bold tw-text-white">Nuestras redes sociales</h3>
-              <div class="tw-flex tw-gap-4">
+              <div class="tw-flex tw-justify-between">
                 {% liquid
                   assign facebook = block.settings.facebook
                   assign instagram = block.settings.instagram
@@ -39,27 +39,27 @@
                   assign twitter = block.settings.twitter
                 %}
                 {% if facebook != blank %}
-                  <a class="tw-flex tw-items-center tw-p-4 tw-text-white " href="{{ facebook }}">
+                  <a class="tw-flex tw-items-center tw-text-white" title="facebook" href="{{ facebook }}">
                     {% render 'tw-social-icons', icon: 'facebook' %}
                   </a>
                 {% endif %}
                 {% if instagram != blank %}
-                  <a class="tw-flex tw-items-center tw-p-4 tw-text-white " href="{{ instagram }}">
+                  <a class="tw-flex tw-items-center tw-text-white" title="instagram" href="{{ instagram }}">
                     {% render 'tw-social-icons', icon: 'instagram' %}
                   </a>
                 {% endif %}
                 {% if tiktok != blank %}
-                  <a class="tw-flex tw-items-center tw-p-4 tw-text-white " href="{{ tiktok }}">
+                  <a class="tw-flex tw-items-center tw-text-white" title="tiktok" href="{{ tiktok }}">
                     {% render 'tw-social-icons', icon: 'tiktok' %}
                   </a>
                 {% endif %}
                 {% if youtube != blank %}
-                  <a class="tw-flex tw-items-center tw-p-4 tw-text-white " href="{{ youtube }}">
+                  <a class="tw-flex tw-items-center tw-text-white" title="youtube" href="{{ youtube }}">
                     {% render 'tw-social-icons', icon: 'youtube' %}
                   </a>
                 {% endif %}
                 {% if twitter != blank %}
-                  <a class="tw-item-center tw-flex tw-p-4 tw-text-white " href="{{ twitter }}">
+                  <a class="tw-item-center tw-flex tw-text-white" title="twitter" href="{{ twitter }}">
                     {% render 'tw-social-icons', icon: 'twitter' %}
                   </a>
                 {% endif %}
