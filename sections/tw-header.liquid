@@ -28,7 +28,7 @@
 
 <div
   id="{{ section.id }}"
-  class=" {% if request.page_type == 'index' or page.template_suffix == 'hati' or page.template_suffix == 'gati' or page.template_suffix == 'about-us' or page.template_suffix == 'playlists' %}-tw-mb-28{% else %}tw-bg-white{% endif %}"
+  class=" {% if request.page_type == 'index' or page.template_suffix == 'hati' or page.template_suffix == 'gati' or page.template_suffix == 'about-us' or page.template_suffix == 'playlists' %}-tw-mb-28{% else %}tw-bg-white tw-drop-shadow-md{% endif %}"
 >
   <div
     {% if request.page_type == 'index'
