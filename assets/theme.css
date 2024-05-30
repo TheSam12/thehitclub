@@ -1538,6 +1538,11 @@ html, :host {
     width: 390px;
   }
 
+  .lg\:tw-w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
   .lg\:tw-grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
