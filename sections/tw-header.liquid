@@ -164,7 +164,7 @@
                   {% if cart.item_count < 100 %}
                     <span
                       class="
-                        tw-absolute tw-bottom-5 tw-left-5 tw-h-5 tw-w-5 tw-rounded-full tw-text-center tw-text-xs
+                        tw-absolute tw-bottom-5 tw-left-5 tw-flex tw-h-5 tw-w-5 tw-items-center tw-justify-center tw-rounded-full tw-text-center tw-text-xs
                           {% unless request.page_type == 'index'
                             or page.template_suffix == 'hati'
                             or page.template_suffix == 'gati'
@@ -183,7 +183,7 @@
                         :class="{ 'tw-text-black': scrollPosition >= 1, 'tw-text-white': scrollPosition < 1,'tw-bg-white': scrollPosition >= 1,'tw-border': scrollPosition >= 1, 'tw-border-black': scrollPosition >= 1, 'tw-bg-black': scrollPosition < 1 }"
                       {% endif %}
                     >
-                      {{- cart.item_count -}}
+                      <span>{{- cart.item_count -}}</span>
                     </span>
                   {% endif %}
                 {% endif %}
