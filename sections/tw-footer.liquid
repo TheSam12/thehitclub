@@ -6,13 +6,13 @@
 <footer class="tw-container tw-m-auto tw-px-10 tw-py-16">
   <div class="tw-pb-6">
     <div class="tw-flex tw-flex-col tw-justify-between tw-gap-8 md:tw-flex-row">
-      <div class="">
-        {{ logo | image_url: width: 200 | image_tag: class: 'tw-m-auto' }}
+      <div class="tw-w-1/5">
+        {{ logo | image_url: width: 600 | image_tag: class: 'tw-m-auto' }}
       </div>
       {% for block in section.blocks %}
         {% case block.type` %}
           {% when 'menu' %}
-            <div>
+            <div class="tw-w-1/5">
               <h3 class="tw-mb-4 tw-font-bold tw-text-white">
                 {{ block.settings.title }}
               </h3>
@@ -28,7 +28,7 @@
               </div>
             </div>
           {% when 'icons' %}
-            <div>
+            <div class="tw-w-1/5">
               <h3 class="tw-mb-4 tw-font-bold tw-text-white">Nuestras redes sociales</h3>
               <div class="tw-flex tw-gap-4">
                 {% liquid
