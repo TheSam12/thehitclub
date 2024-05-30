@@ -1193,6 +1193,11 @@ html, :host {
   line-height: 28px;
 }
 
+.tw-text-xs {
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .tw-font-bold {
   font-weight: 700;
 }

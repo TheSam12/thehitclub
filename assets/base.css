@@ -2072,7 +2072,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 12px;
   bottom: 20px;
   left: 20px;
   line-height: calc(1 + 0.1 / var(--font-body-scale));
