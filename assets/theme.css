@@ -844,6 +844,10 @@ html, :host {
   width: 20%;
 }
 
+.tw-w-4\/5 {
+  width: 80%;
+}
+
 .tw-max-w-\[480px\] {
   max-width: 480px;
 }
