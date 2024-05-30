@@ -165,14 +165,14 @@
                     <span
                       class="
                         tw-absolute tw-bottom-5 tw-left-5 tw-h-5 tw-h-max tw-w-5 tw-rounded-full tw-text-center tw-text-sm
-                          {% if request.page_type == 'index'
+                          {% unless request.page_type == 'index'
                             or page.template_suffix == 'hati'
                             or page.template_suffix == 'gati'
                             or page.template_suffix == 'about-us'
                             or page.template_suffix == 'playlists'
                           %}
                           tw-bg-black tw-text-white
-                        {% endif %}
+                        {% endunless %}
                       "
                       {% if request.page_type == 'index'
                         or page.template_suffix == 'hati'
