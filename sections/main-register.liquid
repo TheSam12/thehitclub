@@ -81,6 +81,19 @@
     </div>
     <div class="field">
       <input
+        type="text"
+        name="customer[note][instagram]"
+        id="RegisterForm-Instagram"
+        {% if form.instagram %}
+          value="{{ form.instagram }}"
+        {% endif %}
+        autocomplete="instagram-account"
+        placeholder="Instagram Username"
+      >
+      <label for="RegisterForm-Instagram"> Instagram Username </label>
+    </div>
+    <div class="field">
+      <input
         type="email"
         name="customer[email]"
         id="RegisterForm-email"
