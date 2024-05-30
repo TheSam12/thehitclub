@@ -6,9 +6,9 @@
   assign btn_link = section.settings.btn_link
 %}
 
-<div class="tw-container tw-relative tw-m-auto tw-p-10 md:tw-pt-20">
+<div class="tw-container tw-relative tw-m-auto tw-flex tw-justify-center tw-p-10 md:tw-pt-20">
   {% if sticker != blank %}
-    <div class="tw-relative">
+    <div>
       <img
         src="{{ sticker | image_url }}"
         width="90"
@@ -38,13 +38,13 @@
 </div>
 <style>
   .sticker-button {
-    top: -100px;
+    top: -60px;
     right: 0;
   }
   @media screen and (min-width: 768px) {
     .sticker-button {
       width: 150px;
-      top: -150px;
+      top: -100px;
     }
   }
 </style>
