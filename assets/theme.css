@@ -664,6 +664,10 @@ html, :host {
   left: 20px;
 }
 
+.-tw-left-full {
+  left: -100%;
+}
+
 .-tw-z-10 {
   z-index: -10;
 }
@@ -838,6 +842,10 @@ html, :host {
 
 .tw-w-\[120px\] {
   width: 120px;
+}
+
+.tw-max-w-\[480px\] {
+  max-width: 480px;
 }
 
 .tw-rotate-\[25deg\] {
