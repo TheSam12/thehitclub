@@ -246,7 +246,13 @@
       </div>
     </nav>
   </div>
-  <div id="mobileMenu" class="tw-invisible tw-transition-all tw-duration-500 tw-ease-in-out">
+  <div id="mobileMenu" class="tw-invisible tw-transition-all tw-duration-200 tw-ease-in-out">
+    <div
+      id="mobileOverlay"
+      class="tw-invisible tw-fixed tw-right-0 tw-z-10 tw-h-screen tw-w-screen tw-bg-gray-600/50 tw-text-transparent tw-opacity-0 tw-transition-all tw-duration-200 tw-ease-in-out"
+    >
+      l
+    </div>
     <nav
       id="mobileNav"
       class="tw-absolute -tw-left-[480px] tw-top-0 tw-z-20 tw-h-screen tw-w-screen tw-max-w-[480px] tw-overflow-auto tw-bg-white tw-transition-all tw-duration-500 tw-ease-in-out"
@@ -314,16 +320,25 @@
         this.isMenuOpen = !this.isMenuOpen;
         const mobileMenu = document.getElementById('mobileMenu');
         const mobileNav = document.getElementById('mobileNav');
+        const mobileOverlay = document.getElementById('mobileOverlay');
         if (this.isMenuOpen) {
           mobileMenu.classList.remove('tw-invisible');
           mobileMenu.classList.add('tw-visible');
           mobileNav.classList.remove('-tw-left-[480px]');
           mobileNav.classList.add('-tw-left-0');
+          mobileOverlay.classList.remove('tw-invisible');
+          mobileOverlay.classList.remove('tw-opacity-0');
+          mobileOverlay.classList.add('tw-visible');
+          mobileOverlay.classList.add('tw-opacity-100');
         } else {
           mobileMenu.classList.add('tw-invisible');
           mobileMenu.classList.remove('tw-visible');
           mobileNav.classList.remove('-tw-left-0');
           mobileNav.classList.add('-tw-left-[480px]');
+          mobileOverlay.classList.add('tw-invisible');
+          mobileOverlay.classList.add('tw-opacity-0');
+          mobileOverlay.classList.remove('tw-visible');
+          mobileOverlay.classList.remove('tw-opacity-100');
         }
       },
     },
