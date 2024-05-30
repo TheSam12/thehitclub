@@ -308,10 +308,11 @@
         "audio_MLQbeQ"
       ],
       "custom_css": [
-        ".simp-cover > div {width: 220px !important; height: 220px !important; margin: 0 auto;}",
-        " \/* Hide the .simp-playlist class *\/.simp-playlist {display: none !important;}",
-        " \/* Add a blue outline around the entire element *\/.simple-audio-player {outline: 1px solid #000000;}",
-        " \/* Ensure the .simp-cover is centered within its parent container *\/.simp-album {display: flex; justify-content: center; align-items: center;}"
+        ".simp-cover > div {width: 220px !important; height: 220px !important; margin: 0 !important;}",
+        ".simp-playlist {display: none !important;}",
+        ".simple-audio-player {outline: 1px solid #000000;}",
+        ".simp-album {display: flex; justify-content: center; align-items: center; margin: 0 auto;}",
+        ".simp-cover {margin: 0 !important; display: flex; justify-content: center; align-items: center;}"
       ],
       "settings": {
         "player_width": 800,
