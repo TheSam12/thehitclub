@@ -11,7 +11,7 @@
       {% for block in section.blocks %}
         <div class="tw-flex tw-flex-col tw-items-center tw-justify-between">
           <div class="tw-flex tw-h-full tw-items-center tw-justify-center">
-            {{ block.settings.image | image_url: width: 200, height: 200 | image_tag }}
+            {{ block.settings.image | image_url: width: 600, height: 600 | image_tag }}
           </div>
           <h3 class="tw-text-center tw-text-3xl tw-font-bold">{{ block.settings.content }}</h3>
         </div>
