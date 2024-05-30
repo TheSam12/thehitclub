@@ -163,7 +163,8 @@
                 {% if cart != empty %}
                   {% if cart.item_count < 100 %}
                     <span
-                      class="tw-absolute tw--right-1 tw--top-1 tw-h-5 tw-h-max tw-w-5 tw-rounded-full tw-text-center tw-text-sm"
+                      class="tw-absolute tw-h-5 tw-h-max tw-w-5 tw-rounded-full tw-text-center tw-text-sm"
+                      style="top:-4px;right:-4px "
                       {% if request.page_type == 'index'
                         or page.template_suffix == 'hati'
                         or page.template_suffix == 'gati'

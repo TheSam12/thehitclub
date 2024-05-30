@@ -632,16 +632,12 @@ html, :host {
   top: -64px;
 }
 
-.tw--right-1 {
-  right: -4px;
-}
-
-.tw--top-1 {
-  top: -4px;
-}
-
 .tw-left-0 {
   left: 0;
+}
+
+.tw-left-5 {
+  left: 20px;
 }
 
 .tw-right-0 {
@@ -658,10 +654,6 @@ html, :host {
 
 .tw-top-\[103\.98px\] {
   top: 103.98px;
-}
-
-.tw-left-5 {
-  left: 20px;
 }
 
 .-tw-z-10 {
@@ -808,6 +800,10 @@ html, :host {
   width: 128px;
 }
 
+.tw-w-4\/5 {
+  width: 80%;
+}
+
 .tw-w-5 {
   width: 20px;
 }
@@ -818,6 +814,10 @@ html, :host {
 
 .tw-w-9 {
   width: 36px;
+}
+
+.tw-w-\[120px\] {
+  width: 120px;
 }
 
 .tw-w-\[200px\] {
@@ -834,18 +834,6 @@ html, :host {
 
 .tw-w-screen {
   width: 100vw;
-}
-
-.tw-w-\[120px\] {
-  width: 120px;
-}
-
-.tw-w-1\/5 {
-  width: 20%;
-}
-
-.tw-w-4\/5 {
-  width: 80%;
 }
 
 .tw-max-w-\[480px\] {
@@ -1022,10 +1010,6 @@ html, :host {
 
 .tw-p-10 {
   padding: 40px;
-}
-
-.tw-p-4 {
-  padding: 16px;
 }
 
 .tw-p-5 {
@@ -1289,16 +1273,12 @@ html, :host {
   transition-duration: 150ms;
 }
 
-.tw-duration-300 {
-  transition-duration: 300ms;
-}
-
-.tw-duration-500 {
-  transition-duration: 500ms;
-}
-
 .tw-duration-200 {
   transition-duration: 200ms;
+}
+
+.tw-duration-300 {
+  transition-duration: 300ms;
 }
 
 .tw-ease-in-out {
@@ -1420,11 +1400,6 @@ html, :host {
 
   .md\:tw-w-1\/2 {
     width: 50%;
-  }
-
-  .md\:tw-w-fit {
-    width: -moz-fit-content;
-    width: fit-content;
   }
 
   .md\:tw-w-1\/5 {
