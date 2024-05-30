@@ -1,5 +1,5 @@
 {% liquid
-  assign title = section.settings.title | split: '-'
+  assign title = section.settings.title
   assign content = section.settings.content
   assign color_1 = section.settings.color_1
   assign color_2 = section.settings.color_2
@@ -19,7 +19,7 @@
         <img src="{{ sticker | image_url }}" width="240" height="240" class="tw-w-32 lg:tw-w-60">
       </div>
     {% endif %}
-    <h2 class="tw-mb-10 tw-text-center tw-text-4xl tw-font-bold md:tw-text-left md:tw-text-7xl "></h2>
+    <h2 class="tw-mb-10 tw-text-center tw-text-4xl tw-font-bold md:tw-text-left md:tw-text-7xl">{{ title }}</h2>
     <div class="">
       {{ content }}
     </div>
