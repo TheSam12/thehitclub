@@ -157,7 +157,7 @@
                     %}
                       :class="{ 'tw-text-black': scrollPosition >= 1, 'tw-text-white': scrollPosition < 1 }"
                     {% endif %}
-                    >Cart</span
+                    >Carrito</span
                   >
                 {% endif %}
                 {% if cart != empty %}
@@ -205,7 +205,7 @@
                         %}
                           :class="{ 'tw-text-black': scrollPosition >= 1, 'tw-text-white': scrollPosition < 1 }"
                         {% endif %}
-                        >Account</span
+                        >Mi Cuenta</span
                       >
                     {% else %}
                       <span
@@ -217,7 +217,7 @@
                         %}
                           :class="{ 'tw-text-black': scrollPosition >= 1, 'tw-text-white': scrollPosition < 1 }"
                         {% endif %}
-                        >Login</span
+                        >Ingresar</span
                       >
                     {% endif %}
                   {% endif %}
@@ -278,6 +278,19 @@
             </li>
           {% endif %}
         {% endfor %}
+        {% if shop.customer_accounts_enabled %}
+          <li class="tw-border-b-1 tw-border tw-border-x-0 tw-border-t-0 tw-px-5 tw-py-4">
+            <div>
+              <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}">
+                {% if customer %}
+                  <span>Mi Cuenta</span>
+                {% else %}
+                  <span>Ingresar</span>
+                {% endif %}
+              </a>
+            </div>
+          </li>
+        {% endif %}
       </ul>
     </nav>
   </div>
