@@ -13,7 +13,9 @@
           <div class="tw-flex tw-h-full tw-items-center tw-justify-center">
             {{ block.settings.image | image_url: width: 600, height: 600 | image_tag }}
           </div>
-          <h3 class="tw-text-center tw-text-3xl tw-font-bold">{{ block.settings.content }}</h3>
+          {%- if block.settings.content != blank -%}
+            <h3 class="tw-text-center tw-text-3xl tw-font-bold">{{ block.settings.content }}</h3>
+          {%- endif -%}
         </div>
       {% endfor %}
     </div>
