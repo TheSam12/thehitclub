@@ -28,7 +28,7 @@
 
 <div
   id="{{ section.id }}"
-  class=" {% if request.page_type == 'index' or page.template_suffix == 'hati' or page.template_suffix == 'gati' or page.template_suffix == 'about-us' or page.template_suffix == 'playlists' %}-tw-mb-28{% else %}tw-bg-white{% endif %}"
+  class=" {% if request.page_type == 'index' or page.template_suffix == 'hati' or page.template_suffix == 'gati' or page.template_suffix == 'about-us' or page.template_suffix == 'playlists' %}-tw-mb-28{% else %}tw-bg-white tw-drop-shadow-md{% endif %}"
 >
   <div
     {% if request.page_type == 'index'
@@ -249,7 +249,7 @@
   <div id="mobileMenu" class="tw-invisible tw-transition-all tw-duration-200 tw-ease-in-out">
     <div
       id="mobileOverlay"
-      class="tw-invisible tw-fixed tw-right-0 tw-top-0 tw-z-10 tw-h-screen tw-w-screen tw-bg-gray-600/50 tw-text-transparent tw-opacity-0 tw-transition-all tw-duration-200 tw-ease-in-out"
+      class="tw-invisible tw-fixed tw-right-0 tw-top-0 tw-z-10 tw-h-screen tw-w-screen tw-bg-black tw-text-transparent tw-opacity-0 tw-opacity-40 tw-transition-all tw-duration-200 tw-ease-in-out"
     >
       l
     </div>
