@@ -39,27 +39,57 @@
                   assign twitter = block.settings.twitter
                 %}
                 {% if facebook != blank %}
-                  <a class="tw-flex tw-items-center tw-text-white" title="facebook" href="{{ facebook }}">
+                  <a
+                    class="tw-flex tw-items-center tw-text-white"
+                    title="facebook"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="{{ facebook }}"
+                  >
                     {% render 'tw-social-icons', icon: 'facebook' %}
                   </a>
                 {% endif %}
                 {% if instagram != blank %}
-                  <a class="tw-flex tw-items-center tw-text-white" title="instagram" href="{{ instagram }}">
+                  <a
+                    class="tw-flex tw-items-center tw-text-white"
+                    title="instagram"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="{{ instagram }}"
+                  >
                     {% render 'tw-social-icons', icon: 'instagram' %}
                   </a>
                 {% endif %}
                 {% if tiktok != blank %}
-                  <a class="tw-flex tw-items-center tw-text-white" title="tiktok" href="{{ tiktok }}">
+                  <a
+                    class="tw-flex tw-items-center tw-text-white"
+                    title="tiktok"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="{{ tiktok }}"
+                  >
                     {% render 'tw-social-icons', icon: 'tiktok' %}
                   </a>
                 {% endif %}
                 {% if youtube != blank %}
-                  <a class="tw-flex tw-items-center tw-text-white" title="youtube" href="{{ youtube }}">
+                  <a
+                    class="tw-flex tw-items-center tw-text-white"
+                    title="youtube"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="{{ youtube }}"
+                  >
                     {% render 'tw-social-icons', icon: 'youtube' %}
                   </a>
                 {% endif %}
                 {% if twitter != blank %}
-                  <a class="tw-item-center tw-flex tw-text-white" title="twitter" href="{{ twitter }}">
+                  <a
+                    class="tw-item-center tw-flex tw-text-white"
+                    title="twitter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="{{ twitter }}"
+                  >
                     {% render 'tw-social-icons', icon: 'twitter' %}
                   </a>
                 {% endif %}
