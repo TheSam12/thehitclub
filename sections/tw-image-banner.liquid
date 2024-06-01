@@ -60,7 +60,7 @@
           </h1>
         {%- endif -%}
         {%- if title_image != blank -%}
-          {{ title_image | image_url: width: 1000 | image_tag: widths: '1000' }}
+          {{ title_image | image_url: width: 1000 | image_tag: class: 'tw-w-[800px]' }}
         {%- endif -%}
         {%- if btn_label != blank -%}
           <a
