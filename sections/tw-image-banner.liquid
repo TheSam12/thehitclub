@@ -60,7 +60,7 @@
           </h1>
         {%- endif -%}
         {%- if title_image != blank -%}
-          {{ title_image | img_url: 'master' | image_tag }}
+          {{ title_image | image_url: 'master' | image_tag }}
         {%- endif -%}
         {%- if btn_label != blank -%}
           <a
