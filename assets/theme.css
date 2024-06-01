@@ -632,6 +632,10 @@ html, :host {
   top: -64px;
 }
 
+.tw-bottom-5 {
+  bottom: 20px;
+}
+
 .tw-left-0 {
   left: 0;
 }
@@ -654,10 +658,6 @@ html, :host {
 
 .tw-top-\[103\.98px\] {
   top: 103.98px;
-}
-
-.tw-bottom-5 {
-  bottom: 20px;
 }
 
 .-tw-z-10 {
@@ -785,11 +785,6 @@ html, :host {
 
 .tw-h-full {
   height: 100%;
-}
-
-.tw-h-max {
-  height: -moz-max-content;
-  height: max-content;
 }
 
 .tw-h-screen {
@@ -1181,11 +1176,6 @@ html, :host {
 .tw-text-lg {
   font-size: 18px;
   line-height: 28px;
-}
-
-.tw-text-sm {
-  font-size: 14px;
-  line-height: 20px;
 }
 
 .tw-text-xl {
