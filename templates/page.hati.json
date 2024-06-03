@@ -190,7 +190,7 @@
         "@media (max-width: 749px) {.banner {display: none; }}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Hit_club_marzo1031.jpg",
+        "image": "shopify:\/\/shop_images\/HATI_banner.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
