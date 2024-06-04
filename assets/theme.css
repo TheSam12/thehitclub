@@ -1127,16 +1127,12 @@ html, :host {
   padding-top: 40px;
 }
 
-.tw-pt-5 {
-  padding-top: 20px;
-}
-
-.tw-pt-36 {
-  padding-top: 144px;
-}
-
 .tw-pt-20 {
   padding-top: 80px;
+}
+
+.tw-pt-5 {
+  padding-top: 20px;
 }
 
 .tw-text-left {
@@ -1544,6 +1540,10 @@ html, :host {
     width: 75%;
   }
 
+  .lg\:tw-w-4\/5 {
+    width: 80%;
+  }
+
   .lg\:tw-w-60 {
     width: 240px;
   }
@@ -1555,10 +1555,6 @@ html, :host {
   .lg\:tw-w-fit {
     width: -moz-fit-content;
     width: fit-content;
-  }
-
-  .lg\:tw-w-4\/5 {
-    width: 80%;
   }
 
   .lg\:tw-grid-cols-3 {
