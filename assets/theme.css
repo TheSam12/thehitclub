@@ -1135,6 +1135,10 @@ html, :host {
   padding-top: 144px;
 }
 
+.tw-pt-20 {
+  padding-top: 80px;
+}
+
 .tw-text-left {
   text-align: left;
 }
@@ -1472,6 +1476,10 @@ html, :host {
     padding-top: 80px;
   }
 
+  .md\:tw-pt-36 {
+    padding-top: 144px;
+  }
+
   .md\:tw-text-left {
     text-align: left;
   }
@@ -1547,6 +1555,10 @@ html, :host {
   .lg\:tw-w-fit {
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .lg\:tw-w-4\/5 {
+    width: 80%;
   }
 
   .lg\:tw-grid-cols-3 {
