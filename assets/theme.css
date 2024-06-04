@@ -835,10 +835,6 @@ html, :host {
   width: 100vw;
 }
 
-.tw-w-\[800px\] {
-  width: 800px;
-}
-
 .tw-max-w-\[480px\] {
   max-width: 480px;
 }
@@ -1133,6 +1129,10 @@ html, :host {
 
 .tw-pt-5 {
   padding-top: 20px;
+}
+
+.tw-pt-36 {
+  padding-top: 144px;
 }
 
 .tw-text-left {
