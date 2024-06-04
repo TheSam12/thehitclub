@@ -27,7 +27,7 @@
       "type": "tw-text-with-button",
       "settings": {
         "title": "Gym & Tone it es para tí si:",
-        "content": "<p>⚡️ Quieres sentirte <strong>cómodo en el gym<\/strong><\/p><p>⚡️ Te gusta entrenar con máquinas en un<strong> <\/strong>gimnasio.<\/p><p><strong>⚡️ <\/strong>Quieres 6 rutinas nuevas a la semana a un <strong>precio accesible<\/strong><\/p><p>⚡️ Necesitas un coach que te prepare las <strong>rutinas de la semana<\/strong><\/p><p>⚡️ Quieres <strong>aprender <\/strong>a usar las máquinas y sacarles provecho<\/p>",
+        "content": "<p>⚡️ Quieres sentirte <strong>cómodo en el gym<br\/><br\/><\/strong><\/p><p>⚡️ Te gusta entrenar con máquinas en un<strong> <\/strong>gimnasio.<br\/><br\/><\/p><p><strong>⚡️ <\/strong>Quieres 6 rutinas nuevas a la semana a un <strong>precio accesible<\/strong><\/p><p><strong><br\/><\/strong><\/p><p>⚡️ Necesitas un coach que te prepare las <strong>rutinas de la semana<br\/><br\/><\/strong><\/p><p>⚡️ Quieres <strong>aprender <\/strong>a usar las máquinas y sacarles provecho<\/p>",
         "btn_label": "¡ESTOY LISTO PARA EMPEZAR!",
         "btn_link": "shopify:\/\/products\/gym-and-tone-it"
       }
