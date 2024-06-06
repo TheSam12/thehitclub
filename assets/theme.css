@@ -1143,6 +1143,10 @@ html, :host {
   padding-top: 20px;
 }
 
+.tw-pt-3 {
+  padding-top: 12px;
+}
+
 .tw-text-left {
   text-align: left;
 }
