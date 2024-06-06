@@ -1514,6 +1514,11 @@ html, :host {
     font-size: 14px;
     line-height: 20px;
   }
+
+  .md\:tw-text-5xl {
+    font-size: 48px;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1024px) {
