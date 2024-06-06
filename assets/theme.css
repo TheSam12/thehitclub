@@ -1212,6 +1212,10 @@ html, :host {
   text-transform: capitalize;
 }
 
+.tw-leading-10 {
+  line-height: 2.5rem;
+}
+
 .tw-text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
