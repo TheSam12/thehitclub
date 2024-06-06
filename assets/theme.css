@@ -811,6 +811,10 @@ html, :host {
   width: 83.333333%;
 }
 
+.tw-w-52 {
+  width: 208px;
+}
+
 .tw-w-9 {
   width: 36px;
 }
@@ -833,14 +837,6 @@ html, :host {
 
 .tw-w-screen {
   width: 100vw;
-}
-
-.tw-w-\[600px\] {
-  width: 600px;
-}
-
-.tw-w-52 {
-  width: 208px;
 }
 
 .tw-max-w-\[480px\] {
@@ -934,6 +930,10 @@ html, :host {
 
 .tw-rounded-3xl {
   border-radius: 1.5rem;
+}
+
+.tw-rounded-\[30px\] {
+  border-radius: 30px;
 }
 
 .tw-rounded-full {
@@ -1220,14 +1220,6 @@ html, :host {
   text-transform: capitalize;
 }
 
-.tw-leading-10 {
-  line-height: 2.5rem;
-}
-
-.tw-leading-9 {
-  line-height: 2.25rem;
-}
-
 .tw-text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1380,10 +1372,6 @@ html, :host {
   text-decoration-line: underline;
 }
 
-.hover\:tw-decoration-solid:hover {
-  text-decoration-style: solid;
-}
-
 @media (min-width: 768px) {
   .md\:tw-mb-0 {
     margin-bottom: 0;
@@ -1488,10 +1476,6 @@ html, :host {
     padding-left: 40px;
   }
 
-  .md\:tw-pt-0 {
-    padding-top: 0;
-  }
-
   .md\:tw-pt-20 {
     padding-top: 80px;
   }
@@ -1514,6 +1498,11 @@ html, :host {
     line-height: 36px;
   }
 
+  .md\:tw-text-5xl {
+    font-size: 48px;
+    line-height: 1;
+  }
+
   .md\:tw-text-6xl {
     font-size: 60px;
     line-height: 1;
@@ -1532,21 +1521,6 @@ html, :host {
   .md\:tw-text-lg {
     font-size: 18px;
     line-height: 28px;
-  }
-
-  .md\:tw-text-sm {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  .md\:tw-text-5xl {
-    font-size: 48px;
-    line-height: 1;
-  }
-
-  .md\:tw-text-4xl {
-    font-size: 36px;
-    line-height: 40px;
   }
 }
 
@@ -1617,17 +1591,12 @@ html, :host {
     padding-bottom: 40px;
   }
 
-  .lg\:tw-py-32 {
-    padding-top: 128px;
-    padding-bottom: 128px;
+  .lg\:tw-pb-12 {
+    padding-bottom: 48px;
   }
 
   .lg\:tw-pb-14 {
     padding-bottom: 56px;
-  }
-
-  .lg\:tw-pb-12 {
-    padding-bottom: 48px;
   }
 
   .lg\:tw-pt-10 {
@@ -1658,16 +1627,6 @@ html, :host {
     font-size: 20px;
     line-height: 28px;
   }
-
-  .lg\:tw-text-base {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .lg\:tw-text-sm {
-    font-size: 14px;
-    line-height: 20px;
-  }
 }
 
 @media (min-width: 1280px) {
@@ -1697,19 +1656,14 @@ html, :host {
     line-height: 36px;
   }
 
-  .xl\:tw-text-xl {
-    font-size: 20px;
-    line-height: 28px;
-  }
-
   .xl\:tw-text-lg {
     font-size: 18px;
     line-height: 28px;
   }
 
-  .xl\:tw-text-base {
-    font-size: 16px;
-    line-height: 24px;
+  .xl\:tw-text-xl {
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 

@@ -26,7 +26,7 @@
           slides: [
               {% for block in section.blocks %}
                   {% if block.settings.img != blank %}
-                      { id: {{ forloop.index }}, content: '<img src="{{ block.settings.img | image_url }}" alt="{{ block.settings.img.alt }}" class="tw-w-full">' },
+                      { id: {{ forloop.index }}, content: '<img src="{{ block.settings.img | image_url }}" alt="{{ block.settings.img.alt }}" class="tw-w-full tw-rounded-[30px] ">' },
                   {% endif %}
               {% endfor %}
           ],
