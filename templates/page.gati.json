@@ -77,7 +77,8 @@
         "product_Y9nA9L"
       ],
       "settings": {
-        "title": "Planes de <br> Membresía",
+        "title": "Planes de  Membresía",
+        "sticker": "shopify:\/\/shop_images\/6.png",
         "content": "",
         "color_1": "#dddd65",
         "color_2": "#dddd65"
