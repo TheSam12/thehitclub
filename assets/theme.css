@@ -1218,6 +1218,10 @@ html,
   text-transform: capitalize;
 }
 
+.tw-leading-9 {
+  line-height: 2.25rem;
+}
+
 .tw-leading-10 {
   line-height: 2.5rem;
 }
