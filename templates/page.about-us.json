@@ -17,6 +17,7 @@
         "title": "Title",
         "btn_label": "",
         "btn_link": "",
+        "direction": "right",
         "color_1": "",
         "color_2": ""
       }
@@ -375,7 +376,7 @@
         "title_align": "center",
         "reverse": "left",
         "main_img": "shopify:\/\/shop_images\/Hit_club_marzo1031-m.jpg",
-        "signature_img": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_49f5bcc2-7d9e-4ab7-a025-c47fbb3cf9a4.png",
+        "signature_img": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_4.png",
         "content": "<p>Mejor conocida como Isacu, estudió psicología y tiene una trayectoria de 12 años en el rubro del fitness.<br\/><br\/><\/p><p>Creadora de dos programas de entrenamiento online y su propia línea de suplementos deportivos, KIU PERFORMANCE ®.<br\/><br\/><\/p><p>Amante de los animales y en constante lucha contra el maltrato animal.<\/p>",
         "brand_img": "shopify:\/\/shop_images\/Coach_Features_1.png"
       }
