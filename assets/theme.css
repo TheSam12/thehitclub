@@ -1509,6 +1509,11 @@ html, :host {
     font-size: 18px;
     line-height: 28px;
   }
+
+  .md\:tw-text-sm {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
