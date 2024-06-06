@@ -40,9 +40,11 @@
       </div>
     {% endif %}
     <div class="tw-container tw-m-auto tw-px-4 tw-pt-10 md:tw-px-20 md:tw-pt-0">
-      <h3 class="tw-hidden tw-py-10 tw-text-center tw-text-2xl md:tw-block">
-        {{ slider_label }}
-      </h3>
+      {% if slider_label != blank %}
+        <h3 class="tw-hidden tw-py-10 tw-text-center tw-text-2xl md:tw-block">
+          {{ slider_label }}
+        </h3>
+      {% endif %}
       <div class="swiper reviews_slider">
         <div class="swiper-wrapper">
           {% for block in section.blocks %}
