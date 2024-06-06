@@ -1551,6 +1551,10 @@ html, :host {
     left: 0;
   }
 
+  .lg\:tw-m-auto {
+    margin: auto;
+  }
+
   .lg\:tw-block {
     display: block;
   }
