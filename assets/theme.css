@@ -1608,6 +1608,11 @@ html, :host {
     font-size: 16px;
     line-height: 24px;
   }
+
+  .lg\:tw-text-sm {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1645,6 +1650,11 @@ html, :host {
   .xl\:tw-text-lg {
     font-size: 18px;
     line-height: 28px;
+  }
+
+  .xl\:tw-text-base {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
