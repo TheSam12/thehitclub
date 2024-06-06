@@ -17,6 +17,7 @@
         "title": "Title",
         "btn_label": "",
         "btn_link": "",
+        "direction": "right",
         "color_1": "",
         "color_2": ""
       }
@@ -375,9 +376,9 @@
         "title_align": "center",
         "reverse": "left",
         "main_img": "shopify:\/\/shop_images\/Hit_club_marzo1031-m.jpg",
-        "signature_img": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_49f5bcc2-7d9e-4ab7-a025-c47fbb3cf9a4.png",
+        "signature_img": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_4.png",
         "content": "<p>Mejor conocida como Isacu, estudió psicología y tiene una trayectoria de 12 años en el rubro del fitness.<br\/><br\/><\/p><p>Creadora de dos programas de entrenamiento online y su propia línea de suplementos deportivos, KIU PERFORMANCE ®.<br\/><br\/><\/p><p>Amante de los animales y en constante lucha contra el maltrato animal.<\/p>",
-        "brand_img": "shopify:\/\/shop_images\/Coach_Features_1.png"
+        "brand_img": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_5.png"
       }
     },
     "tw_image_with_text_VBcaAt": {
@@ -389,7 +390,7 @@
         "title_align": "center",
         "reverse": "right",
         "main_img": "shopify:\/\/shop_images\/Hit_club_marzo0548.jpg",
-        "signature_img": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_1_8763565a-7d09-4757-90d0-c8fd1dbdc8cf.png",
+        "signature_img": "shopify:\/\/shop_images\/2024.05.09_-_The_Hit_Club_Homepage_6.png",
         "content": "<p>Mejor conocido como \"el docti\". Estudió medicina y tiene una trayectoria de 17 años en entrenamientos de pesas y 11 años en entrenamiento de acondicionamiento físico para competencias de cayuco de océano a océano.<br\/><br\/><\/p><p>Vegano y dedicado a la constante búsqueda de herramientas que puedan ayudar a construir la mejor versión de cada uno.<\/p>"
       }
     }
