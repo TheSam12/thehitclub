@@ -1603,6 +1603,11 @@ html, :host {
     font-size: 20px;
     line-height: 28px;
   }
+
+  .lg\:tw-text-base {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1634,6 +1639,11 @@ html, :host {
 
   .xl\:tw-text-xl {
     font-size: 20px;
+    line-height: 28px;
+  }
+
+  .xl\:tw-text-lg {
+    font-size: 18px;
     line-height: 28px;
   }
 }
