@@ -14,7 +14,7 @@
             {{ block.settings.image | image_url: width: 1200, height: 600 | image_tag: class: 'tw-w-4/5' }}
           </div>
           {%- if block.settings.content != blank -%}
-            <h3 class="pt-3 tw-text-center tw-text-3xl tw-font-bold">{{ block.settings.content }}</h3>
+            <h3 class="pt-3 tw-text-center tw-text-3xl tw-font-bold ">{{ block.settings.content }}</h3>
           {%- endif -%}
         </div>
       {% endfor %}
