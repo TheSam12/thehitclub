@@ -1372,6 +1372,10 @@ html, :host {
   }
 }
 
+.hover\:tw-underline:hover {
+  text-decoration-line: underline;
+}
+
 .hover\:tw-decoration-solid:hover {
   text-decoration-style: solid;
 }
