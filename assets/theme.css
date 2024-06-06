@@ -1372,6 +1372,10 @@ html, :host {
   }
 }
 
+.hover\:tw-decoration-solid:hover {
+  text-decoration-style: solid;
+}
+
 @media (min-width: 768px) {
   .md\:tw-mb-0 {
     margin-bottom: 0;
