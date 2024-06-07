@@ -16,14 +16,14 @@
                 href="#"
                 @click.prevent="toggleAnswer(faq)"
                 v-html="faq.question"
-                class="question tw-block tw-flex tw-h-20 tw-w-full tw-cursor-pointer tw-items-center tw-pr-10 tw-text-base hover:tw-underline lg:tw-text-xl"
+                class="question tw-block tw-flex tw-h-20 tw-w-full tw-cursor-pointer tw-items-center tw-pr-10 tw-text-base tw-text-black hover:tw-underline lg:tw-text-xl"
                 :class="{ show: faq.showAnswer }"
               ></a>
             </div>
             <div
               v-if="faq.showAnswer"
               v-html="faq.answer"
-              class="answer tw-px-2 tw-pb-2 tw-pt-5 tw-text-lg"
+              class="answer tw-px-2 tw-pb-2 tw-pt-5 tw-text-lg tw-text-black"
             ></div>
           </div>
         </li>
