@@ -131,7 +131,7 @@
             {% endfor %}
           </div>
           <div class="tw-flex tw-items-center tw-gap-4">
-            <div class="tw-absolute tw-left-5 lg:tw-static lg:tw-left-0">
+            <div class="tw-absolute tw-right-5 lg:tw-static lg:tw-right-0">
               <a
                 href="{{ routes.cart_url }}"
                 class="tw-relative"
@@ -234,7 +234,7 @@
                 </a>
               </div>
             {% endif %}
-            <div class="tw-absolute tw-right-5 lg:tw-hidden ">
+            <div class="tw-absolute tw-left-5 lg:tw-hidden ">
               <button @click="toggleMenu">
                 <span
                   v-if="!isMenuOpen"
