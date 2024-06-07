@@ -3492,6 +3492,9 @@ details-disclosure > details {
   background: #c7c803;
 }
 
-.om-holder .om-container .om-middle .om-iframe-container .om-workspace-content .om-button:hover {
-  color: black !important;
+@media (hover: hover) and (pointer: fine) {
+  #om-campaign-1 #ele_x0HA0HFEV:hover,
+  #om-campaign-1 #ele_-Lvp2iIJ-:hover {
+    color: black !important;
+  }
 }
