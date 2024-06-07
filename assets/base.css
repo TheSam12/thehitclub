@@ -3493,8 +3493,8 @@ details-disclosure > details {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  #om-campaign-1 #ele_x0HA0HFEV:hover,
-  #om-campaign-1 #ele_-Lvp2iIJ-:hover {
+  #om-campaign-1 #ele_x0HA0HFEV.om-button:hover,
+  #om-campaign-1 #ele_-Lvp2iIJ-.om-button:hover {
     color: black !important;
   }
 }
