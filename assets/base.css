@@ -3491,3 +3491,7 @@ details-disclosure > details {
 .swiper-pagination-bullets .swiper-pagination-bullet-active {
   background: #c7c803;
 }
+
+.om-holder .om-container .om-middle .om-iframe-container .om-workspace-content .om-button:hover {
+  color: black !important;
+}
