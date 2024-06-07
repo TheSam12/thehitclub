@@ -20,7 +20,7 @@
             height=""
           >
         {% endif %}
-        <div class="tw-relative tw-py-8 lg:tw-pb-12 lg:tw-pt-10">
+        <div class="tw-relative tw-py-8 lg:tw-pb-12 lg:tw-pt-10 {% if bg_img == null %}bg-color{% endif %}">
           <h2 class="tw-flex tw-flex-col tw-gap-1 tw-text-center tw-text-7xl tw-font-bold tw-text-white tw-drop-shadow-lg md:tw-gap-5 md:tw-text-8xl lg:tw-text-9xl">
             {{ title }}
             <span class="tw-text-2xl md:tw-text-6xl">
@@ -51,7 +51,7 @@
             {% if block.type == 'review' %}
               <div class="swiper-slide">
                 <div class="tw-m-auto tw-w-5/6">
-                  <p class="tw-text-center tw-text-lg tw-font-bold md:tw-text-3xl lg:tw-text-5xl tw-text-black">
+                  <p class="tw-text-center tw-text-lg tw-font-bold tw-text-black md:tw-text-3xl lg:tw-text-5xl">
                     {{ block.settings.content }}
                   </p>
                   {% if block.settings.customer_img != null %}
@@ -65,7 +65,9 @@
                       >
                     </div>
                   {% endif %}
-                  <h3 class="tw-text-center tw-text-base md:tw-text-2xl tw-font-normal">{{ block.settings.customer_name }}</h3>
+                  <h3 class="tw-text-center tw-text-base tw-font-normal md:tw-text-2xl">
+                    {{ block.settings.customer_name }}
+                  </h3>
                 </div>
               </div>
             {% endif %}
@@ -95,6 +97,9 @@
       top: -100px;
     }
   }
+  .bg-color{
+    background-color: {{ section.settings.bg_color }}
+  }
 </style>
 <script>
   const swiper = new Swiper('.reviews_slider', {
@@ -114,6 +119,12 @@
       "type": "image_picker",
       "id": "bg_img",
       "label": "Background image"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color when no image",
+      "default": "#d1d0c7"
     },
     {
       "type": "image_picker",
