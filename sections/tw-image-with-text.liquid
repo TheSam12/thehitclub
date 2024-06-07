@@ -35,7 +35,7 @@
           {{ signature_img | image_url: width: 900 | image_tag: class: 'tw-w-52' }}
         </div>
       {% endif %}
-      <div class="tw-mb-8 tw-text-center tw-text-base md:tw-mb-0 md:tw-text-left md:tw-text-lg lg:tw-text-xl xl:tw-text-2xl">
+      <div class="tw-mb-8 tw-text-center tw-text-base {% if brand_img == null %}md:tw-mb-0{% endif %} md:tw-text-left md:tw-text-lg lg:tw-text-xl xl:tw-text-2xl">
         {{ content }}
       </div>
       {% if brand_img != null %}
