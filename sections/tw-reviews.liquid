@@ -51,7 +51,7 @@
             {% if block.type == 'review' %}
               <div class="swiper-slide">
                 <div class="tw-m-auto tw-w-5/6">
-                  <p class="tw-text-center tw-text-lg tw-font-bold md:tw-text-3xl lg:tw-text-5xl ">
+                  <p class="tw-text-center tw-text-lg tw-font-bold md:tw-text-3xl lg:tw-text-5xl tw-text-black">
                     {{ block.settings.content }}
                   </p>
                   {% if block.settings.customer_img != null %}
@@ -65,7 +65,7 @@
                       >
                     </div>
                   {% endif %}
-                  <h3 class="tw-text-center tw-text-base md:tw-text-2xl">{{ block.settings.customer_name }}</h3>
+                  <h3 class="tw-text-center tw-text-base md:tw-text-2xl tw-font-normal">{{ block.settings.customer_name }}</h3>
                 </div>
               </div>
             {% endif %}
@@ -88,7 +88,7 @@
     top: -100px;
     left: 0px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     .review-sticker {
       left: 15%;
       width: 200px;
