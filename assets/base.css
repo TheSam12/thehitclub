@@ -3488,3 +3488,6 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background: #c7c803;
+}
