@@ -3,14 +3,14 @@
   assign align = section.settings.align
 %}
 <div class="tw-container tw-m-auto lg:tw-py-10">
-  <div class="tw-text-{{ align }} tw-m-auto  lg:tw-w-3/4 lg:tw-pb-14">
+  <div class="tw-text-{{ align }} tw-m-auto  tw-pb-6 lg:tw-w-3/4 lg:tw-pb-14">
     <h2 class="tw-px-2 tw-text-4xl tw-font-bold md:tw-text-7xl">{{ title }}</h2>
   </div>
   <div id="faq">
     <div class="tw-mb-4 tw-w-full lg:tw-m-auto lg:tw-max-w-[700px]">
       <ul class="tw-rounded-2xl">
         <li v-for="(faq, index) in faqs" :key="index">
-          <div :class="{'tw-px-4': true, 'tw-py-2': true, 'lg:tw-py-1': true, 'tw-border-b': index < faqs.length - 1}">
+          <div :class="{'tw-px-4': true, 'tw-py-2': true, 'lg:tw-py-0': true, 'tw-border-b': index < faqs.length - 1}">
             <div class="tw-relative">
               <a
                 href="#"
