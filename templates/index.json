@@ -73,6 +73,7 @@
       ],
       "settings": {
         "title": "Planes de Membresía",
+        "align": "center",
         "content": "",
         "color_1": "#2ed5e9",
         "color_2": "#f7ef8d"
