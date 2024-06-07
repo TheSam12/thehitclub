@@ -169,6 +169,12 @@
           "supporting_text_title": "Purchase options",
           "subscription_policy_url": ""
         }
+      },
+      "4918592460924562117": {
+        "type": "shopify:\/\/apps\/optimonk-popup-cro-a-b-test\/blocks\/app-embed\/0b488be1-fc0a-4fe6-8793-f2bef383dba8",
+        "disabled": false,
+        "settings": {
+        }
       }
     },
     "color_schemes": {
