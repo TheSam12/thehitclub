@@ -4,6 +4,7 @@
   assign color_1 = section.settings.color_1
   assign color_2 = section.settings.color_2
   assign sticker = section.settings.sticker
+  assign align = section.settings.align
 %}
 
 <style>
@@ -16,10 +17,10 @@
   <div class="tw-container tw-relative tw-mx-auto tw-px-10 tw-py-10 md:tw-py-20">
     {% if sticker != null %}
       <div class="tw-absolute -tw-top-16 tw-right-0 lg:-tw-top-32">
-        <img src="{{ sticker | image_url }}" width="240" height="240" class="tw-w-32 lg:tw-w-60" {% if request.path == '/pages/gati' %}style="transform:rotate(-15deg)"{% endif %}>
+        <img src="{{ sticker | image_url }}" width="240" height="240" class="tw-w-32 lg:tw-w-60">
       </div>
     {% endif %}
-    <h2 class="tw-mb-10 tw-text-center tw-text-4xl tw-font-bold {% if request.path == '/pages/gati' or request.path == '/pages/hati' %}md:tw-text-5xl md:tw-text-left{% else %}md:tw-text-7xl{% endif %}">
+    <h2 class="tw-mb-10 tw-text-center tw-text-4xl tw-font-bold {% if request.path == '/pages/gati' or request.path == '/pages/hati' %}md:tw-text-5xl{% else %}md:tw-text-7xl{% endif %} md:tw-text-{{ align }}">
       {{ title }}
     </h2>
     <div class="">
@@ -63,6 +64,26 @@
       "id": "title",
       "label": "Title",
       "default": "Title"
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left",
+      "label": "Title alignment for desktop"
     },
     {
       "type": "image_picker",
