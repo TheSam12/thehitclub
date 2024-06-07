@@ -3491,10 +3491,3 @@ details-disclosure > details {
 .swiper-pagination-bullets .swiper-pagination-bullet-active {
   background: #c7c803;
 }
-
-@media (hover: hover) and (pointer: fine) {
-  #om-campaign-1 #ele_x0HA0HFEV.om-button:hover,
-  #om-campaign-1 #ele_-Lvp2iIJ-.om-button:hover {
-    color: black !important;
-  }
-}
