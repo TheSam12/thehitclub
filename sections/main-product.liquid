@@ -751,6 +751,7 @@
     priceElements.forEach((element) => {
       const priceText = element.textContent;
       if (isNan(priceText)){
+        console.log('Invalid Number');
       } else {
         console.log(priceText);
         const priceNumber = priceText.substr(1);
