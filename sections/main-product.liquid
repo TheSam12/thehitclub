@@ -746,10 +746,13 @@
   </div>
 </section>
 <script>
-  const priceContainer = document.querySelectorAll('.appstel_sellingPlan_price');
-  const priceText = priceContainer.textContent;
-  const price = parseFloat(priceText);
-  const fixedPrice = price.toFixed(0);
+  const priceElements = document.querySelectorAll('.appstle-price');
+  priceElements.forEach((element) => {
+    const priceText = element.textContent;
+    const price = parseFloat(priceText);
+    const roundedPrice = price.toFixed(0);
+    element.textContent = roundedPrice;
+  });
 </script>
 
 {% schema %}
