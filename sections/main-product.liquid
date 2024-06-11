@@ -748,11 +748,9 @@
 <script>
   window.onload = function(){
     const priceElements = document.querySelectorAll('.appstle_price_block');
-    priceElements.forEach((element) => {
-      const priceText = element.textContent;
-      if (isNan(priceText)){
-        console.log('Invalid Number');
-      } else {
+    if (priceElements.length > 0){
+      priceElements.forEach((element) => {
+        const priceText = element.textContent;
         console.log(priceText);
         const priceNumber = priceText.substr(1);
         console.log(priceNumber);
@@ -761,8 +759,8 @@
         const roundedPrice = price.toFixed(0);
         element.textContent = '$'+roundedPrice;
         console.log(roundedPrice);
-      }
-    });
+      });
+    }
   }
 </script>
 
