@@ -750,7 +750,8 @@
     const priceElements = document.querySelectorAll('.appstle_price_block');
     priceElements.forEach((element) => {
       const priceText = element.textContent;
-      if (priceText != NaN){
+      if (isNan(priceText)){
+      } else {
         console.log(priceText);
         const priceNumber = priceText.substr(1);
         console.log(priceNumber);
