@@ -145,6 +145,12 @@
             "img": "shopify:\/\/shop_images\/BEFORE_AFTER_WEBSITE.png"
           }
         },
+        "images_9jt7JA": {
+          "type": "Images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/BEFORE_AFTER_WEBSITE_2.png"
+          }
+        },
         "images_RMXqy4": {
           "type": "Images",
           "settings": {
@@ -179,6 +185,7 @@
       "block_order": [
         "images_ihGTwq",
         "images_ynmkne",
+        "images_9jt7JA",
         "images_RMXqy4",
         "images_Nzpj6Y",
         "images_LfihtQ",
