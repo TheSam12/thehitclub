@@ -145,6 +145,18 @@
             "img": "shopify:\/\/shop_images\/BEFORE_AFTER_WEBSITE.png"
           }
         },
+        "images_mz9rNB": {
+          "type": "Images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/BEFORE_AFTER_WEBSITE_6462e888-6309-4529-be69-344e9c06b49c.png"
+          }
+        },
+        "images_pgyVpR": {
+          "type": "Images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/BEFORE_AFTER_WEBSITE_1_d80b4f4e-455e-4f58-bf89-d881352e2316.png"
+          }
+        },
         "images_9jt7JA": {
           "type": "Images",
           "settings": {
@@ -185,6 +197,8 @@
       "block_order": [
         "images_ihGTwq",
         "images_ynmkne",
+        "images_mz9rNB",
+        "images_pgyVpR",
         "images_9jt7JA",
         "images_RMXqy4",
         "images_Nzpj6Y",
