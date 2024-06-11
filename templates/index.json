@@ -163,16 +163,16 @@
             "img": "shopify:\/\/shop_images\/BEFORE_AFTER_WEBSITE.jpg"
           }
         },
-        "images_EQTDXw": {
-          "type": "Images",
-          "settings": {
-            "img": "shopify:\/\/shop_images\/BEFORE_AFTER_WEBSITE_1.png"
-          }
-        },
         "images_RD34Yt": {
           "type": "Images",
           "settings": {
             "img": "shopify:\/\/shop_images\/before-after.png"
+          }
+        },
+        "images_EQTDXw": {
+          "type": "Images",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/BEFORE_AFTER_WEBSITE_1.png"
           }
         }
       },
@@ -182,8 +182,8 @@
         "images_RMXqy4",
         "images_Nzpj6Y",
         "images_LfihtQ",
-        "images_EQTDXw",
-        "images_RD34Yt"
+        "images_RD34Yt",
+        "images_EQTDXw"
       ],
       "settings": {
         "title": "Cambios Reales"
