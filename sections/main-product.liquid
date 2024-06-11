@@ -751,6 +751,8 @@
     priceElements.forEach((element) => {
       const priceText = element.textContent;
       console.log(priceText);
+      const priceNumber = priceText.substr(1);
+      console.log(priceNumber);
       const price = parseFloat(priceText);
       console.log(price);
       const roundedPrice = price.toFixed(0);
