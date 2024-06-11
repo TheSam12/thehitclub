@@ -758,6 +758,17 @@
       const roundedPrice = price.toFixed(0);
       element.textContent = '$'+roundedPrice;
     });
+    const saveElements = document.querySelectorAll('.appstle_sellingPlan_discountText');
+    saveElements.forEach((element) => {
+      const priceText = element.textContent;
+      if (!priceText || priceText === '') {
+        return;
+      };
+      const priceNumber = priceText.substr(11);
+      const price = parseFloat(priceNumber);
+      const roundedPrice = price.toFixed(0);
+      element.textContent = 'Ahorro de $'+roundedPrice;
+    });
   }
 </script>
 
