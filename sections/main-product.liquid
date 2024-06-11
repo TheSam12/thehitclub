@@ -748,19 +748,16 @@
 <script>
   window.onload = function(){
     const priceElements = document.querySelectorAll('.appstle_price_block');
-    if (priceElements.length > 0){
-      priceElements.forEach((element) => {
-        const priceText = element.textContent;
-        console.log(priceText);
-        const priceNumber = priceText.substr(1);
-        console.log(priceNumber);
-        const price = parseFloat(priceNumber);
-        console.log(price);
-        const roundedPrice = price.toFixed(0);
-        element.textContent = '$'+roundedPrice;
-        console.log(roundedPrice);
-      });
-    }
+    priceElements.forEach((element) => {
+      const priceText = element.textContent;
+      if (!priceText || priceText === '') {
+        return;
+      };
+      const priceNumber = priceText.substr(1);
+      const price = parseFloat(priceNumber);
+      const roundedPrice = price.toFixed(0);
+      element.textContent = '$'+roundedPrice;
+    });
   }
 </script>
 
