@@ -746,14 +746,16 @@
   </div>
 </section>
 <script>
-  const priceElements = document.querySelectorAll('.appstle_sellingPlan_price');
-  priceElements.forEach((element) => {
-    const priceText = element.textContent;
-    const price = parseFloat(priceText);
-    const roundedPrice = price.toFixed(0);
-    element.textContent = roundedPrice;
-    console.log(roundedPrice)
-  });
+  window.onload = function(){
+    const priceElements = document.querySelectorAll('.appstle_sellingPlan_price');
+    priceElements.forEach((element) => {
+      const priceText = element.textContent;
+      const price = parseFloat(priceText);
+      const roundedPrice = price.toFixed(0);
+      element.textContent = roundedPrice;
+      console.log(roundedPrice)
+    });
+  }
 </script>
 
 {% schema %}
