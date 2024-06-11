@@ -746,7 +746,7 @@
   </div>
 </section>
 <script>
-  const priceContainer = document.querySelector('.appstel_sellingPlan_price');
+  const priceContainer = document.querySelectorAll('.appstel_sellingPlan_price');
   const priceText = priceContainer.textContent;
   const price = parseFloat(priceText);
   const fixedPrice = price.toFixed(0);
