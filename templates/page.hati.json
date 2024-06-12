@@ -54,8 +54,8 @@
           "settings": {
             "new_mark": false,
             "title": "PLAN 3 MESES",
-            "price": "$76",
-            "custom_line_1": "(Ahorra $20)",
+            "price": "$75",
+            "custom_line_1": "(Ahorra $21)",
             "custom_line_2": "Pago recurrente cada 90 días",
             "btn_label": "SUSCRIBIRME",
             "btn_url": "https:\/\/thehitclub.myshopify.com\/products\/home-and-tone-it?selling_plan=3317694676&variant=44564437336276"
@@ -66,8 +66,8 @@
           "settings": {
             "new_mark": true,
             "title": "PLAN 6 MESES",
-            "price": "$140",
-            "custom_line_1": "(Ahorra $52)",
+            "price": "$138",
+            "custom_line_1": "(Ahorra $54)",
             "custom_line_2": "Pago recurrente cada 160 días",
             "btn_label": "SUSCRIBIRME",
             "btn_url": "https:\/\/thehitclub.myshopify.com\/products\/home-and-tone-it?selling_plan=3414589652&variant=44564437336276"
@@ -80,7 +80,8 @@
         "product_kXfqit"
       ],
       "settings": {
-        "title": "Planes de <br> Membresía",
+        "title": "Planes de  Membresía",
+        "align": "left",
         "sticker": "shopify:\/\/shop_images\/1.png",
         "content": "",
         "color_1": "#ffa3d7",
