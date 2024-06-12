@@ -124,7 +124,7 @@
         "share"
       ],
       "custom_css": [
-        ".js-product-add-to-cart {background-color: #AA4A44; border-color: #AA4A44; color: #AA4A44;}"
+        ".button {background-color: #000; border-color: #aa4a44; color: #fff;}"
       ],
       "settings": {
         "enable_sticky_info": true,
