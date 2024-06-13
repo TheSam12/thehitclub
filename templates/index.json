@@ -217,8 +217,8 @@
       ],
       "settings": {
         "d_img": "shopify:\/\/shop_images\/home_abs.png",
-        "pre_title": "Pre Title",
-        "title": "Title",
+        "pre_title": "",
+        "title": "",
         "btn_label": "",
         "btn_link": "",
         "direction": "right",
