@@ -247,6 +247,73 @@
       "settings": {
         "title": "¿Qué necesitas?"
       }
+    },
+    "tw_faq_NPbWkG": {
+      "type": "tw-faq",
+      "blocks": {
+        "questions_MXUQpa": {
+          "type": "questions",
+          "settings": {
+            "question": "¿La rutina del día es en vivo o pre-grabada?",
+            "answer": "<p>¡Coach Isacu entrena contigo EN VIVO de lunes a viernes! La rutina tiene una duración de 60 minutos ya que incluimos pre & post stretching stretching + un mini set extra de abs (ñapa) si el tiempo lo permite.<\/p>"
+          }
+        },
+        "questions_jUhDqc": {
+          "type": "questions",
+          "settings": {
+            "question": "¿A qué hora son los LIVES?",
+            "answer": "<p>6:30am (hora de Panamá). Sujeto a cambios con previo aviso.<\/p>"
+          }
+        },
+        "questions_KkqwYH": {
+          "type": "questions",
+          "settings": {
+            "question": "¿Qué pasa si no logro hacer el LIVE a las 6:30am, lo puedo hacer después?",
+            "answer": "<p>¡Claro! Los LIVES quedan guardados para que lo puedas hacer a la hora que prefieras.<\/p>"
+          }
+        },
+        "questions_CbH4Vr": {
+          "type": "questions",
+          "settings": {
+            "question": "¿Necesito tener acceso a un gimnasio para hacer las rutinas?",
+            "answer": "<p>No, las rutinas de Home & Tone it son diseñadas para poder hacerlas desde casa con equipo básico (dumbbells, loop bands y soga).<\/p>"
+          }
+        },
+        "questions_UkjbRn": {
+          "type": "questions",
+          "settings": {
+            "question": "¿Cuántas rutinas a la semana incluye Home & Tone it?",
+            "answer": "<p>Home & Tone it incluye rutinas de lunes a sábado (6 a la semana) cumpliendo una programación muscular completa.<\/p>"
+          }
+        },
+        "questions_qggzRF": {
+          "type": "questions",
+          "settings": {
+            "question": "¿Cuál es la programación muscular de Home & Tone it?",
+            "answer": "<p>Lunes: cuádriceps & femorales<br\/>Martes: espalda, biceps & deltoides<br\/>Miércoles: glúteos & abductores<br\/>Jueves: pecho, hombro & triceps<br\/>Viernes: 30min. full lower bodySábado: abs & pantorrilla<\/p>"
+          }
+        },
+        "questions_CiwkPk": {
+          "type": "questions",
+          "settings": {
+            "question": "¿Tienen planes familiares o empresariales?",
+            "answer": "<p>¡Si, por supuesto! Nos encanta ver a Home & Tone it uniendo familias y co-workers :). Para saber más sobre nuestros paquetes especiales escríbenos a nuestro WhatsApp y te enviamos la información<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "questions_MXUQpa",
+        "questions_jUhDqc",
+        "questions_KkqwYH",
+        "questions_CbH4Vr",
+        "questions_UkjbRn",
+        "questions_qggzRF",
+        "questions_CiwkPk"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "align": "center"
+      }
     }
   },
   "order": [
@@ -258,6 +325,7 @@
     "tw_image_banner_njtx3Y",
     "image_banner_tPTKpY",
     "image_banner_9TRyHM",
-    "tw_image_grid_itPJUP"
+    "tw_image_grid_itPJUP",
+    "tw_faq_NPbWkG"
   ]
 }
