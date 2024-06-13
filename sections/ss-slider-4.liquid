@@ -627,7 +627,7 @@ For inquiries or permissions, contact daniel@section.store
                 <div class="slider-buttons-{{ section.id }}">
                     <button class="slider-btn-prev-{{ section.id }}">
                         {% if arrow_left != blank %}
-                            <img src="{{ arrow_left | image_url: width: 241 }}" alt="{{ arrow_left.alt }}">
+                            <img src="{{ arrow_left | image_url }}" alt="{{ arrow_left.alt }}">
                         {% else %}
                             <svg class="theme-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"></path>
@@ -654,7 +654,7 @@ For inquiries or permissions, contact daniel@section.store
                     <div class="slider-image-{{ section.id }}" style="clip-path: url(#image-shape-{{ section.id }});">
                         {% if block.settings.image != blank %}
                             <img 
-                                src="{{ block.settings.image | image_url }}" 
+                                src="{{ block.settings.image | image_url: width: 241 }}" 
                                 alt="{{ block.settings.image.alt }}" 
                                 {% if lazy %}
                                 loading="lazy"
