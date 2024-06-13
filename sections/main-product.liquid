@@ -746,42 +746,45 @@
   </div>
 </section>
 <script>
-  window.onload = function(){
+  window.onload = function () {
     const priceElements = document.querySelectorAll('.appstle_price_block');
     priceElements.forEach((element) => {
       const priceText = element.textContent;
       if (!priceText || priceText === '') {
         return;
-      };
+      }
       const priceNumber = priceText.substr(1);
       const price = parseFloat(priceNumber);
+      if (price.toString().indexOf('.') !== -1) {
+        console.log(price);
+      }
       const roundedPrice = price.toFixed(0);
-      element.textContent = '$'+roundedPrice;
+      element.textContent = '$' + roundedPrice;
     });
     const saveElements = document.querySelectorAll('.appstle_sellingPlan_discountText');
     saveElements.forEach((element) => {
       const priceText = element.textContent;
       if (!priceText || priceText === '') {
         return;
-      };
+      }
       const priceNumber = priceText.substr(11);
       const price = parseFloat(priceNumber);
       const roundedPrice = price.toFixed(0);
-      element.textContent = 'Ahorro de $'+roundedPrice;
+      element.textContent = 'Ahorro de $' + roundedPrice;
     });
     const discountElements = document.querySelectorAll('.appstle_discount_block');
     discountElements.forEach((element) => {
       const priceText = element.textContent;
       if (!priceText || priceText === '') {
         return;
-      };
+      }
       const priceNumber = priceText.substr(1);
       const priceSlice = priceNumber.slice(0, -4);
       const price = parseFloat(priceSlice);
       const roundedPrice = price.toFixed(0);
-      element.textContent = '$'+roundedPrice+'/mes';
+      element.textContent = '$' + roundedPrice + '/mes';
     });
-  }
+  };
 </script>
 
 {% schema %}
