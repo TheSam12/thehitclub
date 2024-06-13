@@ -1537,10 +1537,6 @@ html, :host {
     top: -128px;
   }
 
-  .lg\:tw-left-0 {
-    left: 0;
-  }
-
   .lg\:tw-right-0 {
     right: 0;
   }
