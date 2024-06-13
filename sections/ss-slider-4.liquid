@@ -654,7 +654,7 @@ For inquiries or permissions, contact daniel@section.store
                     <div class="slider-image-{{ section.id }}" style="clip-path: url(#image-shape-{{ section.id }});">
                         {% if block.settings.image != blank %}
                             <img 
-                                src="{{ block.settings.image | image_url: width: 241 }}" 
+                                src="{{ block.settings.image | image_url }}" 
                                 alt="{{ block.settings.image.alt }}" 
                                 {% if lazy %}
                                 loading="lazy"
