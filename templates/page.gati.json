@@ -218,12 +218,36 @@
             "question": "¿Cuál es la programación muscular de Gym & Tone it?",
             "answer": "<p>Lunes: cuádriceps & femorales<br\/>Martes: espalda & deltoides<br\/>Miércoles: glúteos & abductores<br\/>Jueves: pecho & hombro<br\/>Viernes: full lower body<br\/>Sábado: biceps, triceps & pantorrilla<\/p>"
           }
+        },
+        "questions_nQaVzf": {
+          "type": "questions",
+          "settings": {
+            "question": "¿Cómo aprendo a utilizar correctamente cada máquina?",
+            "answer": "<p>El programa incluye ¨how to videos¨ y tips para que aprendas la técnica correcta de uso en cada máquina. Y si quedas con alguna duda, tienes contacto directo al WhatsApp de tus entrenadores.<\/p>"
+          }
+        },
+        "questions_PnJWnC": {
+          "type": "questions",
+          "settings": {
+            "question": "¿Puedo hacer ambos programas, Home & Gym?",
+            "answer": "<p>¡Claro que sí! Tenemos un Bundle Deal para que puedas variar tus entrenamientos entre rutinas de casa y rutinas desde el gym.<\/p>"
+          }
+        },
+        "questions_Et6EmV": {
+          "type": "questions",
+          "settings": {
+            "question": "¿Tienen planes familiares o empresariales?",
+            "answer": "<p>¡Si, por supuesto! Nos encanta ver a Home & Tone it uniendo familias y co-workers :). Para saber más sobre nuestros paquetes especiales escríbenos a nuestro WhatsApp y te enviamos la información.<\/p>"
+          }
         }
       },
       "block_order": [
         "questions_J8GnJa",
         "questions_yQtnXx",
-        "questions_6GjhfP"
+        "questions_6GjhfP",
+        "questions_nQaVzf",
+        "questions_PnJWnC",
+        "questions_Et6EmV"
       ],
       "settings": {
         "title": "Preguntas Frecuentes",
