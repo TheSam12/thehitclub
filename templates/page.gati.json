@@ -194,6 +194,41 @@
         "color_1": "",
         "color_2": ""
       }
+    },
+    "tw_faq_DnaHPD": {
+      "type": "tw-faq",
+      "blocks": {
+        "questions_J8GnJa": {
+          "type": "questions",
+          "settings": {
+            "question": "¿Necesito tener acceso a un gimnasio para hacer las rutinas?",
+            "answer": "<p>Sí, debes tener acceso a un gimnasio equipado. Si tienes un gimnasio bastante completo en tu hogar, no dudes en enviarnos fotos o videos de las máquinas y te dejamos saber si cumple con los requisitos para poder cumplir con las rutinas.<\/p>"
+          }
+        },
+        "questions_yQtnXx": {
+          "type": "questions",
+          "settings": {
+            "question": "¿Cuántas rutinas a la semana incluye Gym & Tone it?",
+            "answer": "<p>Gym & Tone it incluye 6 rutinas a la semana (lunes a sábado) cumpliendo una programación muscular completa. Los domingos compartimos una sesión de mobility.<\/p>"
+          }
+        },
+        "questions_6GjhfP": {
+          "type": "questions",
+          "settings": {
+            "question": "¿Cuál es la programación muscular de Gym & Tone it?",
+            "answer": "<p>Lunes: cuádriceps & femorales<br\/>Martes: espalda & deltoides<br\/>Miércoles: glúteos & abductores<br\/>Jueves: pecho & hombro<br\/>Viernes: full lower body<br\/>Sábado: biceps, triceps & pantorrilla<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "questions_J8GnJa",
+        "questions_yQtnXx",
+        "questions_6GjhfP"
+      ],
+      "settings": {
+        "title": "Preguntas Frecuentes",
+        "align": "center"
+      }
     }
   },
   "order": [
@@ -204,6 +239,7 @@
     "tw_text_with_gif_LQEwbQ",
     "image_banner_9keykn",
     "image_banner_eR9EV4",
-    "tw_image_banner_UxVVWc"
+    "tw_image_banner_UxVVWc",
+    "tw_faq_DnaHPD"
   ]
 }
