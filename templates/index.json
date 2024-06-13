@@ -46,8 +46,8 @@
           "settings": {
             "new_mark": false,
             "title": "PLAN 3 MESES",
-            "price": "$75",
-            "custom_line_1": "(Ahorra $21)",
+            "price": "$76",
+            "custom_line_1": "(Ahorra $20)",
             "custom_line_2": "Pago recurrente cada 90 días",
             "btn_label": "SUSCRIBIRME",
             "btn_url": "#optimonk-popup"
@@ -58,8 +58,8 @@
           "settings": {
             "new_mark": true,
             "title": "PLAN 6 MESES",
-            "price": "$138",
-            "custom_line_1": "(Ahorra $54)",
+            "price": "$144",
+            "custom_line_1": "(Ahorra $48)",
             "custom_line_2": "Pago recurrente cada 160 días",
             "btn_label": "SUSCRIBIRME",
             "btn_url": "#optimonk-popup"
