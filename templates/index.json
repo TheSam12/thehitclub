@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "tw_image_banner_jhYmQg": {
@@ -95,9 +104,9 @@
         "review_4k4PRV": {
           "type": "review",
           "settings": {
-            "content": "¨Transmites algo increíble! Tu energía es hermosa. Espero todos los días la hora de entrenar¨",
-            "customer_img": "shopify:\/\/shop_images\/proud-canadian-woman.jpg",
-            "customer_name": "Ana Lugo - Bogotá, Colombia"
+            "content": "¨Oficialmente soy rat de Gym & Tone it! La plataforma es lo más friendly que hay y AMO. Me levanto mega motivada para meterle con todo, es mi dosis de self-love diario. Amamos aquí! 💖¨",
+            "customer_img": "shopify:\/\/shop_images\/Sara_Faretra.png",
+            "customer_name": "-Sara Faretra (Panamá)"
           }
         },
         "review_WC78ez": {
