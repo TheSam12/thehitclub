@@ -1533,6 +1533,11 @@ html, :host {
     position: static;
   }
 
+  .lg\:tw-text-3xl {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
   .lg\:-tw-top-32 {
     top: -128px;
   }
