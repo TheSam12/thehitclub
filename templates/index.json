@@ -104,7 +104,7 @@
         "review_4k4PRV": {
           "type": "review",
           "settings": {
-            "content": "¨Oficialmente soy rat de Gym & Tone it! La plataforma es lo más friendly que hay y AMO. Me levanto mega motivada para meterle con todo, es mi dosis de self-love diario. Amamos aquí! 💖¨",
+            "content": "<p>¨Oficialmente soy rat de Gym & Tone it! La plataforma es lo más friendly que hay y AMO. Me levanto mega motivada para meterle con todo, es mi dosis de self-love diario. Amamos aquí! 💖¨<\/p>",
             "customer_img": "shopify:\/\/shop_images\/Sara_Faretra.png",
             "customer_name": "-Sara Faretra (Panamá)"
           }
@@ -112,24 +112,69 @@
         "review_WC78ez": {
           "type": "review",
           "settings": {
-            "content": "¨Transmites algo increíble! Tu energía es hermosa. Espero todos los días la hora de entrenar¨",
-            "customer_img": "shopify:\/\/shop_images\/brushing-eyebrows.jpg",
-            "customer_name": "Lisa Perez - Quito, Ecuador"
+            "content": "<p>¨Entrenar con ustedes es un boost diario de salud física, mental y sabrosura. Gracias por cambiar mi vida y volver el ejercicio un lifestyle. Las amo 💘¨<\/p>",
+            "customer_img": "shopify:\/\/shop_images\/FOTOS_TESTIMONIOS.png",
+            "customer_name": "-Amanda Perez (Ecuador)"
           }
         },
         "review_jpyHcF": {
           "type": "review",
           "settings": {
-            "content": "¨Transmites algo increíble! Tu energía es hermosa. Espero todos los días la hora de entrenar¨",
-            "customer_img": "shopify:\/\/shop_images\/modern-male-fashion-with-glasses.jpg",
-            "customer_name": "Juan Quintero - Tijuana, México"
+            "content": "<p>¨Llevo 1 año entrenando con Isa. Quedé embarazada a finales del 2023 y seguí entrenando igual, las variaciones que dan para embarazadas son perfectas y no hay que interrumpir el entrenamiento. Ooootro nivel de coach, de clase, de vibra! 🔥¨<\/p>",
+            "customer_img": "shopify:\/\/shop_images\/Daniela_Salcedo.png",
+            "customer_name": "-Daniela Salcedo (Colombia)"
+          }
+        },
+        "review_pXqqVe": {
+          "type": "review",
+          "settings": {
+            "content": "<p>¨H&TI es la relación más sana, más expansiva y más feliz que he tenido en mi vida. Los cambios físicos son sólo la cereza del pastel. Lo realmente valioso es la energía positiva que te inyecta cada clase, la química y buena vibra que contagian la coach y la jefa. 3 años activity y vamos por más! ❤️‍🔥⚡¨<\/p>",
+            "customer_img": "shopify:\/\/shop_images\/Mishel_Salcedo.png",
+            "customer_name": "-Mishel Salcedo (Ecuador)"
+          }
+        },
+        "review_zmmq6b": {
+          "type": "review",
+          "settings": {
+            "content": "<p>¨Casi 5 meses de embarazo y es una locura que haya podido entrenar todas las semanas! GRACIAS. Me has cambiado la vida y por ende la de mis hijos. Forever Grateful! ✨¨<\/p>",
+            "customer_img": "shopify:\/\/shop_images\/Hilda_Quintero.png",
+            "customer_name": "-Hilda Quintero (Panamá)"
+          }
+        },
+        "review_KtYy8c": {
+          "type": "review",
+          "settings": {
+            "content": "<p>¨He descubierto que después de tener hijos también puedo estar en mi mejor momento! Entrenar online y con tu energía es de otro mundo!!¨<\/p>",
+            "customer_img": "shopify:\/\/shop_images\/Amaralina_Saez.png",
+            "customer_name": "-Amaralina Saez (Panamá)"
+          }
+        },
+        "review_RfkaB8": {
+          "type": "review",
+          "settings": {
+            "content": "<p>¨Me había costado demasiado encontrar algo que se adaptara a mí. Gym & Tone it me cayó del cielo, Fact! 🙌🏼¨<\/p>",
+            "customer_img": "shopify:\/\/shop_images\/Ale_Sousa.png",
+            "customer_name": "-Ale Sousa (Panamá)"
+          }
+        },
+        "review_kgXidQ": {
+          "type": "review",
+          "settings": {
+            "content": "<p>¨La entrenadora Pokémon favorita de todos! No sabes el impacto que tienes en todos nosotros! Here since 2022! ✊🏻¨<\/p>",
+            "customer_img": "shopify:\/\/shop_images\/Carlo_Huang.png",
+            "customer_name": "-Carlo Huang (Panamá)"
           }
         }
       },
       "block_order": [
         "review_4k4PRV",
         "review_WC78ez",
-        "review_jpyHcF"
+        "review_jpyHcF",
+        "review_pXqqVe",
+        "review_zmmq6b",
+        "review_KtYy8c",
+        "review_RfkaB8",
+        "review_kgXidQ"
       ],
       "settings": {
         "bg_color": "#d1d0c7",
