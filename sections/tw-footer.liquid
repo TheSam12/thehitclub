@@ -37,6 +37,7 @@
                   assign tiktok = block.settings.tiktok
                   assign youtube = block.settings.youtube
                   assign twitter = block.settings.twitter
+                  assign whatsapp = block.settings.whatsapp
                 %}
                 {% if facebook != blank %}
                   <a
@@ -91,6 +92,17 @@
                     href="{{ twitter }}"
                   >
                     {% render 'tw-social-icons', icon: 'twitter' %}
+                  </a>
+                {% endif %}
+                {% if whatsapp != blank %}
+                  <a
+                    class="tw-item-center tw-flex tw-text-white"
+                    title="twitter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="{{ whatsapp }}"
+                  >
+                    {% render 'tw-social-icons', icon: 'whatsapp' %}
                   </a>
                 {% endif %}
               </div>
@@ -165,6 +177,11 @@
           "type": "url",
           "id": "twitter",
           "label": "twitter"
+        },
+        {
+          "type": "url",
+          "id": "whatsapp",
+          "label": "whatsapp"
         }
       ]
     }
