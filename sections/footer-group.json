@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -26,7 +35,8 @@
             "instagram": "https:\/\/www.instagram.com\/hit_isacu\/",
             "tiktok": "https:\/\/www.tiktok.com\/@hit_isacu",
             "youtube": "https:\/\/www.youtube.com\/channel\/UCwJvOafknrc7GMB-pzAP6rA",
-            "twitter": ""
+            "twitter": "",
+            "whatsapp": "https:\/\/web.whatsapp.com\/send?phone=+50764683483&text=Hello!%20Vengo%20de%20thehitclub.online%20y%20tengo%20una%20consulta"
           }
         }
       },
