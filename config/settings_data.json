@@ -188,6 +188,12 @@
       },
       "16963237191767492405": {
         "type": "shopify:\/\/apps\/whatsapp-button\/blocks\/app-embed-block\/96d80a63-e860-4262-a001-8b82ac4d00e6",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "10956798698494376089": {
+        "type": "shopify:\/\/apps\/floatify-cta-social-buttons\/blocks\/app-embed\/38f6d0e7-3732-47a7-bc73-9635042e08d7",
         "disabled": false,
         "settings": {
         }
