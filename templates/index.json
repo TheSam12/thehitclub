@@ -47,7 +47,7 @@
             "custom_line_1": "",
             "custom_line_2": "Pago recurrente cada 30 días",
             "btn_label": "SUSCRIBIRME",
-            "btn_url": "#optimonk-popup"
+            "btn_url": "#plan-1-mes"
           }
         },
         "product_kXCnNx": {
@@ -59,7 +59,7 @@
             "custom_line_1": "(Ahorra $20)",
             "custom_line_2": "Pago recurrente cada 90 días",
             "btn_label": "SUSCRIBIRME",
-            "btn_url": "#optimonk-popup"
+            "btn_url": "#plan-3-meses"
           }
         },
         "product_npFmXr": {
@@ -71,7 +71,7 @@
             "custom_line_1": "(Ahorra $48)",
             "custom_line_2": "Pago recurrente cada 180 días",
             "btn_label": "SUSCRIBIRME",
-            "btn_url": "#optimonk-popup"
+            "btn_url": "#plan-6-meses"
           }
         }
       },
