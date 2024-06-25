@@ -839,6 +839,11 @@ html, :host {
   width: 100vw;
 }
 
+.tw-w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .tw-max-w-\[480px\] {
   max-width: 480px;
 }
