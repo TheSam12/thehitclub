@@ -157,7 +157,10 @@
         {{ 'customer.login_page.sign_in' | t }}
       </button>
 
-      <a href="{{ routes.account_register_url }}">
+      <a
+        href="{{ routes.account_register_url }}"
+        class="tw-rounded-3xl tw-border tw-border-solid tw-px-12 tw-py-4 tw-no-underline"
+      >
         {{ 'customer.login_page.create_account' | t }}
       </a>
     {%- endform -%}

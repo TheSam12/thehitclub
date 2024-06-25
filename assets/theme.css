@@ -962,6 +962,10 @@ html, :host {
   border-top-width: 0px;
 }
 
+.tw-border-solid {
+  border-style: solid;
+}
+
 .tw-border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -1112,6 +1116,11 @@ html, :host {
   padding-bottom: 24px;
 }
 
+.tw-px-12 {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
 .tw-pb-0 {
   padding-bottom: 0;
 }
@@ -1246,6 +1255,10 @@ html, :host {
 .tw-text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.tw-no-underline {
+  text-decoration-line: none;
 }
 
 .tw-opacity-0 {
