@@ -1622,11 +1622,6 @@ html, :host {
     line-height: 36px;
   }
 
-  .lg\:tw-text-5xl {
-    font-size: 48px;
-    line-height: 1;
-  }
-
   .lg\:tw-text-9xl {
     font-size: 128px;
     line-height: 1;
