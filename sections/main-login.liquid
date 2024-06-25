@@ -6,6 +6,19 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .create-account{
+    border-radius:30px;
+    padding:1rem 3rem;
+    text-decoration:none;
+    border:1px solid;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+
+  .create-account:hover{
+    transform: scale(1.05);
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -159,7 +172,7 @@
 
       <a
         href="{{ routes.account_register_url }}"
-        style="border-radius:30px;padding:1rem 3rem;text-decoration:none;border:1px solid;"
+        class="create-account"
       >
         {{ 'customer.login_page.create_account' | t }}
       </a>
