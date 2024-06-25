@@ -1107,6 +1107,11 @@ html, :host {
   padding-bottom: 32px;
 }
 
+.tw-py-6 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .tw-pb-0 {
   padding-bottom: 0;
 }
@@ -1372,6 +1377,12 @@ html, :host {
   }
 }
 
+.hover\:tw-scale-150:hover {
+  --tw-scale-x: 1.5;
+  --tw-scale-y: 1.5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:tw-underline:hover {
   text-decoration-line: underline;
 }
@@ -1488,6 +1499,10 @@ html, :host {
     padding-top: 144px;
   }
 
+  .md\:tw-pt-0 {
+    padding-top: 0;
+  }
+
   .md\:tw-text-left {
     text-align: left;
   }
@@ -1539,6 +1554,10 @@ html, :host {
 
   .lg\:tw-right-0 {
     right: 0;
+  }
+
+  .lg\:tw-left-0 {
+    left: 0;
   }
 
   .lg\:tw-m-auto {
@@ -1600,6 +1619,11 @@ html, :host {
     padding-bottom: 40px;
   }
 
+  .lg\:tw-py-32 {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
   .lg\:tw-pb-12 {
     padding-bottom: 48px;
   }
@@ -1635,6 +1659,11 @@ html, :host {
   .lg\:tw-text-xl {
     font-size: 20px;
     line-height: 28px;
+  }
+
+  .lg\:tw-text-5xl {
+    font-size: 48px;
+    line-height: 1;
   }
 }
 
