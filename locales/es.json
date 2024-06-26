@@ -561,7 +561,9 @@
         },
         "thank_you_confirmed_order_with_email": "Recibirás en breve un correo electrónico de confirmación con tu número de pedido. Nota Importante: Si te inscribiste a uno de nuestros programas online, debes recibir un correo de bienvenida con información MEGA importante con los pasos a seguir. ¡Vamos con todo!",
         "thank_you_confirmed_order_with_phone": "Recibirás un mensaje de texto de confirmación con tu número de pedido. Nota Importante: Si te inscribiste a uno de nuestros programas online, debes recibir un correo de bienvenida con información MEGA importante con los pasos a seguir. ¡Vamos con todo!",
-        "thank_you_confirmed_order_with_email_and_phone": "Recibirás en breve un correo electrónico de confirmación con tu número de pedido. Nota Importante: Si te inscribiste a uno de nuestros programas online, debes recibir un correo de bienvenida con información MEGA importante con los pasos a seguir. ¡Vamos con todo!"
+        "thank_you_confirmed_order_with_email_and_phone": "Recibirás en breve un correo electrónico de confirmación con tu número de pedido. Nota Importante: Si te inscribiste a uno de nuestros programas online, debes recibir un correo de bienvenida con información MEGA importante con los pasos a seguir. ¡Vamos con todo!",
+        "in_transit": "Estamos trabajando en tu orden",
+        "in_transit_title": "Tu envío estará en camino bien pronto!"
       },
       "marketing": {
         "accept_marketing_checkbox_label": "Deseo recibir promos en bomba y enterarme de todo vía email"
