@@ -551,6 +551,13 @@
       "payment_details": {
         "credit_card_details_accessibility_label": "termina en {{lastDigits}}"
       }
+    },
+    "orders": {
+      "order_status": {
+        "on_its_way_label": "Estamos trabajando en tu orden",
+        "on_its_way_title": "Tu envío estará en camino bien pronto!",
+        "on_its_way_description": "Tu envío estará en camino bien pronto!"
+      }
     }
   },
   "shopify": {
