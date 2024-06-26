@@ -6,8 +6,9 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
   .customer .create-account {
-    display: block;
+    display: flex;
     padding: 1rem 3rem;
+    align-items: center;
   }
   .customer .create-account:hover {
     color: #fff;
@@ -18,7 +19,6 @@
     border-radius:30px;
     padding:1rem 3rem;
     text-decoration:none !important;
-    border:1px solid !important;
     transition-duration: 200ms !important;
     transition-timing-function: cubic-bezier(0.4, 0, 1, 1) !important;
   }
