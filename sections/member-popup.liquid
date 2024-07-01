@@ -15,10 +15,12 @@
 <style>
   #membershipsPopup {
     display: none;
+    opacity: 0;
     transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
   }
   #membershipsPopup.openPopup {
     display: block;
+    opacity: 1;
   }
   .membershipsPopup {
     background: linear-gradient(to right, {{bg1}} 0%, {{bg2}} 100%);
