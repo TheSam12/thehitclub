@@ -811,6 +811,10 @@ html, :host {
   height: 100vh;
 }
 
+.tw-h-auto {
+  height: auto;
+}
+
 .tw-w-3\/5 {
   width: 60%;
 }
