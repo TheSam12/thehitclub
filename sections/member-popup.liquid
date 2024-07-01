@@ -91,9 +91,11 @@
   const themeBody = document.getElementById('themeBody');
   function openMemberPopup() {
     memberPopup.classList.add('openPopup');
+    themeBody.classList.add('tw-overflow-hidden');
   }
   function closeMemberPopup() {
     memberPopup.classList.remove('openPopup');
+    themeBody.classList.remove('tw-overflow-hidden');
   }
 </script>
 
