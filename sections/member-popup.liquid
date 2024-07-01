@@ -91,11 +91,13 @@
   const themeBody = document.getElementById('themeBody');
   function openMemberPopup() {
     memberPopup.classList.add('openPopup');
-    themeBody.classList.add('tw-overflow-hidden tw-h-auto');
+    themeBody.classList.add('tw-overflow-hidden');
+    themeBody.classList.add('tw-h-auto');
   }
   function closeMemberPopup() {
     memberPopup.classList.remove('openPopup');
-    themeBody.classList.remove('tw-overflow-hidden tw-h-auto');
+    themeBody.classList.remove('tw-overflow-hidden');
+    themeBody.classList.remove('tw-h-auto');
   }
 </script>
 
