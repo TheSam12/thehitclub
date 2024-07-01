@@ -20,7 +20,8 @@
     "member_popup_dD6mLn": {
       "type": "member-popup",
       "settings": {
-        "bg": "#ac6161",
+        "bg1": "#FD70BA",
+        "bg2": "#F0DC61",
         "hatiImg": "shopify:\/\/shop_images\/Hati_Logo.webp",
         "hatiDesc": "<p>Hacer ejercicio y estar saludable puede ser difícil. Home & Tone it® elimina esos obstáculos. Nuestras rutinas, diseñadas para hacer en casa en menos de 60 minutos con equipo básico, te facilitan estar en forma.<\/p>",
         "hatiUrl": "",
@@ -30,10 +31,64 @@
         "gatiUrl": "",
         "gatiLabel": "TRAIN AT THE GYM"
       }
+    },
+    "tw_memberships_rFnAyR": {
+      "type": "tw-memberships",
+      "blocks": {
+        "product_zFTfcn": {
+          "type": "product",
+          "settings": {
+            "new_mark": false,
+            "title": "Card Title",
+            "price": "$10",
+            "custom_line_1": "Custom line 1",
+            "custom_line_2": "Custom line 2",
+            "btn_label": "Button",
+            "btn_url": ""
+          }
+        },
+        "product_Hx63aF": {
+          "type": "product",
+          "settings": {
+            "new_mark": false,
+            "title": "Card Title",
+            "price": "$10",
+            "custom_line_1": "Custom line 1",
+            "custom_line_2": "Custom line 2",
+            "btn_label": "Button",
+            "btn_url": ""
+          }
+        },
+        "product_d6cnLc": {
+          "type": "product",
+          "settings": {
+            "new_mark": false,
+            "title": "Card Title",
+            "price": "$10",
+            "custom_line_1": "Custom line 1",
+            "custom_line_2": "Custom line 2",
+            "btn_label": "Button",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_zFTfcn",
+        "product_Hx63aF",
+        "product_d6cnLc"
+      ],
+      "settings": {
+        "title": "Title",
+        "align": "left",
+        "content": "",
+        "color_1": "#2ED5E9",
+        "color_2": "#F7EF8D"
+      }
     }
   },
   "order": [
     "main",
-    "member_popup_dD6mLn"
+    "member_popup_dD6mLn",
+    "tw_memberships_rFnAyR"
   ]
 }
