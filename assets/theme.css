@@ -660,6 +660,14 @@ html, :host {
   top: 103.98px;
 }
 
+.tw-right-6 {
+  right: 24px;
+}
+
+.tw-top-1 {
+  top: 4px;
+}
+
 .-tw-z-10 {
   z-index: -10;
 }
