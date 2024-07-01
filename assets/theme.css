@@ -844,6 +844,10 @@ html, :host {
   width: 100vw;
 }
 
+.tw-w-11\/12 {
+  width: 91.666667%;
+}
+
 .tw-max-w-\[480px\] {
   max-width: 480px;
 }
@@ -1620,6 +1624,10 @@ html, :host {
   .lg\:tw-w-fit {
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .lg\:tw-w-\[490px\] {
+    width: 490px;
   }
 
   .lg\:tw-max-w-\[700px\] {
