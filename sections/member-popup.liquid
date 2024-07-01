@@ -84,25 +84,30 @@
     <div class="popup-overlay" onclick="closeMemberPopup()">p</div>
   </div>
 </div>
-{{ section.id }}
+
 <script>
+  const sectionId = document.getElementById('shopify-section-{{ section.id }}');
   const memberPopup = document.getElementById('membershipsPopup');
   const themeBody = document.getElementById('themeBody');
   function openMemberPopup() {
     memberPopup.classList.add('openPopup');
     themeBody.classList.add('tw-overflow-hidden');
     themeBody.classList.add('tw-h-auto');
+    sectionId.classList.add('tw-fixed');
+    sectionId.classList.remove('tw-hidden');
   }
   function closeMemberPopup() {
     memberPopup.classList.remove('openPopup');
     themeBody.classList.remove('tw-overflow-hidden');
     themeBody.classList.remove('tw-h-auto');
+    sectionId.classList.remove('tw-fixed');
+    sectionId.classList.add('tw-hidden');
   }
 </script>
 
 {% schema %}
 {
-  "class": "tw-fixed tw-top-0 tw-right-0 tw-left-0 tw-bottom-0",
+  "class": "tw-hidden tw-top-0 tw-right-0 tw-left-0 tw-bottom-0",
   "name": "Memberships PopUp",
   "settings": [
     {
