@@ -44,7 +44,7 @@
               class="tw-block tw-w-fit tw-rounded-full tw-bg-black tw-px-7 tw-py-2 tw-text-base tw-font-semibold tw-text-white tw-duration-200 tw-ease-in hover:tw-scale-110 lg:tw-text-lg xl:tw-text-xl"
               href="{{ block.settings.btn_url }}"
               {% if request.path == '/pages/test-page' %}
-                onclick="openMemberPopup()"
+                onclick="openMemberPopup{{ forloop.index }}()"
               {% endif %}
             >
               {{- block.settings.btn_label -}}
