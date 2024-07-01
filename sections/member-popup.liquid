@@ -15,6 +15,8 @@
 <style>
   #membershipsPopup {
     display: none;
+    position:absolute;
+    top: 0;
   }
   #membershipsPopup.openPopup {
     display: block;
@@ -39,46 +41,48 @@
 </style>
 
 <div id="membershipsPopup">
-  <div class="popup-position tw-absolute tw-z-40 tw-w-11/12 lg:tw-w-[980px]">
-    <div class="membershipsPopup tw-relative tw-rounded-3xl tw-p-6">
-      <div class="tw-absolute tw-right-6 tw-top-4 tw-cursor-pointer tw-text-xl" onclick="closeMemberPopup()">X</div>
-      <div class="tw-flex tw-flex-col tw-gap-12 lg:tw-grid lg:tw-grid-cols-2">
-        <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
-          {% if hatiImg != blank %}
-            {{ hatiImg | image_url: width: 100 | image_tag }}
-          {% endif %}
-          {% if hatiDesc != blank %}
-            <div class="tw-text-center tw-text-xs tw-text-black lg:tw-text-base">{{ hatiDesc }}</div>
-          {% endif %}
-          {% if hatiLabel != blank %}
-            <a
-              href="{{ hatiUrl }}"
-              class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
-            >
-              {{- hatiLabel -}}
-            </a>
-          {% endif %}
-        </div>
-        <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
-          {% if gatiImg != blank %}
-            {{ gatiImg | image_url: width: 100 | image_tag }}
-          {% endif %}
-          {% if gatiDesc != blank %}
-            <div class="tw-text-center tw-text-xs tw-text-black lg:tw-text-base">{{ gatiDesc }}</div>
-          {% endif %}
-          {% if gatiLabel != blank %}
-            <a
-              href="{{ gatiUrl }}"
-              class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
-            >
-              {{- gatiLabel -}}
-            </a>
-          {% endif %}
+  <div class="tw-sticky tw-top-0">
+    <div class="popup-position tw-absolute tw-z-40 tw-w-11/12 lg:tw-w-[980px]">
+      <div class="membershipsPopup tw-relative tw-rounded-3xl tw-p-6">
+        <div class="tw-absolute tw-right-6 tw-top-4 tw-cursor-pointer tw-text-xl" onclick="closeMemberPopup()">X</div>
+        <div class="tw-flex tw-flex-col tw-gap-12 lg:tw-grid lg:tw-grid-cols-2">
+          <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
+            {% if hatiImg != blank %}
+              {{ hatiImg | image_url: width: 100 | image_tag }}
+            {% endif %}
+            {% if hatiDesc != blank %}
+              <div class="tw-text-center tw-text-xs tw-text-black lg:tw-text-base">{{ hatiDesc }}</div>
+            {% endif %}
+            {% if hatiLabel != blank %}
+              <a
+                href="{{ hatiUrl }}"
+                class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
+              >
+                {{- hatiLabel -}}
+              </a>
+            {% endif %}
+          </div>
+          <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
+            {% if gatiImg != blank %}
+              {{ gatiImg | image_url: width: 100 | image_tag }}
+            {% endif %}
+            {% if gatiDesc != blank %}
+              <div class="tw-text-center tw-text-xs tw-text-black lg:tw-text-base">{{ gatiDesc }}</div>
+            {% endif %}
+            {% if gatiLabel != blank %}
+              <a
+                href="{{ gatiUrl }}"
+                class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
+              >
+                {{- gatiLabel -}}
+              </a>
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>
+    <div class="popup-overlay" onclick="closeMemberPopup()">p</div>
   </div>
-  <div class="popup-overlay" onclick="closeMemberPopup()">p</div>
 </div>
 
 <script>
