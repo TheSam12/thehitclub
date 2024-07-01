@@ -92,7 +92,21 @@
   const sectionId = document.getElementById('shopify-section-{{ section.id }}');
   const memberPopup = document.getElementById('membershipsPopup');
   const themeBody = document.getElementById('themeBody');
-  function openMemberPopup() {
+  function openMemberPopup1() {
+    memberPopup.classList.add('openPopup');
+    themeBody.classList.add('tw-overflow-hidden');
+    themeBody.classList.add('tw-h-auto');
+    sectionId.classList.add('tw-fixed');
+    sectionId.classList.remove('tw-hidden');
+  }
+  function openMemberPopup2() {
+    memberPopup.classList.add('openPopup');
+    themeBody.classList.add('tw-overflow-hidden');
+    themeBody.classList.add('tw-h-auto');
+    sectionId.classList.add('tw-fixed');
+    sectionId.classList.remove('tw-hidden');
+  }
+  function openMemberPopup3() {
     memberPopup.classList.add('openPopup');
     themeBody.classList.add('tw-overflow-hidden');
     themeBody.classList.add('tw-h-auto');
