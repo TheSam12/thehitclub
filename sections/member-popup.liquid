@@ -6,10 +6,18 @@
   assign hatiDesc = var.hatiDesc
   assign hatiUrl = var.hatiUrl
   assign hatiLabel = var.hatiLabel
+  assign hatiUrl2 = var.hatiUrl2
+  assign hatiLabel2 = var.hatiLabel2
+  assign hatiUrl3 = var.hatiUrl3
+  assign hatiLabel3 = var.hatiLabel3
   assign gatiImg = var.gatiImg
   assign gatiDesc = var.gatiDesc
   assign gatiUrl = var.gatiUrl
   assign gatiLabel = var.gatiLabel
+  assign gatiUrl2 = var.gatiUrl2
+  assign gatiLabel2 = var.gatiLabel2
+  assign gatiUrl3 = var.gatiUrl3
+  assign gatiLabel3 = var.gatiLabel3
 %}
 
 <style>
@@ -84,6 +92,84 @@
         </div>
       </div>
     </div>
+    <div class="popup-position tw-absolute tw-z-40 tw-w-11/12 lg:tw-w-[980px]">
+      <div class="membershipsPopup2 tw-relative tw-rounded-3xl tw-p-6">
+        <div class="tw-absolute tw-right-6 tw-top-4 tw-cursor-pointer tw-text-xl" onclick="closeMemberPopup()">X</div>
+        <div class="tw-flex tw-flex-col tw-gap-12 lg:tw-grid lg:tw-grid-cols-2">
+          <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
+            {% if hatiImg != blank %}
+              {{ hatiImg | image_url: width: 100 | image_tag }}
+            {% endif %}
+            {% if hatiDesc != blank %}
+              <div class="tw-text-center tw-text-xs tw-text-black lg:tw-text-base">{{ hatiDesc }}</div>
+            {% endif %}
+            {% if hatiLabel2 != blank %}
+              <a
+                href="{{ hatiUrl2 }}"
+                class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
+              >
+                {{- hatiLabel2 -}}
+              </a>
+            {% endif %}
+          </div>
+          <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
+            {% if gatiImg != blank %}
+              {{ gatiImg | image_url: width: 100 | image_tag }}
+            {% endif %}
+            {% if gatiDesc != blank %}
+              <div class="tw-text-center tw-text-xs  tw-text-black lg:tw-text-base">{{ gatiDesc }}</div>
+            {% endif %}
+            {% if gatiLabel2 != blank %}
+              <a
+                href="{{ gatiUrl2 }}"
+                class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
+              >
+                {{- gatiLabel2 -}}
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-position tw-absolute tw-z-40 tw-w-11/12 lg:tw-w-[980px]">
+      <div class="membershipsPopup3 tw-relative tw-rounded-3xl tw-p-6">
+        <div class="tw-absolute tw-right-6 tw-top-4 tw-cursor-pointer tw-text-xl" onclick="closeMemberPopup()">X</div>
+        <div class="tw-flex tw-flex-col tw-gap-12 lg:tw-grid lg:tw-grid-cols-2">
+          <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
+            {% if hatiImg != blank %}
+              {{ hatiImg | image_url: width: 100 | image_tag }}
+            {% endif %}
+            {% if hatiDesc != blank %}
+              <div class="tw-text-center tw-text-xs tw-text-black lg:tw-text-base">{{ hatiDesc }}</div>
+            {% endif %}
+            {% if hatiLabel3 != blank %}
+              <a
+                href="{{ hatiUrl3 }}"
+                class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
+              >
+                {{- hatiLabel3 -}}
+              </a>
+            {% endif %}
+          </div>
+          <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
+            {% if gatiImg != blank %}
+              {{ gatiImg | image_url: width: 100 | image_tag }}
+            {% endif %}
+            {% if gatiDesc != blank %}
+              <div class="tw-text-center tw-text-xs  tw-text-black lg:tw-text-base">{{ gatiDesc }}</div>
+            {% endif %}
+            {% if gatiLabel3 != blank %}
+              <a
+                href="{{ gatiUrl3 }}"
+                class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
+              >
+                {{- gatiLabel3 -}}
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="popup-overlay" onclick="closeMemberPopup()">p</div>
   </div>
 </div>
@@ -91,6 +177,8 @@
 <script>
   const sectionId = document.getElementById('shopify-section-{{ section.id }}');
   const memberPopup = document.getElementById('membershipsPopup');
+  const memberPopup2 = document.getElementById('membershipsPopup2');
+  const memberPopup3 = document.getElementById('membershipsPopup3');
   const themeBody = document.getElementById('themeBody');
   function openMemberPopup1() {
     memberPopup.classList.add('openPopup');
@@ -100,14 +188,14 @@
     sectionId.classList.remove('tw-hidden');
   }
   function openMemberPopup2() {
-    memberPopup.classList.add('openPopup');
+    memberPopup2.classList.add('openPopup');
     themeBody.classList.add('tw-overflow-hidden');
     themeBody.classList.add('tw-h-auto');
     sectionId.classList.add('tw-fixed');
     sectionId.classList.remove('tw-hidden');
   }
   function openMemberPopup3() {
-    memberPopup.classList.add('openPopup');
+    memberPopup3.classList.add('openPopup');
     themeBody.classList.add('tw-overflow-hidden');
     themeBody.classList.add('tw-h-auto');
     sectionId.classList.add('tw-fixed');
@@ -115,6 +203,8 @@
   }
   function closeMemberPopup() {
     memberPopup.classList.remove('openPopup');
+    memberPopup2.classList.remove('openPopup');
+    memberPopup3.classList.remove('openPopup');
     themeBody.classList.remove('tw-overflow-hidden');
     themeBody.classList.remove('tw-h-auto');
     sectionId.classList.remove('tw-fixed');
@@ -162,6 +252,28 @@
       "default": "TRAIN AT HOME"
     },
     {
+      "type": "url",
+      "id": "hatiUrl2",
+      "label": "Hati url redirection 2"
+    },
+    {
+      "type": "text",
+      "id": "hatiLabel2",
+      "label": "Hati redirect button label 2",
+      "default": "TRAIN AT HOME"
+    },
+    {
+      "type": "url",
+      "id": "hatiUrl3",
+      "label": "Hati url redirection 3"
+    },
+    {
+      "type": "text",
+      "id": "hatiLabel3",
+      "label": "Hati redirect button label 3",
+      "default": "TRAIN AT HOME"
+    },
+    {
       "type": "image_picker",
       "id": "gatiImg",
       "label": "Gati logo image"
@@ -181,6 +293,28 @@
       "type": "text",
       "id": "gatiLabel",
       "label": "Gati redirect button label",
+      "default": "TRAIN AT THE GYM"
+    },
+    {
+      "type": "url",
+      "id": "gatiUrl2",
+      "label": "Gati url redirection 2"
+    },
+    {
+      "type": "text",
+      "id": "gatiLabel2",
+      "label": "Gati redirect button label 2",
+      "default": "TRAIN AT THE GYM"
+    },
+    {
+      "type": "url",
+      "id": "gatiUrl3",
+      "label": "Gati url redirection 3"
+    },
+    {
+      "type": "text",
+      "id": "gatiLabel3",
+      "label": "Gati redirect button label 3",
       "default": "TRAIN AT THE GYM"
     }
   ],
