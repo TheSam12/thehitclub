@@ -16,9 +16,9 @@
   .membershipsPopup {
     background: linear-gradient(to right, {{bg1}} 0%, {{bg2}} 100%);
   }
-  @media (min-width:1024px){
-    .popup-position{
-        left: calc(50% - 490px);
+  @media (min-width: 1024px) {
+    .popup-position {
+      left: calc(50% - 490px);
     }
   }
 </style>
@@ -28,7 +28,7 @@
     <div class="tw-flex tw-flex-col tw-gap-12 lg:tw-grid lg:tw-grid-cols-2">
       <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
         {% if hatiImg != blank %}
-          {{ hatiImg | image_url: width: 85 | image_tag }}
+          {{ hatiImg | image_url: width: 100 | image_tag }}
         {% endif %}
         {% if hatiDesc != blank %}
           <div class="tw-text-center tw-text-xs tw-text-black lg:tw-text-base">{{ hatiDesc }}</div>
@@ -44,7 +44,7 @@
       </div>
       <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
         {% if gatiImg != blank %}
-          {{ gatiImg | image_url: width: 85 | image_tag }}
+          {{ gatiImg | image_url: width: 100 | image_tag }}
         {% endif %}
         {% if gatiDesc != blank %}
           <div class="tw-text-center tw-text-xs tw-text-black lg:tw-text-base">{{ gatiDesc }}</div>
