@@ -1,6 +1,7 @@
 {% liquid
   assign var = section.settings
-  assign bg = var.bg
+  assign bg1 = var.bg1
+  assign bg2 = var.bg2
   assign hatiImg = var.hatiImg
   assign hatiDesc = var.hatiDesc
   assign hatiUrl = var.hatiUrl
@@ -13,43 +14,45 @@
 
 <style>
   .membershipsPopup{
-      background-color: {{ bg }};
+      background: linear-gradient(to right, {{ bg1 }} 0%, {{ bg2 }} 100%);
   }
 </style>
 
-<div id="membershipsPopup" class="membershipsPopup tw-relative tw-p-6">
-  <div class="tw-flex tw-flex-col tw-gap-12 lg:tw-grid lg:tw-grid-cols-2">
-    <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
-      {% if hatiImg != blank %}
-        {{ hatiImg | image_url: width: 85 | image_tag }}
-      {% endif %}
-      {% if hatiDesc != blank %}
-        <div class="tw-text-center tw-text-xs tw-text-black lg:tw-text-base">{{ hatiDesc }}</div>
-      {% endif %}
-      {% if hatiLabel != blank %}
-        <a
-          href="{{ hatiUrl }}"
-          class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-3.5 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
-        >
-          {{- hatiLabel -}}
-        </a>
-      {% endif %}
-    </div>
-    <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
-      {% if gatiImg != blank %}
-        {{ gatiImg | image_url: width: 85 | image_tag }}
-      {% endif %}
-      {% if gatiDesc != blank %}
-        <div class="tw-text-center tw-text-xs tw-text-black lg:tw-text-base">{{ gatiDesc }}</div>
-      {% endif %}
-      {% if gatiLabel != blank %}
-        <a
-          href="{{ gatiUrl }}"
-          class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-3.5 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
-        >
-          {{- gatiLabel -}}
-        </a>
-      {% endif %}
+<div id="membershipsPopup">
+  <div class="membershipsPopup tw-relative tw-p-6">
+    <div class="tw-flex tw-flex-col tw-gap-12 lg:tw-grid lg:tw-grid-cols-2">
+      <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
+        {% if hatiImg != blank %}
+          {{ hatiImg | image_url: width: 85 | image_tag }}
+        {% endif %}
+        {% if hatiDesc != blank %}
+          <div class="tw-text-center tw-text-xs tw-text-black lg:tw-text-base">{{ hatiDesc }}</div>
+        {% endif %}
+        {% if hatiLabel != blank %}
+          <a
+            href="{{ hatiUrl }}"
+            class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-3.5 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
+          >
+            {{- hatiLabel -}}
+          </a>
+        {% endif %}
+      </div>
+      <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
+        {% if gatiImg != blank %}
+          {{ gatiImg | image_url: width: 85 | image_tag }}
+        {% endif %}
+        {% if gatiDesc != blank %}
+          <div class="tw-text-center tw-text-xs tw-text-black lg:tw-text-base">{{ gatiDesc }}</div>
+        {% endif %}
+        {% if gatiLabel != blank %}
+          <a
+            href="{{ gatiUrl }}"
+            class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-3.5 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
+          >
+            {{- gatiLabel -}}
+          </a>
+        {% endif %}
+      </div>
     </div>
   </div>
 </div>
@@ -60,9 +63,15 @@
   "settings": [
     {
       "type": "color",
-      "default": "#fff",
-      "id": "bg",
-      "label": "Background Color"
+      "default": "#FD70BA",
+      "id": "bg1",
+      "label": "First background color"
+    },
+    {
+      "type": "color",
+      "default": "#F0DC61",
+      "id": "bg2",
+      "label": "Second background color"
     },
     {
       "type": "image_picker",
