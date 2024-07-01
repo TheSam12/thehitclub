@@ -13,6 +13,13 @@
 %}
 
 <style>
+  #membershipsPopup{
+    display:none;
+    transition: duration .5s;
+  }
+  #membershipsPopup.isOpen{
+    display: block;
+  }
   .membershipsPopup {
     background: linear-gradient(to right, {{bg1}} 0%, {{bg2}} 100%);
   }
@@ -35,7 +42,7 @@
 <div id="membershipsPopup">
   <div class="popup-position tw-absolute tw-z-40 tw-w-11/12 lg:tw-w-[980px]">
     <div class="membershipsPopup tw-relative tw-rounded-3xl tw-p-6">
-      <div class="tw-absolute tw-right-6 tw-top-5 tw-text-xl">X</div>
+      <div class="tw-absolute tw-right-6 tw-top-4 tw-text-xl" id="closeMemberPopup">X</div>
       <div class="tw-flex tw-flex-col tw-gap-12 lg:tw-grid lg:tw-grid-cols-2">
         <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
           {% if hatiImg != blank %}
@@ -72,8 +79,28 @@
       </div>
     </div>
   </div>
-  <div class="popup-overlay">p</div>
+  <div class="popup-overlay" id="memberOverlay">p</div>
 </div>
+
+<button @click="openPopup">Abrir popup</button>
+
+<script>
+  Vue.createApp({
+    el: '#membershipsPopup',
+    data: {
+      isOpen: false,
+    },
+    methods: {
+      openPopup() {
+        this.isOpen = true;
+      },
+      closePopup() {
+        this.isOpen = false;
+      },
+    },
+  });
+</script>
+
 {% schema %}
 {
   "name": "Memberships PopUp",
