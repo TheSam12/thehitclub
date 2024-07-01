@@ -26,34 +26,41 @@
     opacity: 0;
     transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
   }
+
   #membershipsPopup.openPopup {
     display: block;
     opacity: 1;
     transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
   }
+
   #membershipsPopup2 {
     display: none;
     opacity: 0;
     transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
   }
+
   #membershipsPopup2.openPopup {
     display: block;
     opacity: 1;
     transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
   }
+
   #membershipsPopup3 {
     display: none;
     opacity: 0;
     transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
   }
+
   #membershipsPopup3.openPopup {
     display: block;
     opacity: 1;
     transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
   }
+
   .membershipsPopup {
     background: linear-gradient(to right, {{bg1}} 0%, {{bg2}} 100%);
   }
+
   .popup-overlay {
     background: rgba(0, 0, 0, 0.4);
     z-index: 30;
@@ -63,6 +70,11 @@
     height: 100vh;
     top: 0;
   }
+
+  .memberships-popup-hover:hover{
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(254, 211, 108));
+  }
+
   @media (min-width: 1024px) {
     .popup-position {
       left: calc(50% - 490px);
@@ -147,7 +159,7 @@
             {% if gatiLabel2 != blank %}
               <a
                 href="{{ gatiUrl2 }}"
-                class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
+                class="memberships-popup-hover tw-w-full tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
               >
                 {{- gatiLabel2 -}}
               </a>
@@ -175,7 +187,7 @@
             {% if hatiLabel3 != blank %}
               <a
                 href="{{ hatiUrl3 }}"
-                class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
+                class="memberships-popup-hover tw-w-full tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
               >
                 {{- hatiLabel3 -}}
               </a>
@@ -191,7 +203,7 @@
             {% if gatiLabel3 != blank %}
               <a
                 href="{{ gatiUrl3 }}"
-                class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
+                class="memberships-popup-hover tw-w-full tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
               >
                 {{- gatiLabel3 -}}
               </a>
