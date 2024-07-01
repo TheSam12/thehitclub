@@ -1044,6 +1044,14 @@ html, :host {
   padding: 16px;
 }
 
+.tw-p-3 {
+  padding: 12px;
+}
+
+.tw-p-3\.5 {
+  padding: 14px;
+}
+
 .tw-px-10 {
   padding-left: 40px;
   padding-right: 40px;
