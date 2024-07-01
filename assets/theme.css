@@ -1040,6 +1040,10 @@ html, :host {
   padding: 24px;
 }
 
+.tw-p-4 {
+  padding: 16px;
+}
+
 .tw-px-10 {
   padding-left: 40px;
   padding-right: 40px;
