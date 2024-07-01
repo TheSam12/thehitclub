@@ -1056,6 +1056,10 @@ html, :host {
   padding: 14px;
 }
 
+.tw-p-2 {
+  padding: 8px;
+}
+
 .tw-px-10 {
   padding-left: 40px;
   padding-right: 40px;
@@ -1628,6 +1632,10 @@ html, :host {
 
   .lg\:tw-w-\[490px\] {
     width: 490px;
+  }
+
+  .lg\:tw-w-\[980px\] {
+    width: 980px;
   }
 
   .lg\:tw-max-w-\[700px\] {

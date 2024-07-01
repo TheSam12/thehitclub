@@ -13,13 +13,13 @@
 %}
 
 <style>
-  .membershipsPopup{
-    background: linear-gradient(to right, {{ bg1 }} 0%, {{ bg2 }} 100%);
+  .membershipsPopup {
+    background: linear-gradient(to right, {{bg1}} 0%, {{bg2}} 100%);
   }
 </style>
 
-<div id="membershipsPopup" class="lg:tw-left-[calc(50% - 245px)] tw-absolute tw-w-11/12 lg:tw-w-[490px]">
-  <div class="membershipsPopup tw-relative tw-p-6">
+<div id="membershipsPopup" class="lg:tw-left-[calc(50% - 490px)] tw-absolute tw-w-11/12 lg:tw-w-[980px]">
+  <div class="membershipsPopup tw-relative tw-rounded-3xl tw-p-6">
     <div class="tw-flex tw-flex-col tw-gap-12 lg:tw-grid lg:tw-grid-cols-2">
       <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
         {% if hatiImg != blank %}
@@ -31,7 +31,7 @@
         {% if hatiLabel != blank %}
           <a
             href="{{ hatiUrl }}"
-            class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-3.5 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
+            class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
           >
             {{- hatiLabel -}}
           </a>
@@ -47,7 +47,7 @@
         {% if gatiLabel != blank %}
           <a
             href="{{ gatiUrl }}"
-            class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-3.5 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
+            class="tw-w-full tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
           >
             {{- gatiLabel -}}
           </a>
