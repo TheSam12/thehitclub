@@ -13,11 +13,11 @@
 %}
 
 <style>
-  #membershipsPopup {
-    display: none;
-    transition: duration 0.5s;
+  #membershipsPopup{
+    display:none;
+    transition: duration .5s;
   }
-  #membershipsPopup.isOpen {
+  #membershipsPopup.isOpen{
     display: block;
   }
   .membershipsPopup {
@@ -84,7 +84,7 @@
 
 <button @click="openPopup">Abrir popup</button>
 <script>
-  Vue.createApp({
+  new Vue({
     el: '#membershipsPopup',
     data: {
       isOpen: false,
@@ -97,7 +97,7 @@
         this.isOpen = false;
       },
     },
-  }).mount('#membershipsPopup');
+  });
 </script>
 
 {% schema %}
