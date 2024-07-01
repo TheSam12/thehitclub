@@ -15,11 +15,6 @@
 <style>
   #membershipsPopup {
     display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
   }
   #membershipsPopup.openPopup {
@@ -107,7 +102,7 @@
 
 {% schema %}
 {
-  "class": "tw-z-10",
+  "class": "tw-z-10 tw-fixed tw-top-0 tw-right-0 tw-left-0 tw-bottom-0",
   "name": "Memberships PopUp",
   "settings": [
     {

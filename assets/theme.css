@@ -676,6 +676,10 @@ html, :host {
   top: 16px;
 }
 
+.tw-bottom-0 {
+  bottom: 0;
+}
+
 .-tw-z-10 {
   z-index: -10;
 }
