@@ -88,19 +88,88 @@
         "color_2": "#f7ef8d"
       }
     },
-    "member_popup_nLhTWL": {
-      "type": "member-popup",
+    "tw_memberships_popup_mRiMez": {
+      "type": "tw-memberships-popup",
+      "blocks": {
+        "product_GgPMwn": {
+          "type": "product",
+          "settings": {
+            "new_mark": false,
+            "title": "PLAN 1 MES",
+            "price": "$32",
+            "custom_line_1": "",
+            "custom_line_2": "Pago recurrente cada 30 días",
+            "btn_label": "SUSCRIBIRME",
+            "btn_url": "",
+            "bg1": "#FD70BA",
+            "bg2": "#F0DC61",
+            "hatiImg": "shopify:\/\/shop_images\/Hati_Logo.webp",
+            "hatiDesc": "<p>Hacer ejercicio y estar saludable puede ser difícil. Home & Tone it® elimina esos obstáculos. Nuestras rutinas, diseñadas para hacer en casa en menos de 60 minutos con equipo básico, te facilitan estar en forma.<\/p>",
+            "hatiUrl": "https:\/\/thehitclub.online\/products\/home-and-tone-it?selling_plan=3317727444&variant=44564437336276",
+            "hatiLabel": "TRAIN AT HOME",
+            "gatiImg": "shopify:\/\/shop_images\/Gati_Logo.webp",
+            "gatiDesc": "<p>Muchas personas cometen errores al entrenar sin guía en el gimnasio. Gym & Tone It® te enseña a usar correctamente cada máquina y te ofrece nuevas rutinas diarias para trabajar cada músculo del cuerpo.<\/p>",
+            "gatiUrl": "https:\/\/thehitclub.online\/products\/gym-and-tone-it?selling_plan=3440672980&variant=45136519037140",
+            "gatiLabel": "TRAIN AT THE GYM"
+          }
+        },
+        "product_GtzQX8": {
+          "type": "product",
+          "settings": {
+            "new_mark": false,
+            "title": "PLAN 3 MESES",
+            "price": "$76",
+            "custom_line_1": "(Ahorra $20)",
+            "custom_line_2": "Pago recurrente cada 90 días",
+            "btn_label": "SUSCRIBIRME",
+            "btn_url": "",
+            "bg1": "#FD70BA",
+            "bg2": "#F0DC61",
+            "hatiImg": "shopify:\/\/shop_images\/Hati_Logo.webp",
+            "hatiDesc": "<p>Hacer ejercicio y estar saludable puede ser difícil. Home & Tone it® elimina esos obstáculos. Nuestras rutinas, diseñadas para hacer en casa en menos de 60 minutos con equipo básico, te facilitan estar en forma.<\/p>",
+            "hatiUrl": "https:\/\/thehitclub.online\/products\/home-and-tone-it?selling_plan=3317694676&variant=44564437336276",
+            "hatiLabel": "TRAIN AT HOME",
+            "gatiImg": "shopify:\/\/shop_images\/Gati_Logo.webp",
+            "gatiDesc": "<p>Muchas personas cometen errores al entrenar sin guía en el gimnasio. Gym & Tone It® te enseña a usar correctamente cada máquina y te ofrece nuevas rutinas diarias para trabajar cada músculo del cuerpo.<\/p>",
+            "gatiUrl": "https:\/\/thehitclub.online\/products\/gym-and-tone-it?selling_plan=3440640212&variant=45136519037140",
+            "gatiLabel": "TRAIN AT THE GYM"
+          }
+        },
+        "product_KJntCf": {
+          "type": "product",
+          "settings": {
+            "new_mark": true,
+            "title": "PLAN 6 MESES",
+            "price": "$144",
+            "custom_line_1": "(Ahorra $48)",
+            "custom_line_2": "Pago recurrente cada 180 días",
+            "btn_label": "SUSCRIBIRME",
+            "btn_url": "",
+            "bg1": "#FD70BA",
+            "bg2": "#F0DC61",
+            "hatiImg": "shopify:\/\/shop_images\/Hati_Logo.webp",
+            "hatiDesc": "<p>Hacer ejercicio y estar saludable puede ser difícil. Home & Tone it® elimina esos obstáculos. Nuestras rutinas, diseñadas para hacer en casa en menos de 60 minutos con equipo básico, te facilitan estar en forma.<\/p>",
+            "hatiUrl": "https:\/\/thehitclub.online\/products\/gym-and-tone-it?selling_plan=3440705748&variant=45136519037140",
+            "hatiLabel": "TRAIN AT HOME",
+            "gatiImg": "shopify:\/\/shop_images\/Gati_Logo.webp",
+            "gatiDesc": "<p>Muchas personas cometen errores al entrenar sin guía en el gimnasio. Gym & Tone It® te enseña a usar correctamente cada máquina y te ofrece nuevas rutinas diarias para trabajar cada músculo del cuerpo.<\/p>",
+            "gatiUrl": "https:\/\/thehitclub.online\/products\/gym-and-tone-it?selling_plan=3440705748&variant=45136519037140",
+            "gatiLabel": "TRAIN AT THE GYM"
+          }
+        }
+      },
+      "block_order": [
+        "product_GgPMwn",
+        "product_GtzQX8",
+        "product_KJntCf"
+      ],
+      "disabled": true,
       "settings": {
-        "bg1": "#FD70BA",
-        "bg2": "#F0DC61",
-        "hatiImg": "shopify:\/\/shop_images\/Hati_Logo.webp",
-        "hatiDesc": "<p>Hacer ejercicio y estar saludable puede ser difícil. Home & Tone it® elimina esos obstáculos. Nuestras rutinas, diseñadas para hacer en casa en menos de 60 minutos con equipo básico, te facilitan estar en forma.<\/p>",
-        "hatiUrl": "",
-        "hatiLabel": "TRAIN AT HOME",
-        "gatiImg": "shopify:\/\/shop_images\/Gati_Logo.webp",
-        "gatiDesc": "<p>Muchas personas cometen errores al entrenar sin guía en el gimnasio. Gym & Tone It® te enseña a usar correctamente cada máquina y te ofrece nuevas rutinas diarias para trabajar cada músculo del cuerpo.<\/p>",
-        "gatiUrl": "",
-        "gatiLabel": "TRAIN AT THE GYM"
+        "title": "Planes de Membresía",
+        "align": "center",
+        "content": "",
+        "color_1": "#2ED5E9",
+        "color_2": "#F7EF8D"
       }
     },
     "tw_text_with_button_kiey4m": {
@@ -338,7 +407,7 @@
     "tw_image_banner_jhYmQg",
     "tw-text_with_gif",
     "tw_memberships_Q7cxVz",
-    "member_popup_nLhTWL",
+    "tw_memberships_popup_mRiMez",
     "tw_text_with_button_kiey4m",
     "tw_reviews_xHykKm",
     "tw_images_slideshow_CrERLc",
