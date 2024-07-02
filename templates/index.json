@@ -80,7 +80,6 @@
         "product_kXCnNx",
         "product_npFmXr"
       ],
-      "disabled": true,
       "settings": {
         "title": "Planes de Membresía",
         "align": "center",
@@ -161,6 +160,7 @@
         "product_GtzQX8",
         "product_KJntCf"
       ],
+      "disabled": true,
       "settings": {
         "title": "Planes de Membresía",
         "align": "center",
