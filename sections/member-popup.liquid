@@ -51,8 +51,8 @@
     background: linear-gradient(90deg, rgb(255, 255, 255), rgb(254, 211, 108));
   }
 
-  .memberships-gati-hover:hover{
-    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(253, 112, 186))
+  .memberships-gati-hover:hover {
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(253, 112, 186));
   }
 
   .popup-position {
@@ -205,25 +205,18 @@
   const memberPopup = document.getElementById('membershipsPopup');
   const memberPopup2 = document.getElementById('membershipsPopup2');
   const memberPopup3 = document.getElementById('membershipsPopup3');
-  const themeBody = document.getElementById('themeBody');
   function openMemberPopup1() {
     memberPopup.classList.add('openPopup');
-    themeBody.classList.add('tw-overflow-hidden');
-    themeBody.classList.add('tw-h-auto');
     sectionId.classList.add('tw-fixed');
     sectionId.classList.remove('tw-hidden');
   }
   function openMemberPopup2() {
     memberPopup2.classList.add('openPopup');
-    themeBody.classList.add('tw-overflow-hidden');
-    themeBody.classList.add('tw-h-auto');
     sectionId.classList.add('tw-fixed');
     sectionId.classList.remove('tw-hidden');
   }
   function openMemberPopup3() {
     memberPopup3.classList.add('openPopup');
-    themeBody.classList.add('tw-overflow-hidden');
-    themeBody.classList.add('tw-h-auto');
     sectionId.classList.add('tw-fixed');
     sectionId.classList.remove('tw-hidden');
   }
@@ -231,8 +224,6 @@
     memberPopup.classList.remove('openPopup');
     memberPopup2.classList.remove('openPopup');
     memberPopup3.classList.remove('openPopup');
-    themeBody.classList.remove('tw-overflow-hidden');
-    themeBody.classList.remove('tw-h-auto');
     sectionId.classList.remove('tw-fixed');
     sectionId.classList.add('tw-hidden');
   }
