@@ -5,6 +5,7 @@
   assign color_2 = section.settings.color_2
   assign sticker = section.settings.sticker
   assign align = section.settings.align
+  assign popup = section.settings.popup
 %}
 
 <style>
@@ -40,12 +41,21 @@
           </span>
           <span class="tw-text-base lg:tw-text-lg xl:tw-text-xl">{{ block.settings.custom_line_1 }}</span>
           <div class="tw-flex tw-justify-center">
-            <a
-              class="tw-block tw-w-fit tw-rounded-full tw-bg-black tw-px-7 tw-py-2 tw-text-base tw-font-semibold tw-text-white tw-duration-200 tw-ease-in hover:tw-scale-110 lg:tw-text-lg xl:tw-text-xl"
-              href="{{ block.settings.btn_url }}"
-            >
-              {{- block.settings.btn_label -}}
-            </a>
+            {% if popup %}
+              <button
+                class="tw-block tw-w-fit tw-rounded-full tw-bg-black tw-px-7 tw-py-2 tw-text-base tw-font-semibold tw-text-white tw-duration-200 tw-ease-in hover:tw-scale-110 lg:tw-text-lg xl:tw-text-xl"
+                onclick="openMemberPopup{{ forloop.index }}()"
+              >
+                {{- block.settings.btn_label -}}
+              </button>
+            {% else %}
+              <a
+                class="tw-block tw-w-fit tw-rounded-full tw-bg-black tw-px-7 tw-py-2 tw-text-base tw-font-semibold tw-text-white tw-duration-200 tw-ease-in hover:tw-scale-110 lg:tw-text-lg xl:tw-text-xl"
+                href="{{ block.settings.btn_url }}"
+              >
+                {{- block.settings.btn_label -}}
+              </a>
+            {% endif %}
           </div>
           <p class="tw-text-xs tw-text-gray-500 xl:tw-text-lg">{{ block.settings.custom_line_2 }}</p>
         </div>
@@ -107,6 +117,12 @@
       "id": "color_2",
       "label": "Gradient color 2",
       "default": "#F7EF8D"
+    },
+    {
+      "type": "checkbox",
+      "id": "popup",
+      "label": "Show Popups",
+      "default": false
     }
   ],
   "blocks": [
