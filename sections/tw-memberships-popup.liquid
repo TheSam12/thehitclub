@@ -105,9 +105,11 @@
     assign bg2 = var.bg2
     assign hatiImg = var.hatiImg
     assign hatiDesc = var.hatiDesc
+    assign hatiUrl = var.hatiUrl
     assign hatiLabel = var.hatiLabel
     assign gatiImg = var.gatiImg
     assign gatiDesc = var.gatiDesc
+    assign gatiUrl = var.gatiUrl
     assign gatiLabel = var.gatiLabel
   %}
   <style>
@@ -147,6 +149,7 @@
               {% if gatiLabel != blank %}
                 <a
                   class="memberships-gati-hover tw-w-full tw-cursor-pointer tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
+                  href="{{ gatiUrl }}"
                 >
                   {{- gatiLabel -}}
                 </a>
@@ -177,7 +180,7 @@
 {% schema %}
 {
   "name": "memberships",
-  "class": "tw-mb-8 tw-z-20 tw-relative",
+  "class": "tw-mb-8 tw-z-5 tw-relative",
   "settings": [
     {
       "type": "text",
@@ -307,6 +310,11 @@
           "default": "<p>Hacer ejercicio y estar saludable puede ser difícil. Home & Tone it® elimina esos obstáculos. Nuestras rutinas, diseñadas para hacer en casa en menos de 60 minutos con equipo básico, te facilitan estar en forma.</p>"
         },
         {
+          "type": "url",
+          "id": "hatiUrl",
+          "label": "Hati url redirection"
+        },
+        {
           "type": "text",
           "id": "hatiLabel",
           "label": "Hati redirect button label",
@@ -322,6 +330,11 @@
           "id": "gatiDesc",
           "label": "Gati description",
           "default": "<p>Muchas personas cometen errores al entrenar sin guía en el gimnasio. Gym & Tone It® te enseña a usar correctamente cada máquina y te ofrece nuevas rutinas diarias para trabajar cada músculo del cuerpo.</p>"
+        },
+        {
+          "type": "url",
+          "id": "gatiUrl",
+          "label": "Gati url redirection"
         },
         {
           "type": "text",
