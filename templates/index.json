@@ -86,7 +86,7 @@
         "content": "",
         "color_1": "#2ed5e9",
         "color_2": "#f7ef8d",
-        "popup": false
+        "popup": true
       }
     },
     "tw_memberships_popup_mRiMez": {
@@ -95,8 +95,8 @@
         "popup_wQeDYr": {
           "type": "popup",
           "settings": {
-            "bg1": "#FD70BA",
-            "bg2": "#F0DC61",
+            "bg1": "#fd70ba",
+            "bg2": "#f0dc61",
             "hatiImg": "shopify:\/\/shop_images\/Hati_Logo.webp",
             "hatiDesc": "<p>Hacer ejercicio y estar saludable puede ser difícil. Home & Tone it® elimina esos obstáculos. Nuestras rutinas, diseñadas para hacer en casa en menos de 60 minutos con equipo básico, te facilitan estar en forma.<\/p>",
             "hatiUrl": "https:\/\/thehitclub.online\/products\/home-and-tone-it?selling_plan=3317727444&variant=44564437336276",
@@ -110,8 +110,8 @@
         "popup_HdLVda": {
           "type": "popup",
           "settings": {
-            "bg1": "#FD70BA",
-            "bg2": "#F0DC61",
+            "bg1": "#fd70ba",
+            "bg2": "#f0dc61",
             "hatiImg": "shopify:\/\/shop_images\/Hati_Logo.webp",
             "hatiDesc": "<p>Hacer ejercicio y estar saludable puede ser difícil. Home & Tone it® elimina esos obstáculos. Nuestras rutinas, diseñadas para hacer en casa en menos de 60 minutos con equipo básico, te facilitan estar en forma.<\/p>",
             "hatiUrl": "https:\/\/thehitclub.online\/products\/home-and-tone-it?selling_plan=3317694676&variant=44564437336276",
@@ -125,8 +125,8 @@
         "popup_pGRYFr": {
           "type": "popup",
           "settings": {
-            "bg1": "#FD70BA",
-            "bg2": "#F0DC61",
+            "bg1": "#fd70ba",
+            "bg2": "#f0dc61",
             "hatiImg": "shopify:\/\/shop_images\/Hati_Logo.webp",
             "hatiDesc": "<p>Hacer ejercicio y estar saludable puede ser difícil. Home & Tone it® elimina esos obstáculos. Nuestras rutinas, diseñadas para hacer en casa en menos de 60 minutos con equipo básico, te facilitan estar en forma.<\/p>",
             "hatiUrl": "https:\/\/thehitclub.online\/products\/home-and-tone-it?selling_plan=3414589652&variant=44564437336276",
