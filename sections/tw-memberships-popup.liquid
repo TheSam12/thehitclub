@@ -165,11 +165,13 @@
 
 <script>
   const headerIndex = document.getElementById('shopify-section-tw-header');
+  const body = document.getElementById('themeBody');
   {% for block in section.blocks %}
     const memberPopup{{ forloop.index }} = document.getElementById('membershipsPopup{{ forloop.index }}');
     function openMemberPopup{{ forloop.index }}() {
       memberPopup{{ forloop.index }}.classList.add('openPopup');
       headerIndex.classList.remove('tw-z-10');
+      body.classList.add('tw-overflow-hidden');
     }
   {% endfor %}
   function closeMemberPopup() {
@@ -177,6 +179,7 @@
       memberPopup{{ forloop.index }}.classList.remove('openPopup');
     {% endfor %}
     headerIndex.classList.add('tw-z-10');
+    body.classList.remove('tw-overflow-hidden');
   }
 </script>
 
