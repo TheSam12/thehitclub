@@ -1,0 +1,351 @@
+{% liquid
+  assign title = section.settings.title
+  assign content = section.settings.content
+  assign color_1 = section.settings.color_1
+  assign color_2 = section.settings.color_2
+  assign sticker = section.settings.sticker
+  assign align = section.settings.align
+%}
+
+<style>
+  .bg-gradient-{{ section.id }} {
+    background: rgb(2,0,36);
+    background: linear-gradient(to bottom right, {{ color_1 }} 0%, {{  color_2 }} 100%);
+  }
+
+  {% for block in section.blocks %}#membershipsPopup{{ forloop.index }}{% unless forloop.last %},{% endunless %}{% endfor %}{
+    display: none;
+  }
+
+  {% for block in section.blocks %}#membershipsPopup{{ forloop.index }}.openPopup{% unless forloop.last %},{% endunless %}{% endfor %} {
+    display: block;
+  }
+
+  .membershipsPopup {
+    background: linear-gradient(to right, {{bg1}} 0%, {{bg2}} 100%);
+  }
+
+  .popup-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 30;
+    color: transparent;
+    position: sticky;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+  }
+
+  .memberships-hati-hover:hover {
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(254, 211, 108));
+  }
+
+  .memberships-gati-hover:hover {
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(253, 112, 186));
+  }
+
+  .popup-position {
+    top: 10%;
+  }
+
+  @media (min-width: 1024px) {
+    .popup-position {
+      left: calc(50% - 490px);
+      top: calc(50% - 121px);
+    }
+  }
+</style>
+<div class="bg-gradient-{{ section.id }}">
+  <div class="tw-container tw-relative tw-mx-auto tw-px-10 tw-py-10 md:tw-py-20">
+    {% if sticker != null %}
+      <div class="tw-absolute -tw-top-16 tw-right-0 lg:-tw-top-32">
+        <img src="{{ sticker | image_url }}" width="240" height="240" class="tw-w-32 lg:tw-w-60">
+      </div>
+    {% endif %}
+    <h2 class="tw-mb-10 tw-text-center tw-text-4xl tw-font-bold {% if sticker != null %}md:tw-text-5xl{% else %}md:tw-text-6xl{% endif %} md:tw-text-{{ align }}">
+      {{ title }}
+    </h2>
+    <div class="">
+      {{ content }}
+    </div>
+    <div class="tw-grid tw-gap-10 lg:tw-grid-cols-3">
+      {% for block in section.blocks %}
+        <div class="tw-relative tw-flex tw-flex-col tw-justify-around tw-gap-4 tw-rounded-3xl tw-bg-white tw-p-5 tw-px-8 tw-py-10 tw-text-center md:tw-gap-8">
+          {% if block.settings.new_mark %}
+            <div class="tw-absolute" style="top:-12px;right:-20px ">
+              <img src="{{ 'new-mark.png' | asset_img_url: 'large' }}" width="500" height="120" class="tw-w-[120px]">
+            </div>
+          {% endif %}
+          <h3 class="tw-text-xl tw-font-bold lg:tw-text-2xl xl:tw-text-3xl ">{{ block.settings.title }}</h3>
+          <span class="tw-text-6xl tw-font-bold tw-text-black md:tw-text-8xl">
+            {{- block.settings.price -}}
+          </span>
+          <span class="tw-text-base lg:tw-text-lg xl:tw-text-xl">{{ block.settings.custom_line_1 }}</span>
+          <div class="tw-flex tw-justify-center">
+            <a
+              class="tw-block tw-w-fit tw-rounded-full tw-bg-black tw-px-7 tw-py-2 tw-text-base tw-font-semibold tw-text-white tw-duration-200 tw-ease-in hover:tw-scale-110 lg:tw-text-lg xl:tw-text-xl"
+              href="{{ block.settings.btn_url }}"
+              {% if request.path == '/pages/test-page' %}
+                onclick="openMemberPopup{{ forloop.index }}()"
+              {% endif %}
+            >
+              {{- block.settings.btn_label -}}
+            </a>
+          </div>
+          <p class="tw-text-xs tw-text-gray-500 xl:tw-text-lg">{{ block.settings.custom_line_2 }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% for block in section.blocks %}
+  {% liquid
+    assign var = block.settings
+    assign bg1 = var.bg1
+    assign bg2 = var.bg2
+    assign hatiImg = var.hatiImg
+    assign hatiDesc = var.hatiDesc
+    assign hatiLabel = var.hatiLabel
+    assign gatiImg = var.gatiImg
+    assign gatiDesc = var.gatiDesc
+    assign gatiLabel = var.gatiLabel
+  %}
+  <div id="membershipsPopup{{ forloop.index }}">
+    <div>
+      <div class="popup-position tw-absolute tw-z-40 tw-p-5 lg:tw-w-[980px] lg:tw-p-0">
+        <div class="membershipsPopup tw-relative tw-rounded-3xl tw-p-6">
+          <div class="tw-absolute tw-right-6 tw-top-4 tw-cursor-pointer tw-text-xl" onclick="closeMemberPopup()">X</div>
+          <div class="tw-flex tw-flex-col tw-gap-12 lg:tw-grid lg:tw-grid-cols-2">
+            <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
+              {% if hatiImg != blank %}
+                {{ hatiImg | image_url: width: 100 | image_tag }}
+              {% endif %}
+              {% if hatiDesc != blank %}
+                <div class="tw-text-center tw-text-xs tw-text-black lg:tw-text-base">{{ hatiDesc }}</div>
+              {% endif %}
+              {% if hatiLabel != blank %}
+                <a
+                  href="{{ hatiUrl }}"
+                  class="memberships-hati-hover tw-w-full tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
+                >
+                  {{- hatiLabel -}}
+                </a>
+              {% endif %}
+            </div>
+            <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-4">
+              {% if gatiImg != blank %}
+                {{ gatiImg | image_url: width: 100 | image_tag }}
+              {% endif %}
+              {% if gatiDesc != blank %}
+                <div class="tw-text-center tw-text-xs  tw-text-black lg:tw-text-base">{{ gatiDesc }}</div>
+              {% endif %}
+              {% if gatiLabel != blank %}
+                <a
+                  class="memberships-gati-hover tw-w-full tw-cursor-pointer tw-rounded-3xl tw-bg-white tw-p-2 tw-text-center tw-text-sm tw-font-bold tw-uppercase tw-text-black lg:tw-text-lg"
+                >
+                  {{- gatiLabel -}}
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup-overlay" onclick="closeMemberPopup()">p</div>
+    </div>
+  </div>
+{% endfor %}
+
+<script>
+  const sectionId = document.getElementById('shopify-section-{{ section.id }}');
+  {% for block in section.blocks %}
+    const memberPopup{{ forloop.index }} = document.getElementById('membershipsPopup{{ forloop.index }}');
+    function openMemberPopup{{ forloop.index }}() {
+      memberPopup{{ forloop.index }}.classList.add('openPopup');
+      sectionId.classList.add('tw-fixed');
+      sectionId.classList.remove('tw-hidden');
+    }
+  {% endfor %}
+  function closeMemberPopup() {
+    {% for block in section.blocks %}
+      memberPopup{{ forloop.index }}.classList.remove('openPopup');
+    {% endfor %}
+    sectionId.classList.remove('tw-fixed');
+    sectionId.classList.add('tw-hidden');
+  }
+</script>
+
+{% schema %}
+{
+  "name": "memberships",
+  "class": "tw-mb-8",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left",
+      "label": "Title alignment for desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "sticker",
+      "label": "Sticker Image"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p></p>"
+    },
+    {
+      "type": "color",
+      "id": "color_1",
+      "label": "Gradient color 1",
+      "default": "#2ED5E9"
+    },
+    {
+      "type": "color",
+      "id": "color_2",
+      "label": "Gradient color 2",
+      "default": "#F7EF8D"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product card",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "new_mark",
+          "label": "Show new mark",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Card Title"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price",
+          "default": "$10"
+        },
+        {
+          "type": "text",
+          "id": "custom_line_1",
+          "label": "Custom line 1",
+          "default": "Custom line 1"
+        },
+        {
+          "type": "text",
+          "id": "custom_line_2",
+          "label": "Custom line 2",
+          "default": "Custom line 2"
+        },
+        {
+          "type": "header",
+          "content": "Button"
+        },
+        {
+          "type": "text",
+          "id": "btn_label",
+          "label": "Button label",
+          "default": "Button"
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "header",
+          "content": "Card Popup"
+        },
+        {
+          "type": "color",
+          "default": "#FD70BA",
+          "id": "bg1",
+          "label": "First background color"
+        },
+        {
+          "type": "color",
+          "default": "#F0DC61",
+          "id": "bg2",
+          "label": "Second background color"
+        },
+        {
+          "type": "image_picker",
+          "id": "hatiImg",
+          "label": "Hati logo image"
+        },
+        {
+          "type": "richtext",
+          "id": "hatiDesc",
+          "label": "Hati description",
+          "default": "<p>Hacer ejercicio y estar saludable puede ser difícil. Home & Tone it® elimina esos obstáculos. Nuestras rutinas, diseñadas para hacer en casa en menos de 60 minutos con equipo básico, te facilitan estar en forma.</p>"
+        },
+        {
+          "type": "text",
+          "id": "hatiLabel",
+          "label": "Hati redirect button label",
+          "default": "TRAIN AT HOME"
+        },
+        {
+          "type": "image_picker",
+          "id": "gatiImg",
+          "label": "Gati logo image"
+        },
+        {
+          "type": "richtext",
+          "id": "gatiDesc",
+          "label": "Gati description",
+          "default": "<p>Muchas personas cometen errores al entrenar sin guía en el gimnasio. Gym & Tone It® te enseña a usar correctamente cada máquina y te ofrece nuevas rutinas diarias para trabajar cada músculo del cuerpo.</p>"
+        },
+        {
+          "type": "text",
+          "id": "gatiLabel",
+          "label": "Gati redirect button label",
+          "default": "TRAIN AT THE GYM"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Memberships With Popup",
+      "blocks": [
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
