@@ -172,30 +172,6 @@
         "color_2": "#F7EF8D"
       }
     },
-    "member_popup_nLhTWL": {
-      "type": "member-popup",
-      "disabled": true,
-      "settings": {
-        "bg1": "#fd70ba",
-        "bg2": "#f0dc61",
-        "hatiImg": "shopify:\/\/shop_images\/Hati_Logo.webp",
-        "hatiDesc": "<p>Hacer ejercicio y estar saludable puede ser difícil. Home & Tone it® elimina esos obstáculos. Nuestras rutinas, diseñadas para hacer en casa en menos de 60 minutos con equipo básico, te facilitan estar en forma.<\/p>",
-        "hatiUrl": "",
-        "hatiLabel": "TRAIN AT HOME",
-        "hatiUrl2": "",
-        "hatiLabel2": "TRAIN AT HOME",
-        "hatiUrl3": "",
-        "hatiLabel3": "TRAIN AT HOME",
-        "gatiImg": "shopify:\/\/shop_images\/Gati_Logo.webp",
-        "gatiDesc": "<p>Muchas personas cometen errores al entrenar sin guía en el gimnasio. Gym & Tone It® te enseña a usar correctamente cada máquina y te ofrece nuevas rutinas diarias para trabajar cada músculo del cuerpo.<\/p>",
-        "gatiUrl": "",
-        "gatiLabel": "TRAIN AT THE GYM",
-        "gatiUrl2": "",
-        "gatiLabel2": "TRAIN AT THE GYM",
-        "gatiUrl3": "",
-        "gatiLabel3": "TRAIN AT THE GYM"
-      }
-    },
     "tw_text_with_button_kiey4m": {
       "type": "tw-text-with-button",
       "settings": {
@@ -432,7 +408,6 @@
     "tw-text_with_gif",
     "tw_memberships_Q7cxVz",
     "tw_memberships_popup_mRiMez",
-    "member_popup_nLhTWL",
     "tw_text_with_button_kiey4m",
     "tw_reviews_xHykKm",
     "tw_images_slideshow_CrERLc",
