@@ -21,39 +21,16 @@
 %}
 
 <style>
-  #membershipsPopup {
-    visibility: hidden;
-    opacity: 0;
-  }
-
-  #membershipsPopup.openPopup {
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0.5s, opacity 0.5s;
-  }
-
-  #membershipsPopup2 {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.4s;
-  }
-
-  #membershipsPopup2.openPopup {
-    display: block;
-    opacity: 1;
-    transition: opacity 0.4s;
-  }
-
+  #membershipsPopup,
+  #membershipsPopup2,
   #membershipsPopup3 {
     display: none;
-    opacity: 0;
-    transition: opacity 0.4s;
   }
 
+  #membershipsPopup.openPopup,
+  #membershipsPopup2.openPopup,
   #membershipsPopup3.openPopup {
     display: block;
-    opacity: 1;
-    transition: opacity 0.4s;
   }
 
   .membershipsPopup {
