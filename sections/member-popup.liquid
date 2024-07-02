@@ -23,20 +23,14 @@
 <style>
   #membershipsPopup {
     display: none;
-    opacity: 0;
-    transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
   }
 
   #membershipsPopup.openPopup {
     display: block;
-    opacity: 1;
-    transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
   }
 
   #membershipsPopup2 {
     display: none;
-    opacity: 0;
-    transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
   }
 
   #membershipsPopup2.openPopup {
@@ -53,8 +47,6 @@
 
   #membershipsPopup3.openPopup {
     display: block;
-    opacity: 1;
-    transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
   }
 
   .membershipsPopup {
@@ -77,6 +69,13 @@
 
   .popup-position {
     top: 10%;
+    opacity: 0;
+    transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+  }
+
+  .open-popup .popup-position {
+    opacity: 1;
+    transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
   }
 
   @media (min-width: 1024px) {
