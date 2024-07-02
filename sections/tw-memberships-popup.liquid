@@ -177,8 +177,7 @@
     const memberPopup{{ forloop.index }} = document.getElementById('membershipsPopup{{ forloop.index }}');
     function openMemberPopup{{ forloop.index }}() {
       memberPopup{{ forloop.index }}.classList.add('openPopup');
-      headerIndex.classList.remove('tw-z-10');
-      headerIndex.classList.add('tw-z-1');
+      headerIndex.classList.remove('tw-sticky');
       body.classList.add('tw-overflow-hidden');
     }
   {% endfor %}
@@ -186,8 +185,7 @@
     {% for block in section.blocks %}
       memberPopup{{ forloop.index }}.classList.remove('openPopup');
     {% endfor %}
-    headerIndex.classList.add('tw-z-10');
-    headerIndex.classList.remove('tw-z-1');
+    headerIndex.classList.add('tw-sticky');
     body.classList.remove('tw-overflow-hidden');
   }
 </script>
@@ -195,7 +193,7 @@
 {% schema %}
 {
   "name": "Popup memberships",
-  "class": "tw-mb-8 tw-z-1 tw-relative",
+  "class": "tw-mb-8 tw-relative",
   "settings": [
     {
       "type": "text",
