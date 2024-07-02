@@ -88,6 +88,77 @@
         "padding_bottom": 36
       }
     },
+    "tw_memberships_popup_D6af8M": {
+      "type": "tw-memberships-popup",
+      "blocks": {
+        "product_kk6DeM": {
+          "type": "product",
+          "settings": {
+            "new_mark": false,
+            "title": "Card Title",
+            "price": "$10",
+            "custom_line_1": "Custom line 1",
+            "custom_line_2": "Custom line 2",
+            "btn_label": "Button",
+            "btn_url": "",
+            "bg1": "#FD70BA",
+            "bg2": "#F0DC61",
+            "hatiDesc": "<p>Hacer ejercicio y estar saludable puede ser difícil. Home & Tone it® elimina esos obstáculos. Nuestras rutinas, diseñadas para hacer en casa en menos de 60 minutos con equipo básico, te facilitan estar en forma.<\/p>",
+            "hatiLabel": "TRAIN AT HOME",
+            "gatiDesc": "<p>Muchas personas cometen errores al entrenar sin guía en el gimnasio. Gym & Tone It® te enseña a usar correctamente cada máquina y te ofrece nuevas rutinas diarias para trabajar cada músculo del cuerpo.<\/p>",
+            "gatiLabel": "TRAIN AT THE GYM"
+          }
+        },
+        "product_CwmHPL": {
+          "type": "product",
+          "settings": {
+            "new_mark": false,
+            "title": "Card Title",
+            "price": "$10",
+            "custom_line_1": "Custom line 1",
+            "custom_line_2": "Custom line 2",
+            "btn_label": "Button",
+            "btn_url": "",
+            "bg1": "#FD70BA",
+            "bg2": "#F0DC61",
+            "hatiDesc": "<p>Hacer ejercicio y estar saludable puede ser difícil. Home & Tone it® elimina esos obstáculos. Nuestras rutinas, diseñadas para hacer en casa en menos de 60 minutos con equipo básico, te facilitan estar en forma.<\/p>",
+            "hatiLabel": "TRAIN AT HOME",
+            "gatiDesc": "<p>Muchas personas cometen errores al entrenar sin guía en el gimnasio. Gym & Tone It® te enseña a usar correctamente cada máquina y te ofrece nuevas rutinas diarias para trabajar cada músculo del cuerpo.<\/p>",
+            "gatiLabel": "TRAIN AT THE GYM"
+          }
+        },
+        "product_VeYFca": {
+          "type": "product",
+          "settings": {
+            "new_mark": false,
+            "title": "Card Title",
+            "price": "$10",
+            "custom_line_1": "Custom line 1",
+            "custom_line_2": "Custom line 2",
+            "btn_label": "Button",
+            "btn_url": "",
+            "bg1": "#FD70BA",
+            "bg2": "#F0DC61",
+            "hatiDesc": "<p>Hacer ejercicio y estar saludable puede ser difícil. Home & Tone it® elimina esos obstáculos. Nuestras rutinas, diseñadas para hacer en casa en menos de 60 minutos con equipo básico, te facilitan estar en forma.<\/p>",
+            "hatiLabel": "TRAIN AT HOME",
+            "gatiDesc": "<p>Muchas personas cometen errores al entrenar sin guía en el gimnasio. Gym & Tone It® te enseña a usar correctamente cada máquina y te ofrece nuevas rutinas diarias para trabajar cada músculo del cuerpo.<\/p>",
+            "gatiLabel": "TRAIN AT THE GYM"
+          }
+        }
+      },
+      "block_order": [
+        "product_kk6DeM",
+        "product_CwmHPL",
+        "product_VeYFca"
+      ],
+      "settings": {
+        "title": "Title",
+        "align": "left",
+        "content": "",
+        "color_1": "#2ED5E9",
+        "color_2": "#F7EF8D"
+      }
+    },
     "tw_memberships_rFnAyR": {
       "type": "tw-memberships",
       "blocks": {
@@ -133,6 +204,7 @@
         "product_Hx63aF",
         "product_d6cnLc"
       ],
+      "disabled": true,
       "settings": {
         "title": "Title",
         "align": "left",
@@ -143,6 +215,7 @@
     },
     "member_popup_dD6mLn": {
       "type": "member-popup",
+      "disabled": true,
       "settings": {
         "bg1": "#fd70ba",
         "bg2": "#f0dc61",
@@ -168,6 +241,7 @@
   "order": [
     "main",
     "featured_product_JeAxNz",
+    "tw_memberships_popup_D6af8M",
     "tw_memberships_rFnAyR",
     "member_popup_dD6mLn"
   ]
