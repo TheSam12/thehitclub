@@ -1,18 +1,4 @@
-{% liquid
-  assign title = section.settings.title
-  assign content = section.settings.content
-  assign color_1 = section.settings.color_1
-  assign color_2 = section.settings.color_2
-  assign sticker = section.settings.sticker
-  assign align = section.settings.align
-%}
-
 <style>
-  .bg-gradient-{{ section.id }} {
-    background: rgb(2,0,36);
-    background: linear-gradient(to bottom right, {{ color_1 }} 0%, {{  color_2 }} 100%);
-  }
-
   {% for block in section.blocks %}#membershipsPopup{{ forloop.index }}{% unless forloop.last %},{% endunless %}{% endfor %}{
     display: none;
   }
@@ -65,46 +51,6 @@
     }
   }
 </style>
-<div class="bg-gradient-{{ section.id }}">
-  <div class="tw-container tw-relative tw-mx-auto tw-px-10 tw-py-10 md:tw-py-20">
-    {% if sticker != null %}
-      <div class="tw-absolute -tw-top-16 tw-right-0 lg:-tw-top-32">
-        <img src="{{ sticker | image_url }}" width="240" height="240" class="tw-w-32 lg:tw-w-60">
-      </div>
-    {% endif %}
-    <h2 class="tw-mb-10 tw-text-center tw-text-4xl tw-font-bold {% if sticker != null %}md:tw-text-5xl{% else %}md:tw-text-6xl{% endif %} md:tw-text-{{ align }}">
-      {{ title }}
-    </h2>
-    <div class="">
-      {{ content }}
-    </div>
-    <div class="tw-grid tw-gap-10 lg:tw-grid-cols-3">
-      {% for block in section.blocks %}
-        <div class="tw-relative tw-flex tw-flex-col tw-justify-around tw-gap-4 tw-rounded-3xl tw-bg-white tw-p-5 tw-px-8 tw-py-10 tw-text-center md:tw-gap-8">
-          {% if block.settings.new_mark %}
-            <div class="tw-absolute" style="top:-12px;right:-20px ">
-              <img src="{{ 'new-mark.png' | asset_img_url: 'large' }}" width="500" height="120" class="tw-w-[120px]">
-            </div>
-          {% endif %}
-          <h3 class="tw-text-xl tw-font-bold lg:tw-text-2xl xl:tw-text-3xl ">{{ block.settings.title }}</h3>
-          <span class="tw-text-6xl tw-font-bold tw-text-black md:tw-text-8xl">
-            {{- block.settings.price -}}
-          </span>
-          <span class="tw-text-base lg:tw-text-lg xl:tw-text-xl">{{ block.settings.custom_line_1 }}</span>
-          <div class="tw-flex tw-justify-center">
-            <button
-              class="tw-block tw-w-fit tw-rounded-full tw-bg-black tw-px-7 tw-py-2 tw-text-base tw-font-semibold tw-text-white tw-duration-200 tw-ease-in hover:tw-scale-110 lg:tw-text-lg xl:tw-text-xl"
-              onclick="openMemberPopup{{ forloop.index }}()"
-            >
-              {{- block.settings.btn_label -}}
-            </button>
-          </div>
-          <p class="tw-text-xs tw-text-gray-500 xl:tw-text-lg">{{ block.settings.custom_line_2 }}</p>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
 {% for block in section.blocks %}
   {% liquid
     assign var = block.settings
@@ -193,106 +139,15 @@
 {% schema %}
 {
   "name": "Popup memberships",
-  "class": "tw-mb-8 tw-relative",
-  "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Title",
-      "default": "Title"
-    },
-    {
-      "type": "select",
-      "id": "align",
-      "options": [
-        {
-          "value": "left",
-          "label": "Left"
-        },
-        {
-          "value": "center",
-          "label": "Center"
-        },
-        {
-          "value": "right",
-          "label": "Right"
-        }
-      ],
-      "default": "left",
-      "label": "Title alignment for desktop"
-    },
-    {
-      "type": "image_picker",
-      "id": "sticker",
-      "label": "Sticker Image"
-    },
-    {
-      "type": "richtext",
-      "id": "content",
-      "label": "Content",
-      "default": "<p></p>"
-    },
-    {
-      "type": "color",
-      "id": "color_1",
-      "label": "Gradient color 1",
-      "default": "#2ED5E9"
-    },
-    {
-      "type": "color",
-      "id": "color_2",
-      "label": "Gradient color 2",
-      "default": "#F7EF8D"
-    }
-  ],
+  "class": "tw-mb-8 tw-z-20 tw-relative",
   "blocks": [
     {
       "type": "product",
-      "name": "Product card",
+      "name": "Popup",
       "settings": [
         {
-          "type": "checkbox",
-          "id": "new_mark",
-          "label": "Show new mark",
-          "default": false
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title",
-          "default": "Card Title"
-        },
-        {
-          "type": "text",
-          "id": "price",
-          "label": "Price",
-          "default": "$10"
-        },
-        {
-          "type": "text",
-          "id": "custom_line_1",
-          "label": "Custom line 1",
-          "default": "Custom line 1"
-        },
-        {
-          "type": "text",
-          "id": "custom_line_2",
-          "label": "Custom line 2",
-          "default": "Custom line 2"
-        },
-        {
           "type": "header",
-          "content": "Button"
-        },
-        {
-          "type": "text",
-          "id": "btn_label",
-          "label": "Button label",
-          "default": "Button"
-        },
-        {
-          "type": "header",
-          "content": "Card Popup"
+          "content": "Popup settings"
         },
         {
           "type": "color",
@@ -358,13 +213,13 @@
       "name": "Memberships With Popup",
       "blocks": [
         {
-          "type": "product"
+          "type": "popup"
         },
         {
-          "type": "product"
+          "type": "popup"
         },
         {
-          "type": "product"
+          "type": "popup"
         }
       ]
     }
