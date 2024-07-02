@@ -155,21 +155,16 @@
 {% endfor %}
 
 <script>
-  const sectionId = document.getElementById('shopify-section-{{ section.id }}');
   {% for block in section.blocks %}
     const memberPopup{{ forloop.index }} = document.getElementById('membershipsPopup{{ forloop.index }}');
     function openMemberPopup{{ forloop.index }}() {
       memberPopup{{ forloop.index }}.classList.add('openPopup');
-      sectionId.classList.add('tw-fixed');
-      sectionId.classList.remove('tw-hidden');
     }
   {% endfor %}
   function closeMemberPopup() {
     {% for block in section.blocks %}
       memberPopup{{ forloop.index }}.classList.remove('openPopup');
     {% endfor %}
-    sectionId.classList.remove('tw-fixed');
-    sectionId.classList.add('tw-hidden');
   }
 </script>
 
