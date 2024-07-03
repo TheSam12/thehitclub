@@ -95,6 +95,7 @@
         "popup_wQeDYr": {
           "type": "popup",
           "settings": {
+            "title": "PLAN 1 MES POPUP",
             "bg1": "#fd70ba",
             "bg2": "#f0dc61",
             "hatiImg": "shopify:\/\/shop_images\/Hati_Logo.webp",
@@ -110,6 +111,7 @@
         "popup_HdLVda": {
           "type": "popup",
           "settings": {
+            "title": "PLAN 3 MESES POPUP",
             "bg1": "#fd70ba",
             "bg2": "#f0dc61",
             "hatiImg": "shopify:\/\/shop_images\/Hati_Logo.webp",
@@ -125,6 +127,7 @@
         "popup_pGRYFr": {
           "type": "popup",
           "settings": {
+            "title": "PLAN 6 MESES POPUP",
             "bg1": "#fd70ba",
             "bg2": "#f0dc61",
             "hatiImg": "shopify:\/\/shop_images\/Hati_Logo.webp",
