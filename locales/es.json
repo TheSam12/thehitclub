@@ -475,7 +475,7 @@
       "submit": "Crear Cuenta"
     },
     "reset_password": {
-      "title": "Restablecer contraseña de cuenta",
+      "title": "Restablecer contraseña",
       "subtext": "Introduce una nueva contraseña.",
       "password": "Contraseña",
       "password_confirm": "Confirmar contraseña",
