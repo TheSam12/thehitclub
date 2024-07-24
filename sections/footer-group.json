@@ -83,6 +83,9 @@
         "footer-1",
         "footer-2"
       ],
+      "custom_css": [
+        "div {background-color: black}"
+      ],
       "settings": {
         "color_scheme": "scheme-4",
         "newsletter_enable": false,
