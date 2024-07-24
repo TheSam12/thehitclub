@@ -83,8 +83,9 @@
         "footer-1",
         "footer-2"
       ],
+      "disabled": true,
       "custom_css": [
-        "div {background-color: black}"
+        "div {background-color: black;}"
       ],
       "settings": {
         "color_scheme": "scheme-4",
